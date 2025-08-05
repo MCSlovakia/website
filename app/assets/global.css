@@ -18,34 +18,13 @@
     font-display: swap;
 }
 
-:root {
-    /* Main Colors */
-    --mcs-blue: #091851;
-    --mcs-orange-light: #FFA940;
-    --mcs-orange: #FF7A00;
-    --mcs-orange-dark: #CC6200;
-    --mcs-white: #F5F6FA;
-    --mcs-grey: #EBECF2;
-    --mcs-black: #020614;
-
-    /* Text Colors */
-    --txt-white-prim: #F5F6FA;
-    --txt-white-sec: #A9B8F1;
-    --txt-black-prim: #020614;
-    --txt-black-sec: #525664;
-
-    /* Disabled Colors */
-    --disabled: #D9CEC3;
-    --disabled-txt: #8B8075;
-}
-
 * {
     background-color: var(--mcs-white);
     font-family: 'Mulish', sans-serif;
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
+     @apply bg-mcs-white;
     font-weight: 700;
 }
 
@@ -60,4 +39,8 @@ h2 {
 
 .mulish {
     font-family: 'Mulish', sans-serif;
+}
+
+a {
+    @apply hover:text-mcs-orange-light
 }
