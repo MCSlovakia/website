@@ -24,6 +24,7 @@
 }
 
 h1 {
+    font-family: 'Merriweather', serif;
      @apply bg-mcs-white;
     font-weight: 700;
 }
@@ -41,6 +42,4 @@ h2 {
     font-family: 'Mulish', sans-serif;
 }
 
-a {
-    @apply hover:text-mcs-orange-light
-}
+/* No global anchor color rules; style links per-component. */
