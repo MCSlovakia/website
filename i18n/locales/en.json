@@ -1,1 +1,9 @@
-{}
+{
+  "header": {
+    "about": "About Us",
+    "projects": "Projects",
+    "partners": "Partners",
+    "support-us": "Support us",
+    "articles": "Articles"
+  }
+}

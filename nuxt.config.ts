@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: [
-    '@/assets/global.css'
+    'remixicon/fonts/remixicon.css',
+    '@/assets/global.css',
   ],
   modules: [
     '@nuxt/image',

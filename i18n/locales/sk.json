@@ -1,1 +1,9 @@
-{}
+{
+  "header": {
+    "about": "O nás",
+    "projects": "Projekty",
+    "partners": "Partnery",
+    "support-us": "Podporte nás",
+    "articles": "Články"
+  }
+}
