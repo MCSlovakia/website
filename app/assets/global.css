@@ -19,13 +19,15 @@
 }
 
 * {
-    background-color: var(--mcs-white);
     font-family: 'Mulish', sans-serif;
+}
+
+body{
+    @apply bg-mcs-white;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
-     @apply bg-mcs-white;
     font-weight: 700;
 }
 
