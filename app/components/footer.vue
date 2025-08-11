@@ -48,7 +48,7 @@
 
       </div>
       <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs gap-5">
-        <p>© Model Conferences Slovakia 2025</p>
+        <p>© Model Conferences Slovakia {{ new Date().getFullYear() }}</p>
         <div class="flex sm:gap-4 gap-2 sm:flex-row flex-col">
           <NuxtLink to="/privacy-policy" class="hover:text-mcs-orange-light transition duration-150">Zásady ochrany osobných údajov</NuxtLink>
           <NuxtLink to="/processing-policy" class="hover:text-mcs-orange-light transition duration-150">Spracovanie osobných údajov</NuxtLink>
