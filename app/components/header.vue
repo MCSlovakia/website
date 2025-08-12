@@ -3,11 +3,11 @@
         <div class="flex py-4 justify-between items-center xl:w-[1180px] lg:w-[940px] w-full">
             <NuxtLink to="/"><img src="/assets/logo/logo-header.svg" alt="MCS logo"></NuxtLink>
             <nav class="hidden sm:flex space-x-6">
-                <NuxtLink to="/about" class="text-mcs-white hover:text-mcs-orange-light transition-colors">{{ $t('header.about') }}</NuxtLink>
-                <NuxtLink to="/projects" class="text-mcs-white hover:text-mcs-orange-light transition-colors">{{ $t("header.projects") }}</NuxtLink>
-                <NuxtLink to="/partners" class="text-mcs-white hover:text-mcs-orange-light transition-colors">{{ $t("header.partners") }}</NuxtLink>
-                <NuxtLink to="/support-us" class="text-mcs-white hover:text-mcs-orange-light transition-colors">{{ $t("header.support-us") }}</NuxtLink>
-                <NuxtLink to="/articles" class="text-mcs-white hover:text-mcs-orange-light transition-colors">{{ $t("header.articles") }}</NuxtLink>
+                <NuxtLink to="/about" @click="isOpen = false" :class="linkClass('/about')" >{{ $t('header.about') }}</NuxtLink>
+                <NuxtLink to="/projects" @click="isOpen = false" :class="linkClass('/projects')" >{{ $t("header.projects") }}</NuxtLink>
+                <NuxtLink to="/partners" @click="isOpen = false" :class="linkClass('/partners')" >{{ $t("header.partners") }}</NuxtLink>
+                <NuxtLink to="/support-us" @click="isOpen = false" :class="linkClass('/support-us')" >{{ $t("header.support-us") }}</NuxtLink>
+                <NuxtLink to="/articles" @click="isOpen = false" :class="linkClass('/articles')" >{{ $t("header.articles") }}</NuxtLink>
             </nav>
             <button class="block sm:hidden" @click="isOpen = true" aria-label="Open menu" :aria-expanded="isOpen ? 'true' : 'false'">
               <i class="ri-menu-3-line text-mcs-white text-2xl"></i>
@@ -41,9 +41,9 @@ import { ref, watch } from 'vue'
 const isOpen = ref(false)
 const route = useRoute()
 
-const linkClass = (path: string) => route.path.startsWith(path)
-  ? 'text-mcs-orange'
-  : 'text-mcs-white hover:text-mcs-orange'
+const linkClass = (path: string) => route.path === path
+  ? 'text-mcs-orange-light hover:text-mcs-orange'
+  : 'text-mcs-white hover:text-mcs-orange-light'
 
 watch(() => route.path, () => {
   if (isOpen.value) isOpen.value = false
