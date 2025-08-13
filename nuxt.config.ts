@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// Temporary declaration to satisfy TypeScript in editors before Nuxt generates types
+// This avoids false errors like "Cannot find name 'defineNuxtConfig'" during initial setup.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare const defineNuxtConfig: any;
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -12,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/i18n',
   ],
+
   i18n: {
     defaultLocale: 'sk',
     locales: [

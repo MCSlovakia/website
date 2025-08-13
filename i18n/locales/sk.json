@@ -5,5 +5,57 @@
     "partners": "Partnery",
     "support-us": "Podporte nás",
     "articles": "Články"
+  },
+  "home": {
+    "seo": {
+      "title": "Model Conferences Slovakia — Domov",
+      "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov. TODO: upraviť popis."
+    },
+    "hero": {
+      "title": "Modelové konferencie pre budúcich lídrov a diplomatov Slovenska",
+      "desc": "Zaži diplomaciu na vlastnej koži. Na modelových konferenciách pre stredoškolákov a vysokoškolákov rozvíjaš kritické myslenie, rečnícke zručnosti a schopnosť viesť s rešpektom.",
+      "ctaVolunteer": "Stať sa dobrovoľníkom",
+      "ctaPartner": "Stať sa partnerom"
+    },
+    "about": {
+      "title": "Čo je MCS",
+      "desc": "Model Conferences Slovakia (MCS) je nezisková organizácia, ktorá formuje budúcich lídrov a diplomatov. Cez modelové konferencie rozvíjame kritické myslenie, rečnícke schopnosti a globálne povedomie.",
+      "cta": "Zistiť o nás"
+    },
+    "projects": {
+      "title": "Projekty",
+      "cta": "Prezrieť projekty",
+      "ctaJoin": "Zúčastniť sa",
+      "sampleDesc1": "NATOBA je prvý projekt MCS: medzinárodná simulácia summitu NATO v Bratislave...",
+      "sampleDesc2": "MUN 2025 je prestížna konferencia simulujúca činnosť OSN...",
+      "sampleDesc3": "MUN 2026 bude pokračovať v tradícii poskytovania platformy pre mladých lídrov..."
+    },
+    "partnerCta": {
+      "title": "Podporte mladých lídrov",
+      "desc": "Veríte v vzdelanie a potenciál mladých? Podporte MCS a staňte sa súčasťou projektov, ktoré rozvíjajú lídrov budúcnosti z celého Slovenska.",
+      "ctaSupport": "Podporiť projekt",
+      "ctaPartner": "Stať sa partnerom"
+    },
+    "leadership": {
+      "title": "Vedenie",
+      "ctaMore": "Zistiť viac o nás"
+    },
+    "articles": {
+      "title": "Články",
+      "ctaMore": "Zistiť viac o nás"
+    },
+    "partners": {
+      "title": "Naši partneri",
+      "ctaMore": "Zistiť o partneroch"
+    },
+    "volunteerCta": {
+      "title": "Pridaj sa k nám",
+      "desc": "Chceš zažiť konferencie, získať skúsenosti a byť súčasťou tímu? Staň sa dobrovoľníkom MCS a pomôž rozvíjať budúcich lídrov Slovenska.",
+      "ctaVolunteer": "Stať sa dobrovoľníkom"
+    },
+    "press": {
+      "title": "O nás napísali",
+      "editorLabel": "Redakcia"
+    }
   }
 }
