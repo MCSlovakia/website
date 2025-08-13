@@ -18,9 +18,13 @@
     font-display: swap;
 }
 
-body {
-    background-color: var(--mcs-white);
+
+* {
     font-family: 'Mulish', sans-serif;
+}
+
+body{
+    @apply bg-mcs-white;
 }
 
 h1 {
