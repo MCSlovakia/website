@@ -14,5 +14,9 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ]
+  ],
+  "exclude": ["node_modules"],
+  "vueCompilerOptions": {
+    "globalTypesPath": "./.nuxt/nuxt.d.ts"
+  }
 }

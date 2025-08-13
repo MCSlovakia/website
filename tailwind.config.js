@@ -10,6 +10,11 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        // Custom breakpoints per request
+        sm2: '360px',
+        xs: '480px',
+      },
       colors: {
         // Main Colors
         'mcs-blue': '#091851',

@@ -5,5 +5,57 @@
     "partners": "Partners",
     "support-us": "Support us",
     "articles": "Articles"
+  },
+  "home": {
+    "seo": {
+      "title": "",
+      "description": ""
+    },
+    "hero": {
+      "title": "",
+      "desc": "",
+      "ctaVolunteer": "",
+      "ctaPartner": ""
+    },
+    "about": {
+      "title": "",
+      "desc": "",
+      "cta": ""
+    },
+    "projects": {
+      "title": "",
+      "cta": "",
+      "ctaJoin": "",
+      "sampleDesc1": "",
+      "sampleDesc2": "",
+      "sampleDesc3": ""
+    },
+    "partnerCta": {
+      "title": "",
+      "desc": "",
+      "ctaSupport": "",
+      "ctaPartner": ""
+    },
+    "leadership": {
+      "title": "",
+      "ctaMore": ""
+    },
+    "articles": {
+      "title": "",
+      "ctaMore": ""
+    },
+    "partners": {
+      "title": "",
+      "ctaMore": ""
+    },
+    "volunteerCta": {
+      "title": "",
+      "desc": "",
+      "ctaVolunteer": ""
+    },
+    "press": {
+      "title": "",
+      "editorLabel": ""
+    }
   }
 }

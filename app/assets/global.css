@@ -18,14 +18,13 @@
     font-display: swap;
 }
 
-* {
+body {
     background-color: var(--mcs-white);
     font-family: 'Mulish', sans-serif;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
-     @apply bg-mcs-white;
     font-weight: 700;
 }
 
