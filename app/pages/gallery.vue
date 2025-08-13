@@ -1,11 +1,8 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-
+  <JoinUs />
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import JoinUs from "~/components/joinUs.vue";
 
-</style>
+</script>
