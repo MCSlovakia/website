@@ -9,11 +9,11 @@
   "home": {
     "seo": {
       "title": "Model Conferences Slovakia — Domov",
-      "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov. TODO: upraviť popis."
+      "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov. TODO: upraviť popis."
     },
     "hero": {
-      "title": "Modelové konferencie pre budúcich lídrov a diplomatov Slovenska",
-      "desc": "Zaži diplomaciu na vlastnej koži. Na modelových konferenciách pre stredoškolákov a vysokoškolákov rozvíjaš kritické myslenie, rečnícke zručnosti a schopnosť viesť s rešpektom.",
+      "title": "Modelové konferencie pre budúcich lídrov a diplomatov Slovenska",
+      "desc": "Zaži diplomaciu na vlastnej koži. Na modelových konferenciách pre stredoškolákov a vysokoškolákov rozvíjaš kritické myslenie, rečnícke zručnosti a schopnosť viesť s rešpektom.",
       "ctaVolunteer": "Stať sa dobrovoľníkom",
       "ctaPartner": "Stať sa partnerom"
     },
@@ -42,7 +42,7 @@
     },
     "articles": {
       "title": "Články",
-      "ctaMore": "Zistiť viac o nás"
+      "ctaMore": "Prećítať viac článkov"
     },
     "partners": {
       "title": "Naši partneri",

@@ -1,97 +1,96 @@
 <template>
-  <div class="bg-mcs-white">
-    <!-- Hero -->
-    <section
-      class="bg-mcs-blue text-txt-white-prim relative overflow-visible
-             h-[640px] xs:h-[700px] md:h-[1000px] lg:h-[800px] xl:h-[800px] 2xl:h-[800px]">
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="grid grid-cols-1 md:grid-cols-1 gap-10 items-start">
-          <div class="space-y-6">
-            <h1 class="merriweather text-4xl md:text-5xl text-txt-white-prim">
-              {{ t('home.hero.title') }}
-            </h1>
-            <p class="text-[18px] text-txt-white-sec">
-              {{ t('home.hero.desc') }}
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <ButtonPrim :text="t('home.hero.ctaVolunteer')" />
-              <ButtonSec :text="t('home.hero.ctaPartner')" class="text-txt-white-prim"/>
-            </div>
-          </div>
-          <!-- image starts under buttons, keeps its size, and overflows into white -->
-          <div class="relative mt-6 md:mt-8 z-10">
-            <div class="rounded">
-              <img src="@/assets/images/hero.png" alt="Hero image" class="w-full h-auto object-cover object-center" />
-            </div>
+  <div class="flex lg:px-auto px-5 justify-center bg-mcs-blue max-h-screen overflow-visible">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex flex-col gap-4 mt-12">
+        <h1 class="md:text-5xl sm:text-3xl text-2xl text-txt-white-prim">
+          {{ t('home.hero.title') }}
+        </h1>
+        <div class="flex lg:flex-row flex-col items-start gap-4 md:gap-6">
+          <p class="text-txt-white-sec md:text-[18px] text-base xl:w-[700px] lg:w-[460px]">
+            {{ t('home.hero.desc') }}
+          </p>
+          <div class="flex sm:flex-row flex-col items-start gap-4">
+            <ButtonPrim
+                :text="t('home.hero.ctaVolunteer')"
+                :onClick="openVolunteerForm"
+            />
+            <ButtonSec
+                class="text-txt-white-prim"
+                :text="t('home.hero.ctaPartner')"
+                :onClick="() => router.push('/partners')"
+            />
           </div>
         </div>
       </div>
-    </section>
+      <NuxtImg
+          class="mt-4 md:mt-4 z-10 w-full md:h-[700px] sm:h-[400px] h-[300px] object-cover object-center rounded"
+          src="/components/main/hero.png"
+          alt="Background image"
+          width="100%"
+          height="100%"
+      />
+    </div>
+  </div>
 
-    <!-- About -->
-    <!-- changed: add top padding to clear the overlapping hero image -->
-    <section class="pt-24 md:pt-40 lg:pt-48">
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <img :src="aboutImg" alt="About MCS" class="w-full h-[300px] md:h-[480px] object-cover object-center rounded" />
-          </div>
-          <div class="space-y-6">
-            <h2 class="merriweather text-4xl text-txt-black-prim">{{ t('home.about.title') }}</h2>
-            <p class="text-[18px] text-txt-black-sec">{{ t('home.about.desc') }}</p>
-            <ButtonSec :text="t('home.about.cta')" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section>
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="flex items-center justify-between gap-5 flex-wrap mb-6">
-          <h2 class="merriweather text-4xl text-txt-black-prim">{{ t('home.projects.title') }}</h2>
-          <ButtonSec :text="t('home.projects.cta')" />
-        </div>
-        <div class="grid md:grid-cols-3 gap-5">
-          <ProjectCard
-            v-for="(p, idx) in projects"
-            :key="p.title"
-            :img="p.img"
-            :title="p.title"
-            :desc="p.desc"
-            :date="p.date"
-            :cta-text="p.cta"
+  <div class="flex lg:px-auto px-5 justify-center xl:mt-[340px] lg:mt-[240px] md:mt-[160px] sm:mt[220px] mt-[100px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex lg:flex-row flex-col items-center justify-between gap-10">
+        <NuxtImg
+            class="lg:w-[480px] lg:h-[480px] w-auto h-320 object-cover rounded"
+            src="/components/main/about.jpg"
+            alt="About Model Conferences Slovakia"
+            width="100%"
+            height="100%"
+            loading="lazy"
+        />
+        <div class="flex flex-col gap-6 items-start">
+          <h2 class="md:text-[40px] text-3xl">{{ t('home.about.title') }}</h2>
+          <p class="text-[18px] text-txt-black-sec">{{ t('home.about.desc') }}</p>
+          <ButtonSec
+              :text="t('home.about.cta')"
+              :onClick="() => router.push('/about')"
           />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- CTA Partner -->
-    <section class="py-16 md:py-24">
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0">
-        <div class="relative bg-mcs-blue text-txt-white-prim rounded px-[50px] pt-[90px] pb-[100px] overflow-hidden">
-          <div class="max-w-[680px] space-y-6">
-            <h2 class="merriweather text-4xl">{{ t('home.partnerCta.title') }}</h2>
-            <p class="text-[18px] text-txt-white-sec">{{ t('home.partnerCta.desc') }}</p>
-            <div class="flex gap-4">
-              <ButtonPrim :text="t('home.partnerCta.ctaSupport')" />
-              <ButtonSec :text="t('home.partnerCta.ctaPartner')" class="text-txt-white-prim" />
-            </div>
-          </div>
-          <img src="@/assets/images/support.png" alt="CTA Partner image" class="hidden md:block absolute right-8 top-8 w-[420px] h-[437px] object-cover rounded" />
-        </div>
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex items-center justify-between gap-5 flex-wrap">
+        <h2 class="md:text-[40px] text-3xl">{{ t('home.projects.title') }}</h2>
+        <ButtonSec
+            :text="t('home.projects.cta')"
+            :onClick="() => router.push('/projects')"
+        />
       </div>
-    </section>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
+        <ProjectCard
+            v-for="(p, idx) in projects"
+            :key="idx"
+            :img="p.img"
+            :title="p.title"
+            :description="p.desc"
+            :date="p.date"
+            :link="'/project-details/' + idx"
+        />
+      </div>
+    </div>
+  </div>
 
-    <!-- Leadership -->
-    <section>
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="flex items-center justify-between gap-5 flex-wrap mb-6">
-          <h2 class="merriweather text-4xl text-txt-black-prim">{{ t('home.leadership.title') }}</h2>
-          <ButtonSec :text="t('home.leadership.ctaMore')" />
-        </div>
-        <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-          <div
+  <PartnerCta />
+
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex items-center justify-between gap-5 flex-wrap">
+        <h2 class="md:text-[40px] text-3xl">{{ t('home.leadership.title') }}</h2>
+        <ButtonSec
+            :text="t('home.leadership.ctaMore')"
+            :onClick="() => router.push('/about')"
+        />
+      </div>
+      <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div
             v-for="(m, i) in leaders"
             :key="m.name"
             :class="[
@@ -99,160 +98,115 @@
               i >= 6 && i < 8 ? 'hidden lg:block' : '',
               i >= 3 && i < 6 ? 'hidden xs:block' : ''
             ]"
-          >
-            <LeaderCard
+        >
+          <LeaderCard
               :img="m.img"
               :name="m.name"
               :role="m.role"
-            />
-          </div>
+              :instagram="m.instagram"
+              :linkedin="m.linkedin"
+          />
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Articles -->
-    <section>
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="flex items-center justify-between gap-5 flex-wrap mb-6">
-          <h2 class="merriweather text-4xl text-txt-black-prim">{{ t('home.articles.title') }}</h2>
-          <ButtonSec :text="t('home.articles.ctaMore')" />
-        </div>
-        <div class="grid md:grid-cols-3 gap-5">
-          <ArticleCard
-            v-for="a in articles"
-            :key="a.title"
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex items-center justify-between gap-5 flex-wrap">
+        <h2 class="md:text-[40px] text-3xl">{{ t('home.articles.title') }}</h2>
+        <ButtonSec
+            :text="t('home.articles.ctaMore')"
+            :onClick="() => router.push('/articles')"
+        />
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
+        <ArticleCard
+            v-for="(a, idx) in articlesContent"
+            :key="idx"
             :img="a.img"
             :title="a.title"
             :excerpt="a.excerpt"
             :author="a.author"
-          />
-        </div>
+        />
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Partners -->
-    <section>
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <div class="flex items-center justify-between gap-5 flex-wrap mb-6">
-          <h2 class="merriweather text-4xl text-txt-black-prim">{{ t('home.partners.title') }}</h2>
-          <ButtonSec :text="t('home.partners.ctaMore')" />
-        </div>
-        <div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 gap-5">
-          <div v-for="(p, i) in partners" :key="i" class="bg-mcs-grey rounded px-[30px] py-5 flex items-center justify-center">
-            <img :src="p" alt="Partner logo" class="w-[60px] h-[60px] object-contain" />
-          </div>
-        </div>
+  <JoinUs />
+
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <div class="flex items-center justify-between gap-5 flex-wrap mb-6">
+        <h2 class="md:text-[40px] text-3xl">{{ t('home.partners.title') }}</h2>
+        <ButtonSec
+            :text="t('home.partners.ctaMore')"
+            :onClick="() => router.push('/partners')"
+        />
       </div>
-    </section>
-
-    <!-- CTA Volunteer -->
-    <section class="py-16 md:py-24">
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0">
-        <div class="relative bg-mcs-blue text-txt-white-prim rounded px-[50px] pt-[90px] pb-[100px] overflow-hidden">
-          <div class="max-w-[680px] space-y-6">
-            <h2 class="merriweather text-4xl">{{ t('home.volunteerCta.title') }}</h2>
-            <p class="text-[18px] text-txt-white-sec">{{ t('home.volunteerCta.desc') }}</p>
-            <ButtonPrim :text="t('home.volunteerCta.ctaVolunteer')" />
-          </div>
-          <img :src="ctaVolunteerImg" alt="CTA Volunteer image" class="hidden md:block absolute right-8 top-8 w-[400px] h-[422px] object-cover rounded" />
-        </div>
+      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
+        <PartnerCard
+            v-for="(p, idx) in partnersContent"
+            :key="idx"
+            :logo="p"
+        />
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Press mentions -->
-    <section>
-      <div class="mx-auto w-full max-w-[1180px] px-4 md:px-0 py-16 md:py-24">
-        <h2 class="merriweather text-4xl text-txt-black-prim mb-6">{{ t('home.press.title') }}</h2>
-        <div class="grid md:grid-cols-3 gap-5">
-          <article v-for="p in press" :key="p.source" class="bg-mcs-grey rounded p-5 space-y-4">
-            <div class="flex items-center gap-4">
-              <img :src="p.logo" :alt="p.source" class="w-[60px] h-[60px] object-cover rounded" />
-              <div>
-                <h3 class="text-[20px] font-semibold" :class="p.accent ? 'text-mcs-orange' : 'text-txt-black-prim'">{{ p.source }}</h3>
-                <p class="text-[14px] text-txt-black-sec">{{ t('home.press.editorLabel') }}</p>
-              </div>
-            </div>
-            <p class="text-[20px] text-txt-black-sec">{{ p.text }}</p>
-          </article>
-        </div>
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+    <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
+      <h2 class="md:text-[40px] text-3xl">{{ t('home.press.title') }}</h2>
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
+        <PressMentionCard
+            v-for="(p, idx) in pressMensionContent"
+            :key="idx"
+            :logo="p.logo"
+            :title="p.title"
+            :author="p.author"
+            :description="p.description"
+        />
       </div>
-    </section>
-
-    <!-- Footer spacing placeholder; real footer is in layout/header components -->
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-// @ts-nocheck
-// Image assets are stored on a localhost server and referenced as constants.
-// TODO: Replace placeholder URLs with real assets from the design server.
-import pfpHolder from '@/assets/images/pfp_holder.png'
+import ProjectCard from "~/components/project/projectCard.vue";
+import PartnerCta from "~/components/partnerCta.vue";
+import LeaderCard from "~/components/leaders/leaderCard.vue";
+import ArticleCard from "~/components/articles/articleCard.vue";
+import JoinUs from "~/components/joinUs.vue";
+import PartnerCard from "~/components/partners/partnerCard.vue";
+import PressMentionCard from '~/components/main/pressMentionCard.vue';
 
-const heroImg = 'http://localhost:3845/assets/hero.png';
-const aboutImg = 'http://localhost:3845/assets/about.png';
-const projImg1 = 'http://localhost:3845/assets/project-1.png';
-const projImg2 = 'http://localhost:3845/assets/project-2.png';
-const projImg3 = 'http://localhost:3845/assets/project-3.png';
-const ctaPartnerImg = 'http://localhost:3845/assets/cta-partner.png';
-const ctaVolunteerImg = 'http://localhost:3845/assets/cta-volunteer.png';
-const leaderImg1 = pfpHolder;
-const leaderImg2 = pfpHolder;
-const leaderImg3 = pfpHolder;
-const leaderImg4 = pfpHolder;
-const articleImg1 = 'http://localhost:3845/assets/article-1.png';
-const articleImg2 = 'http://localhost:3845/assets/article-2.png';
-const articleImg3 = 'http://localhost:3845/assets/article-3.png';
-const partnerLogo = 'http://localhost:3845/assets/partner.png';
-const pressLogo1 = 'http://localhost:3845/assets/press-1.png';
-const pressLogo2 = 'http://localhost:3845/assets/press-2.png';
-const pressLogo3 = 'http://localhost:3845/assets/press-3.png';
+import {useRouter} from "vue-router";
+const router = useRouter();
 
+import {useI18n} from "#imports";
 const { t } = useI18n()
 
-// Explicit imports to avoid auto-registration mismatch during hydration
-
-const leaders = [
-  { name: 'Hana Huorková', role: 'Riaditeľka', img: leaderImg1 },
-  { name: 'Tomáš Klein', role: 'Predseda Výkonnej rady', img: leaderImg2 },
-  { name: 'Adam Dacho', role: 'Podpredseda Výkonnej rady', img: leaderImg3 },
-  { name: 'Katarína Matejková', role: 'Revízorka', img: leaderImg4 },
-  { name: 'Adam Pacho', role: 'Podpredseda Výkonnej rady', img: leaderImg3 },
-  { name: 'Adam Bachol', role: 'Podpredseda Výkonnej rady', img: leaderImg3 },
-  { name: 'Adam Rachol', role: 'Podpredseda Výkonnej rady', img: leaderImg3 },
-  { name: 'Adam Vacho', role: 'Podpredseda Výkonnej rady', img: leaderImg3 },
-]
-
-const articles = [
-  { title: 'Čo sa stane keď krajiny porušia medzinárodné právo?', excerpt: 'Každý štát má právny systém... ', author: 'Zoe Potocká', img: articleImg1, accent: false },
-  { title: 'Diplomacia – je vôbec potrebná v modernom svete?', excerpt: 'Komunikácia je snáď najúčinnejším nástrojom...', author: 'Hana Dubeková', img: articleImg2, accent: true },
-  { title: 'Je OSN stále dôležité? Akú úlohu zohráva dnes?', excerpt: 'Organizácia Spojených národov (OSN)...', author: 'Sophia Anna Hozlárová', img: articleImg3, accent: false },
-]
-
-const partners = Array.from({ length: 8 }).map(() => partnerLogo)
-
-const press = [
-  { source: 'Startitup', logo: pressLogo1, text: 'Model Conferences Slovakia (MCS) nie je len ďalšia neziskovka...', accent: false },
-  { source: 'Denník N', logo: pressLogo2, text: 'MCS ponúka študentom reálnu skúsenosť s rozhodovaním...', accent: true },
-  { source: 'Aktuality.sk', logo: pressLogo3, text: 'Model Conferences Slovakia organizuje konferencie...', accent: false },
-]
+function openVolunteerForm() {
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
+}
 
 const projects = [
   {
-    img: projImg1,
+    img: "",
     title: 'NATOBA 2026',
     desc: t('home.projects.sampleDesc1'),
     date: 'Jún 2026',
     cta: t('home.projects.ctaJoin'),
   },
   {
-    img: projImg2,
+    img: "",
     title: 'MUN 2025',
     desc: t('home.projects.sampleDesc2'),
     date: 'November 2025',
     cta: t('home.projects.ctaJoin'),
   },
   {
-    img: projImg3,
+    img: "",
     title: 'MUN 2026',
     desc: t('home.projects.sampleDesc3'),
     date: 'Apríl 2026',
@@ -260,15 +214,129 @@ const projects = [
   },
 ]
 
+const leaders = [
+  {
+    img: '/components/leaders/hanka.jpg',
+    name: 'Hana Huorková',
+    role: 'Riaditeľka',
+    instagram: 'hanahuorkova',
+    linkedin: 'hana-huorkova',
+  },
+  {
+    img: '/components/leaders/tomas.jpg',
+    name: 'Tomáš Klein',
+    role: 'Predseda Výkonnej rady',
+    instagram: 'tomas_klein',
+    linkedin: 'tomas-klein-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/adam.jpg',
+    name: 'Adam Dacho',
+    role: 'Podpredseda Výkonnej rady',
+    instagram: 'adam_dacho',
+    linkedin: 'adam-dacho-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/goran.jpg',
+    name: 'Goran Dacho',
+    role: 'Člen Výkonnej rady',
+    instagram: 'goran_dacho',
+    linkedin: 'goran-dacho-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/kika.jpg',
+    name: 'Katarína Matejková',
+    role: 'Revízorka',
+    instagram: 'katarina_matejkova',
+    linkedin: 'katarina-matejkova-1a4b6b1',
+  },
+  {
+    img: '/components/leaders/oliver.jpg',
+    name: 'Oliver Gajarský',
+    role: 'Člen Správnej rady',
+    instagram: 'oliver_gajarsky',
+    linkedin: 'oliver-gajarsky-1a4b6b1a',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Anna Kleinová',
+    role: 'Predsedkyňa Správnej rady',
+    instagram: 'anna_kleinova',
+    linkedin: 'anna-kleinova-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Tomáš Klein st.',
+    role: 'Člen Správnej rady',
+    instagram: 'tomas_klein_st',
+    linkedin: 'tomas-klein-st-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Lucia Šimková',
+    role: 'Marketingová manažérka',
+    instagram: 'lucia_simkova',
+    linkedin: 'lucia-simkova-1a4b6b1a',
+  },
+]
+
+const articlesContent = [
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+]
+
+const partnersContent = [
+  new URL('/assets/partners/partner=ba.png', import.meta.url).href,
+  new URL('/assets/partners/partner=mxvez.png', import.meta.url).href,
+  new URL('/assets/partners/partner=nadacia-orange.png', import.meta.url).href,
+  new URL('/assets/partners/partner=nivam.png', import.meta.url).href,
+  new URL('/assets/partners/partner=sda.png', import.meta.url).href,
+  new URL('/assets/partners/partner=tatra.png', import.meta.url).href,
+  new URL('/assets/partners/partner=Variant7.png', import.meta.url).href,
+]
+
+const pressMensionContent = [
+  {
+    logo: 'https://example.com/logo1.png',
+    title: 'Startitup',
+    author: "Redakcia",
+    description: "Model Conferences Slovakia (MCS) nie je len ďalšia neziskovka. Je to komunita mladých, ktorí chcú aktívne formovať svet. Organizujú simulácie NATO či OSN a rozvíjajú u študentov schopnosti, ktoré využijú ako budúci lídri. Stoja na ambícii, inovácii a odhodlaní zanechať skutočný dopad."
+  },
+  {
+    logo: 'https://example.com/logo2.png',
+    title: 'Denník N',
+    author: "Redakcia",
+    description: "MCS ponúka študentom reálnu skúsenosť s rozhodovaním v diplomacii. Na summite NATOBA si mladí osvojujú strategické myslenie, empatiu aj schopnosť viesť dialóg. Cieľom je pripraviť ich na situácie, kde budú musieť niesť zodpovednosť a hľadať riešenia v zložitých globálnych výzvach.",
+  },
+  {
+    logo: 'https://example.com/logo3.png',
+    title: 'Aktuality.sk',
+    author: "Redakcia",
+    description: 'Model Conferences Slovakia organizuje konferencie, kde si mladí vyskúšajú úlohu diplomatov. Projekt NATOBA každý rok priláka desiatky študentov, ktorí simulujú reálne rokovania a riešia aktuálne výzvy. MCS im pomáha rozvíjať zručnosti dôležité pre kariéru aj život.',
+  },
+]
+
 useHead({
-  // TODO: refine SEO title/description
   title: t('home.seo.title') || 'Model Conferences Slovakia — Homepage',
   meta: [
     { name: 'description', content: t('home.seo.description') || 'MCS — modelové konferencie pre budúcich lídrov. TODO: edit.' },
   ],
 })
 </script>
-
-<style scoped>
-/* Utilities used: Tailwind. Using plain <img> with object-cover per request. */
-</style>
