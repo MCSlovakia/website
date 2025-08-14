@@ -169,6 +169,14 @@
       </div>
     </div>
   </div>
+
+  <CtaBig
+    title="Pridaj sa k organizátorom"
+    description="Staň sa súčasťou komunity mladých lídrov, diplomatov a vizionárov. Či už ako dobrovoľník alebo líder, čaká ťa zmysluplná skúsenosť, nové výzvy a priestor na rast. Pripoj sa k nám a buď súčasťou skutočnej zmeny."
+    buttonText="Staň sa dobrovoľníkom"
+    buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform"
+  />
+
 </template>
 
 <script lang="ts" setup>
@@ -179,6 +187,7 @@ import ArticleCard from "~/components/articles/articleCard.vue";
 import JoinUs from "~/components/joinUs.vue";
 import PartnerCard from "~/components/partners/partnerCard.vue";
 import PressMentionCard from '~/components/main/pressMentionCard.vue';
+import CtaBig from "~/components/ctaBig.vue";
 
 import {useRouter} from "vue-router";
 const router = useRouter();
