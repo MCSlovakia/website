@@ -3,10 +3,35 @@
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-[90px] mt-[50px] xl:w-[1180px] lg:w-[940px] w-full">
       <h1 class="md:text-5xl sm:text-3xl text-2xl">Články</h1>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
-        <!-- clanky cez v-for -->
+        <ArticleCard
+          v-for="(article, index) in pagedArticles"
+          :key="index"
+          :img="article.img"
+          :title="article.title"
+          :excerpt="article.excerpt"
+          :author="article.author"
+        />
       </div>
-      <div>
-        <!-- paginetion -->
+      <div class="flex gap-2 justify-center mt-6" v-if="pageCount > 1">
+        <ButtonSec
+            class="text-txt-black-prim"
+            icon="ri-arrow-left-s-line"
+            :disabled="currentPage.valueOf() === 1"
+            :onClick="() => goToPage(currentPage.valueOf() - 1)"
+        />
+        <ButtonSec
+            v-for="page in pageCount"
+            :key="page"
+            :text="String(page)"
+            :active="page === currentPage.valueOf()"
+            :onClick="() => goToPage(page)"
+        />
+        <ButtonSec
+            class="text-txt-black-prim"
+            icon="ri-arrow-right-s-line"
+            :disabled="currentPage.valueOf() === pageCount.valueOf()"
+            :onClick="() => goToPage(currentPage.valueOf() + 1)"
+        />
       </div>
     </div>
   </div>
@@ -15,6 +40,178 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import JoinUs from "~/components/joinUs.vue";
+import ArticleCard from "~/components/articles/articleCard.vue";
+import ButtonSec from '~/components/buttonSec.vue';
+
+const pageSize = 18
+const currentPage = ref(1)
+const pageCount = computed(() => Math.ceil(articlesContent.length / pageSize))
+
+const pagedArticles = computed(() =>
+    articlesContent.slice((currentPage.value - 1) * pageSize, currentPage.value * pageSize)
+)
+
+function goToPage(page: number) {
+  if (page >= 1 && page <= pageCount.value) {
+    currentPage.value = page
+  }
+}
+
+const articlesContent = [
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article1.png',
+    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
+    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
+    author: 'Redakcia',
+  },
+  {
+    img: 'https://example.com/article2.png',
+    title: 'Ako MCS formuje budúcich lídrov',
+    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
+    author: 'Redakcia',
+  },
+
+  {
+    img: 'https://example.com/article3.png',
+    title: 'MCS: Komunita mladých lídrov',
+    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
+    author: 'Redakcia',
+  },
+]
 
 </script>

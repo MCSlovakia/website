@@ -67,7 +67,16 @@
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <h2 class="md:text-[40px] text-3xl">Zakladatelia</h2>
       <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
-        <!-- rozsirene karticky zakladatelov -->
+        <FounderCard
+            v-for="(item, idx) in founders"
+            :key="idx"
+            :img="item.img"
+            :name="item.name"
+            :description="item.description"
+            :instagram="item.instagram"
+            :linkedin="item.linkedin"
+            :email="item.email"
+        />
       </div>
     </div>
   </div>
@@ -76,7 +85,15 @@
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <h2 class="md:text-[40px] text-3xl">Vedenie</h2>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
-        <!-- cez v-for karticky vedenia -->
+        <LeaderCard
+            v-for="(item, idx) in leaders"
+            :key="idx"
+            :img="item.img"
+            :name="item.name"
+            :role="item.role"
+            :instagram="item.instagram"
+            :linkedin="item.linkedin"
+        />
       </div>
     </div>
   </div>
@@ -91,6 +108,8 @@ import ButtonPrim from "~/components/buttonPrim.vue";
 import ButtonSec from "~/components/buttonSec.vue";
 import { useRouter } from 'vue-router';
 import Card from "~/components/card.vue";
+import FounderCard from "~/components/leaders/founderCard.vue";
+import LeaderCard from "~/components/leaders/leaderCard.vue";
 const router = useRouter();
 
 const WorkContent = [
@@ -152,5 +171,90 @@ const ValuesContent = [
     description: 'MCS podporuje mladých ľudí v tom, aby boli proaktívni, hľadali inovatívne a konštruktívne riešenia problémov, ktoré svet trápi.',
   },
 ];
+
+const founders = [
+  {
+    img: '/components/leaders/adam.jpg',
+    name: 'Adam Dacho',
+    description: 'Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje MUN, MEP, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie.',
+    instagram: 'tomas_klein',
+    linkedin: 'tomas-klein-1a4b6b1a2',
+    email: 'adam@mcslovakia.sk',
+  },
+  {
+    img: '/components/leaders/hanka.jpg',
+    name: 'Hana Huorková',
+    description: 'Hanka je maturantka na ŠpMNDaG, čoskoro odchádza študovať medzinárodné právo do Amsterdamu. Zúčastnila sa desiatok modelových konferencií, ktoré aj organizovala. Je v DofE a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším a podporiť vzdelávanie v diplomacii.',
+    instagram: 'hanahuorkova',
+    linkedin: 'hana-huorkova',
+    email: 'hana@mcslovakia.sk',
+  },
+];
+
+const leaders = [
+  {
+    img: '/components/leaders/hanka.jpg',
+    name: 'Hana Huorková',
+    role: 'Riaditeľka',
+    instagram: 'hanahuorkova',
+    linkedin: 'hana-huorkova',
+  },
+  {
+    img: '/components/leaders/tomas.jpg',
+    name: 'Tomáš Klein',
+    role: 'Predseda Výkonnej rady',
+    instagram: 'tomas_klein',
+    linkedin: 'tomas-klein-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/adam.jpg',
+    name: 'Adam Dacho',
+    role: 'Podpredseda Výkonnej rady',
+    instagram: 'adam_dacho',
+    linkedin: 'adam-dacho-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/goran.jpg',
+    name: 'Goran Dacho',
+    role: 'Člen Výkonnej rady',
+    instagram: 'goran_dacho',
+    linkedin: 'goran-dacho-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/kika.jpg',
+    name: 'Katarína Matejková',
+    role: 'Revízorka',
+    instagram: 'katarina_matejkova',
+    linkedin: 'katarina-matejkova-1a4b6b1',
+  },
+  {
+    img: '/components/leaders/oliver.jpg',
+    name: 'Oliver Gajarský',
+    role: 'Člen Správnej rady',
+    instagram: 'oliver_gajarsky',
+    linkedin: 'oliver-gajarsky-1a4b6b1a',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Anna Kleinová',
+    role: 'Predsedkyňa Správnej rady',
+    instagram: 'anna_kleinova',
+    linkedin: 'anna-kleinova-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Tomáš Klein st.',
+    role: 'Člen Správnej rady',
+    instagram: 'tomas_klein_st',
+    linkedin: 'tomas-klein-st-1a4b6b1a2',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Lucia Šimková',
+    role: 'Marketingová manažérka',
+    instagram: 'lucia_simkova',
+    linkedin: 'lucia-simkova-1a4b6b1a',
+  },
+]
 
 </script>

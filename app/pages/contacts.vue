@@ -1,3 +1,4 @@
+
 <template>
   <div class="flex lg:mx-auto mx-5 justify-center">
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-12 mt-8 xl:w-[1180px] lg:w-[940px] w-full">
@@ -67,3 +68,4 @@ const ContactCardsContent = [
 ];
 
 </script>
+
