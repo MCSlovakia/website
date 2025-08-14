@@ -184,7 +184,6 @@ import {useRouter} from "vue-router";
 const router = useRouter();
 
 import {useI18n} from "#imports";
-import LazyProjectCard from "#components";
 const { t } = useI18n()
 
 function openVolunteerForm() {
