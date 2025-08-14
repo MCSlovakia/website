@@ -10,11 +10,7 @@
             {{ props.description }}
           </p>
         </div>
-        <ButtonPrim
-          :text="props.buttonText"
-          :link="props.buttonLink"
-          class="bg-mcs-blue"
-        />
+        <button class="text-[18px] pt-2.5 pb-3 px-6 rounded transition duration-100 ease-in-out bg-mcs-blue text-txt-white-prim hover:bg-[#314079]">{{props.buttonText}}</button>
       </div>
       <NuxtImg
         src="/components/ctaBig.png"
