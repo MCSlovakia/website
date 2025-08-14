@@ -67,7 +67,16 @@
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <h2 class="md:text-[40px] text-3xl">Zakladatelia</h2>
       <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
-        <!-- rozsirene karticky zakladatelov -->
+        <FounderCard
+            v-for="(item, idx) in founders"
+            :key="idx"
+            :img="item.img"
+            :name="item.name"
+            :description="item.description"
+            :instagram="item.instagram"
+            :linkedin="item.linkedin"
+            :email="item.email"
+        />
       </div>
     </div>
   </div>
@@ -99,6 +108,7 @@ import ButtonPrim from "~/components/buttonPrim.vue";
 import ButtonSec from "~/components/buttonSec.vue";
 import { useRouter } from 'vue-router';
 import Card from "~/components/card.vue";
+import FounderCard from "~/components/leaders/founderCard.vue";
 import LeaderCard from "~/components/leaders/leaderCard.vue";
 const router = useRouter();
 
@@ -159,6 +169,25 @@ const ValuesContent = [
     icon: new URL('/assets/icons/about/be-creative.svg', import.meta.url).href,
     title: 'Tvorivosť a hľadanie riešení',
     description: 'MCS podporuje mladých ľudí v tom, aby boli proaktívni, hľadali inovatívne a konštruktívne riešenia problémov, ktoré svet trápi.',
+  },
+];
+
+const founders = [
+  {
+    img: '/components/leaders/adam.jpg',
+    name: 'Adam Dacho',
+    description: 'Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje MUN, MEP, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie.',
+    instagram: 'tomas_klein',
+    linkedin: 'tomas-klein-1a4b6b1a2',
+    email: 'adam@mcslovakia.sk',
+  },
+  {
+    img: '/components/leaders/hanka.jpg',
+    name: 'Hana Huorková',
+    description: 'Hanka je maturantka na ŠpMNDaG, čoskoro odchádza študovať medzinárodné právo do Amsterdamu. Zúčastnila sa desiatok modelových konferencií, ktoré aj organizovala. Je v DofE a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším a podporiť vzdelávanie v diplomacii.',
+    instagram: 'hanahuorkova',
+    linkedin: 'hana-huorkova',
+    email: 'hana@mcslovakia.sk',
   },
 ];
 
