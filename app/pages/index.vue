@@ -133,7 +133,7 @@
     </div>
   </div>
 
-  <JoinUs />
+  <LazyJoinUs />
 
   <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
@@ -184,6 +184,7 @@ import {useRouter} from "vue-router";
 const router = useRouter();
 
 import {useI18n} from "#imports";
+import LazyProjectCard from "#components";
 const { t } = useI18n()
 
 function openVolunteerForm() {

@@ -10,6 +10,7 @@
           width="60"
           height="60"
           alt="Press Mention Logo"
+          loading="lazy"
       />
       <div class="flex flex-col gap">
         <h3 class="text-xl font-semibold">

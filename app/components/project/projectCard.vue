@@ -1,12 +1,13 @@
 <template>
   <NuxtLink
     class="rounded hover:shadow-[0px_4px_10px_0px_rgba(9,24,81,0.15)] transition duration-200 bg-mcs-grey group"
-    to="/projects"
+    to="/gallery"
   >
     <NuxtImg
       class="w-full h-48 object-cover"
       src="/images/project-thumbnail.jpg"
       alt="Project Thumbnail"
+      loading="lazy"
     />
     <div class="px-5 pb-5 pt-4 flex flex-col gap-3">
       <h3 class="text-xl font-medium text-txt-black-prim transition-colors duration-200 group-hover:text-mcs-orange">

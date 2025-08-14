@@ -4,6 +4,7 @@
       v-if="props.logo"
       :src="props.logo"
       alt="Partner Logo"
+      loading="lazy"
     />
   </div>
 </template>
