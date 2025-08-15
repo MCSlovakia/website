@@ -22,7 +22,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-
+      - name: Clean node_modules and package-lock.json
+        run: |
+            rm -rf node_modules package-lock.json
       - name: Install deps
         run: npm ci
 
@@ -76,3 +78,4 @@ jobs:
           # If you deploy to a slot (e.g. 'staging'), set it here. Omit for production slot.
           # slot-name: 'staging'
           package: ./.output
+
