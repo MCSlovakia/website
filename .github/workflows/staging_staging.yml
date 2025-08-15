@@ -22,7 +22,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
-
+      - name: Clean node_modules and package-lock.json
+        run: |
+          rm -rf node_modules package-lock.json
+          
       - name: npm install, build, and test
         run: |
           npm install
@@ -62,4 +65,5 @@ jobs:
           app-name: 'staging'
           slot-name: 'Production'
           package: .
+
           
