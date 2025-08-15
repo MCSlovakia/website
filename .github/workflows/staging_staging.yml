@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - staging
+name: Build and deploy Nuxt SSR app to Azure Web App - staging
 
 on:
   push:
@@ -22,18 +22,22 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
+          cache: 'npm'
 
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Nuxt app
+        run: npm run build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: node-app
-          path: .
+          name: nuxt-app
+          path: |
+            .output/
+            package.json
+            package-lock.json
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,14 +50,14 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: node-app
+          name: nuxt-app
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_AA5C3D5FE1104F88A178D90F578481A2 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6D0D41641F1F41C9A02B063B918DE9B5 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6637E3B703FA4E7DB90E6D5C192A1E98 }}
+          client-id: ${{ secrets.__clientidsecretname__ }}
+          tenant-id: ${{ secrets.__tenantidsecretname__ }}
+          subscription-id: ${{ secrets.__subscriptionidsecretname__ }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -62,4 +66,3 @@ jobs:
           app-name: 'staging'
           slot-name: 'Production'
           package: .
-          
