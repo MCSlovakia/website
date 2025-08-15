@@ -24,8 +24,14 @@ jobs:
           node-version: '22.x'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies with clean slate
+        run: |
+          rm -rf node_modules package-lock.json .nuxt .output
+          npm install --no-optional
+          npm install oxc-parser --force
+          
+      - name: Rebuild native dependencies
+        run: npm rebuild
 
       - name: Build Nuxt app
         run: npm run build
