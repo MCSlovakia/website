@@ -13,44 +13,54 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Node.js version
-        uses: actions/setup-node@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '22.x'
-      - name: Clean node_modules and package-lock.json
-        run: |
-          rm -rf node_modules package-lock.json
-          
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
 
-      - name: Upload artifact for deployment job
+      - name: Install deps
+        run: npm ci
+
+      - name: Build (Nuxt)
+        run: npm run build
+
+      - name: Verify build output
+        run: |
+          pwd
+          ls -la
+          ls -la ./.output
+
+      - name: Upload artifact (.output)
         uses: actions/upload-artifact@v4
         with:
-          name: build-output
-          path: .
+          name: nuxt-output
+          path: ./.output
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
+      id-token: write
+      contents: read
 
     steps:
-      - name: Download artifact from build job
+      - name: Download build artifact to workspace root
         uses: actions/download-artifact@v4
         with:
-          name: build-output
-      
+          name: nuxt-output
+          path: .
+
+      - name: Verify downloaded files
+        run: |
+          pwd
+          ls -la
+          ls -la ./.output
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -58,13 +68,11 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A0938C85043940CFAB4FA2EE3E62D164 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_017AE0E3ADB04829B57B27184458484C }}
 
-      - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
+      - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'staging'
-          slot-name: 'Production'
+          # IMPORTANT: Set this to the actual Web App name (not the slot name)
+          app-name: 'MCSlovakia-staging'
+          # If you deploy to a slot (e.g. 'staging'), set it here. Omit for production slot.
+          # slot-name: 'staging'
           package: ./.output
-
-          
-
