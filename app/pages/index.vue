@@ -222,7 +222,7 @@ const projects = [
     cta: t('home.projects.ctaJoin'),
   },
 ]
-
+// test
 const leaders = [
   {
     img: '/components/leaders/hanka.jpg',
