@@ -26,6 +26,12 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Remove node_modules and package-lock.json (fix native-binding optional deps issue)
+        run: |
+          echo "Removing node_modules and package-lock.json to avoid optional-deps native binding install bug"
+          rm -rf node_modules package-lock.json || true
+          ls -la || true
+
       - name: Install dependencies
         run: npm ci
 
