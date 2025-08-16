@@ -21,25 +21,6 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Use Node.js 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Remove node_modules and package-lock.json (fix native-binding optional deps issue)
-        run: |
-          echo "Removing node_modules and package-lock.json to avoid optional-deps native binding install bug"
-          rm -rf node_modules package-lock.json || true
-          ls -la || true
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Nuxt for Azure preset
-        run: |
-          # Build using the Azure preset so Nuxt will generate staticwebapp.config.json
-          npx nuxi build --preset=azure
-
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -65,4 +46,3 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_SKY_08B4E7703 }}
           action: "close"
-
