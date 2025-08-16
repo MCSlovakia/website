@@ -21,6 +21,25 @@ jobs:
           submodules: true
           lfs: false
 
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Remove node_modules and package-lock.json (fix native-binding optional deps issue)
+        run: |
+          echo "Removing node_modules and package-lock.json to avoid optional-deps native binding install bug"
+          rm -rf node_modules package-lock.json || true
+          ls -la || true
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Nuxt for Azure preset
+        run: |
+          # Build using the Azure preset so Nuxt will generate staticwebapp.config.json
+          npx nuxi build --preset=azure
+
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -28,12 +47,10 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LIVELY_SKY_08B4E7703 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
+          skip_app_build: true
+          app_location: ".output/public" # App source code path
           api_location: ".output/server" # Api source code path - optional
-          output_location: ".output/public" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+          output_location: "" # Built app content directory - optional. Empty because we are skipping build.
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
