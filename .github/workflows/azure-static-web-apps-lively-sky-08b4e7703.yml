@@ -35,10 +35,31 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Nuxt for Azure preset
+      - name: Build Nuxt for Azure Static Web Apps (SSR)
         run: |
-          # Build using the Azure preset so Nuxt will generate staticwebapp.config.json
-          npx nuxi build --preset=azure
+          # Build using the Azure Static Web Apps preset (SSR)
+          npx nuxi build --preset=azure-swa
+
+      - name: Write Static Web Apps routing config (SSR rewrite)
+        run: |
+          cat > .output/public/staticwebapp.config.json << 'EOF'
+          {
+            "navigationFallback": {
+              "rewrite": "/api/functions",
+              "exclude": [
+                "/_nuxt/*",
+                "/favicon.ico",
+                "/robots.txt",
+                "/__nuxt_content/*",
+                "/admin/*",
+                "/assets/*"
+              ]
+            },
+            "routes": [
+              { "route": "/api/*", "allowedRoles": ["anonymous"] }
+            ]
+          }
+          EOF
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
@@ -48,9 +69,9 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           skip_app_build: true
-          app_location: ".output/public" # App source code path
-          api_location: ".output/server" # Api source code path - optional
-          output_location: "" # Built app content directory - optional. Empty because we are skipping build.
+          app_location: ".output/public" # Built app output path
+          api_location: ".output/server"  # Azure Functions app (contains host.json and functions/)
+          output_location: "" # Not used when skip_app_build=true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
