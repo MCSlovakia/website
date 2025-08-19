@@ -30,7 +30,7 @@ jobs:
           npm install
           npx nuxi build --preset=azure
 
-      # Upload only the Nuxt .output directory
+      # Upload the entire .output folder as artifact
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
@@ -49,8 +49,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: nuxt-app
-          path: .output
-      
+          path: nuxt-output  # download to a fresh folder
+    
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'mainweb'
           slot-name: 'Production'
-          package: .output
+          package: nuxt-output
