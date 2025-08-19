@@ -1,6 +1,6 @@
 <template>
   <div class="bg-mcs-grey rounded p-5 flex items-center justify-center">
-    <NuxtImg
+    <img
       v-if="props.logo"
       :src="props.logo"
       alt="Partner Logo"

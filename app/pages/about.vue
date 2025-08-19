@@ -139,34 +139,41 @@ const WorkContent = [
   },
 ];
 
+import aboutCriticalThinking from '~/assets/icons/about/critical-thinking.svg'
+import aboutActiveCitizen from '~/assets/icons/about/active-citizen.svg'
+import aboutYapsesh from '~/assets/icons/about/yapsesh.svg'
+import aboutSelfGrow from '~/assets/icons/about/self-grow.svg'
+import aboutGlobalChallenge from '~/assets/icons/about/global-challenge.svg'
+import aboutBeCreative from '~/assets/icons/about/be-creative.svg'
+
 const ValuesContent = [
   {
-    icon: new URL('/assets/icons/about/critical-thinking.svg', import.meta.url).href,
+    icon: aboutCriticalThinking,
     title: 'Kritické myslenie a argumentácia',
     description: 'MCS podporuje rozvoj analytického a logického myslenia, ako aj schopnosti formulovať a obhajovať vlastné názory.',
   },
   {
-    icon: new URL('/assets/icons/about/active-citizen.svg', import.meta.url).href,
+    icon: aboutActiveCitizen,
     title: 'Aktívne občianstvo a angažovanosť',
     description: 'Cieľom je pripraviť mladých ľudí na aktívnu účasť v spoločnosti a motivovať ich, aby sa podieľali na riešení spoločenských a globálnych problémov.',
   },
   {
-    icon: new URL('/assets/icons/about/yapsesh.svg', import.meta.url).href,
+    icon: aboutYapsesh,
     title: 'Dialóg a porozumenie',
     description: 'MCS verí v silu aktívneho a rešpektujúceho dialógu ako nástroja na vytváranie konsenzu medzi rôznymi názormi a záujmami.',
   },
   {
-    icon: new URL('/assets/icons/about/self-grow.svg', import.meta.url).href,
+    icon: aboutSelfGrow,
     title: 'Osobnostný rast a sebavyjadrenie',
     description: 'Organizácia vytvára bezpečný priestor pre rozvoj sebavedomia, schopnosti vyjadriť sa a prezentovať vlastné názory bez strachu.',
   },
   {
-    icon: new URL('/assets/icons/about/global-challenge.svg', import.meta.url).href,
+    icon: aboutGlobalChallenge,
     title: 'Vzdelávanie o globálnych výzvach',
     description: 'Dôležitou hodnotou je zvyšovanie povedomia o medzinárodných vzťahoch, diplomacii a výzvach dnešného sveta.',
   },
   {
-    icon: new URL('/assets/icons/about/be-creative.svg', import.meta.url).href,
+    icon: aboutBeCreative,
     title: 'Tvorivosť a hľadanie riešení',
     description: 'MCS podporuje mladých ľudí v tom, aby boli proaktívni, hľadali inovatívne a konštruktívne riešenia problémov, ktoré svet trápi.',
   },

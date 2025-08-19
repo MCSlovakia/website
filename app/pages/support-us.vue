@@ -70,34 +70,41 @@ import ButtonSec from '~/components/buttonSec.vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
 
+import supportLearning from '~/assets/icons/support/learning.svg'
+import supportSocialImpact from '~/assets/icons/support/social-impact.svg'
+import supportCriticalThinking from '~/assets/icons/support/critical-thinking.svg'
+import supportTransparency from '~/assets/icons/support/transparency.svg'
+import supportPartner from '~/assets/icons/support/partner.svg'
+import supportCommunity from '~/assets/icons/support/community.svg'
+
 const CardContent = [
   {
-    icon: new URL('/assets/icons/support/learning.svg', import.meta.url).href,
+    icon: supportLearning,
     title: 'Vzdelávanie budúcich lídrov',
     description: 'Vaša podpora pomáha formovať generáciu mladých, ktorí chcú zodpovedne ovplyvňovať svet okolo seba.',
   },
   {
-    icon: new URL('/assets/icons/support/social-impact.svg', import.meta.url).href,
+    icon: supportSocialImpact,
     title: 'Skutočný spoločenský dopad',
     description: 'Konferencie a programy MCS rozvíjajú schopnosti, ktoré mladí využijú v škole, práci aj verejnom živote.',
   },
   {
-    icon: new URL('/assets/icons/support/critical-thinking.svg', import.meta.url).href,
+    icon: supportCriticalThinking,
     title: 'Podpora kritického myslenia adialógu',
     description: 'Investujete do zručností, ktoré budujú otvorenú, tolerantnú a informovanú spoločnosť.',
   },
   {
-    icon: new URL('/assets/icons/support/transparency.svg', import.meta.url).href,
+    icon: supportTransparency,
     title: 'Transparentná a nezisková organizácia',
     description: 'Každé euro smeruje priamo do vzdelávacích aktivít, nie do zisku. Sme otvorení a zodpovední voči darcom aj partnerom.',
   },
   {
-    icon: new URL('/assets/icons/support/partner.svg', import.meta.url).href,
+    icon: supportPartner,
     title: 'Partnerstvo s dlhodobou hodnotou',
     description: 'Firmám ponúkame zmysluplnú spoluprácu, viditeľnosť a možnosť podieľať sa na rozvoji občianskej spoločnosti.',
   },
   {
-    icon: new URL('/assets/icons/support/community.svg', import.meta.url).href,
+    icon: supportCommunity,
     title: 'Komunita s vášňou pre zmenu',
     description: 'Pridáte sa k ľuďom, ktorým záleží na budúcnosti Slovenska – vzdelaných, angažovaných a ochotných konať.',
   },

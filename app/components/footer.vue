@@ -4,7 +4,7 @@
       <div class="flex flex-row items-start justify-between flex-wrap gap-5">
         <div class="logo--container">
           <NuxtLink to="/" class="flex items-center">
-            <img src="/assets/logo/logo-footer.svg" alt="MCS logo" class="w-[150px] h-auto">
+            <img :src="logoFooter" alt="MCS logo" class="w-[150px] h-auto">
           </NuxtLink>
           <div>
             <NuxtLink
@@ -59,6 +59,7 @@
 </template>
 
 <script setup lang="ts">
+import logoFooter from '~/assets/logo/logo-footer.svg'
 const smLinks = [
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
