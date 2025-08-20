@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: Install dependencies and build Nuxt app (Azure preset)
+      - name: Install dependencies and build Nuxt app (Node.js server preset)
         run: |
           rm -f package-lock.json
           npm install
-          npx nuxi build --preset=azure
+          npx nuxi build --preset=node-server
 
       # Upload the entire .output folder as artifact
       - name: Upload build artifact
