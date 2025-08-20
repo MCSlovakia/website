@@ -24,15 +24,5 @@ export default defineNuxtConfig({
       { code: 'sk', name: 'Slovenčina', file: 'sk.json', language: 'sk-SK' },
       { code: 'en', name: 'English', file: 'en.json', language: 'en-US' },
     ]
-  },
-  nitro: {
-    azure: {
-      config: {
-        // ...
-        platform: {
-          apiRuntime: 'node:22'
-        }
-      }
-    }
   }
 });

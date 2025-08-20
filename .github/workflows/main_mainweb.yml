@@ -29,6 +29,18 @@ jobs:
           rm -f package-lock.json
           npm install
           npx nuxi build --preset=node-server
+          
+      # Create package.json in .output root for Azure Web App startup
+      - name: Create startup configuration for Azure Web App
+        run: |
+          echo '{
+            "name": "nuxt-app-azure",
+            "version": "1.0.0",
+            "type": "module",
+            "scripts": {
+              "start": "node server/index.mjs"
+            }
+          }' > .output/package.json
 
       # Upload the entire .output folder as artifact
       - name: Upload build artifact
