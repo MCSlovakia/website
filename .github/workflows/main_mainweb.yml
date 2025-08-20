@@ -35,7 +35,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nuxt-app
-          path: .output
+          path: |
+            .output/
+            package.json
+            package-lock.json
 
   deploy:
     runs-on: ubuntu-latest
@@ -49,7 +52,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: nuxt-app
-          path: nuxt-output  # download to a fresh folder
     
       - name: Login to Azure
         uses: azure/login@v2
@@ -64,4 +66,4 @@ jobs:
         with:
           app-name: 'mainweb'
           slot-name: 'Production'
-          package: nuxt-output
+          package: .output
