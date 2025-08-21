@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-mcs-blue flex md:justify-center justify-between items-center lg:px-auto px-5">
+  <header :class="[{ '-translate-y-full': isHidden }, 'bg-mcs-blue flex md:justify-center justify-between items-center lg:px-auto px-5', 'sticky top-0 left-0 right-0 z-40 transform transition-transform duration-300']" :aria-hidden="isHidden ? 'true' : 'false'">
         <div class="flex py-4 justify-between items-center xl:w-[1180px] lg:w-[940px] w-full">
             <NuxtLink to="/"><img :src="logoHeader" alt="MCS logo"></NuxtLink>
             <nav class="hidden sm:flex space-x-6 items-center">
@@ -50,12 +50,42 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from '#imports'
 import logoHeader from '~/assets/logo/logo-header.svg'
 
 const isOpen = ref(false)
 const route = useRoute()
+
+// Hide header when scrolling down, show when scrolling up
+const isHidden = ref(false)
+const lastScroll = ref(0)
+const SCROLL_DELTA = 10 // minimal scroll delta to react
+
+const onScroll = () => {
+  const current = window.scrollY || 0
+  const delta = Math.abs(current - lastScroll.value)
+  if (delta < SCROLL_DELTA) return
+
+  // if scrolling down and scrolled past small offset, hide
+  if (current > lastScroll.value && current > 100) {
+    isHidden.value = true
+  } else {
+    // scrolling up
+    isHidden.value = false
+  }
+
+  lastScroll.value = current
+}
+
+onMounted(() => {
+  lastScroll.value = window.scrollY || 0
+  window.addEventListener('scroll', onScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
 
 const linkClass = (path: string) => route.path === path
   ? 'text-mcs-orange-light hover:text-mcs-orange'
