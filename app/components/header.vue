@@ -21,31 +21,33 @@
             </button>
         </div>
 
-        <!-- Mobile full-screen menu -->
-        <div v-if="isOpen" id="mobile-menu" class="fixed inset-0 z-50 sm:hidden bg-mcs-blue" role="dialog" aria-modal="true">
-            <div class="flex items-center justify-between px-5 py-4">
-              <div>
-                <NuxtLink to="/" @click="isOpen = false"><img :src="logoHeader" alt="MCS logo"></NuxtLink>
-              </div>
-              <button @click="isOpen = false" aria-label="Close menu" class="text-mcs-white">
-                <i class="ri-close-line text-2xl"></i>
-              </button>
-            </div>
-            <nav class="h-4/5 flex flex-col items-center justify-center gap-8">
-                <NuxtLink to="/about" @click="isOpen = false" :class="linkClass('/about')" class="text-2xl">{{ $t('header.about') }}</NuxtLink>
-                <NuxtLink to="/projects" @click="isOpen = false" :class="linkClass('/projects')" class="text-2xl">{{ $t('header.projects') }}</NuxtLink>
-                <NuxtLink to="/partners" @click="isOpen = false" :class="linkClass('/partners')" class="text-2xl">{{ $t('header.partners') }}</NuxtLink>
-                <NuxtLink to="/support-us" @click="isOpen = false" :class="linkClass('/support-us')" class="text-2xl">{{ $t('header.support-us') }}</NuxtLink>
-                <NuxtLink to="/articles" @click="isOpen = false" :class="linkClass('/articles')" class="text-2xl">{{ $t('header.articles') }}</NuxtLink>
-                <button
-                  class="mt-6 px-3 py-2 rounded border border-mcs-white/30 text-mcs-white uppercase"
-                  @click="() => { toggleLocale(); isOpen = false }"
-                  aria-label="Toggle language"
-                >
-                  {{ currentLocale.toUpperCase() }}
+        <!-- Mobile full-screen menu (teleported to body to avoid being clipped by header transform) -->
+        <teleport to="body">
+          <div v-if="isOpen" id="mobile-menu" class="fixed inset-0 z-50 sm:hidden bg-mcs-blue" role="dialog" aria-modal="true">
+              <div class="flex items-center justify-between px-5 py-4">
+                <div>
+                  <NuxtLink to="/" @click="isOpen = false"><img :src="logoHeader" alt="MCS logo"></NuxtLink>
+                </div>
+                <button @click="isOpen = false" aria-label="Close menu" class="text-mcs-white">
+                  <i class="ri-close-line text-2xl"></i>
                 </button>
-            </nav>
-        </div>
+              </div>
+              <nav class="h-4/5 flex flex-col items-center justify-center gap-8">
+                  <NuxtLink to="/about" @click="isOpen = false" :class="linkClass('/about')" class="text-2xl">{{ $t('header.about') }}</NuxtLink>
+                  <NuxtLink to="/projects" @click="isOpen = false" :class="linkClass('/projects')" class="text-2xl">{{ $t('header.projects') }}</NuxtLink>
+                  <NuxtLink to="/partners" @click="isOpen = false" :class="linkClass('/partners')" class="text-2xl">{{ $t('header.partners') }}</NuxtLink>
+                  <NuxtLink to="/support-us" @click="isOpen = false" :class="linkClass('/support-us')" class="text-2xl">{{ $t('header.support-us') }}</NuxtLink>
+                  <NuxtLink to="/articles" @click="isOpen = false" :class="linkClass('/articles')" class="text-2xl">{{ $t('header.articles') }}</NuxtLink>
+                  <button
+                    class="mt-6 px-3 py-2 rounded border border-mcs-white/30 text-mcs-white uppercase"
+                    @click="() => { toggleLocale(); isOpen = false }"
+                    aria-label="Toggle language"
+                  >
+                    {{ currentLocale.toUpperCase() }}
+                  </button>
+              </nav>
+          </div>
+        </teleport>
     </header>
 </template>
 
