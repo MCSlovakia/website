@@ -1,75 +1,12 @@
-# Nuxt Minimal Starter
+# MCSlovakia Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### O commitoch a branchoch
+- Ked vytvarate novy brach, tak robte vo fromate:
+    - feature/branch-topic - ked ide o feature
+    - fix/branch-topic - ked ide o fix
+- Ked robite commit, tak piste zmysluplne zmeby, aby sa dalo rozobrat co sa zmenilo
+    - feat: add ... - ked ide o nove funkcie
+    - fix: fixed ... - ked ide o fixe
+    - ked je to dolezite, tak za feat/fix dajte! - priklad: feat!: implement UI Kit
 
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Tuto mozete precitat cele: https://www.conventionalcommits.org/en/v1.0.0/
