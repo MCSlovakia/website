@@ -49,6 +49,9 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # required for requesting the JWT
+      contents: read
     needs: build
     steps:
       - name: Download build artifact
@@ -70,3 +73,4 @@ jobs:
           app-name: 'mainweb'
           slot-name: 'Production'
           package: deploy/  # Point to the deploy directory
+
