@@ -28,7 +28,7 @@ jobs:
         run: |
           rm -f package-lock.json
           npm install
-          npx nuxi build --preset=azure
+          npx nuxi build
 
       # Upload the entire .output folder as artifact
       
@@ -73,4 +73,5 @@ jobs:
           app-name: 'mainweb'
           slot-name: 'Production'
           package: deploy/  # Point to the deploy directory
+
 
