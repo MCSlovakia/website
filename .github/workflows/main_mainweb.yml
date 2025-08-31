@@ -63,7 +63,8 @@ jobs:
         with:
           app-name: 'mainweb'
           slot-name: 'Production'
-          package: .  # Point to the deploy directory
+          package: .output  # Point to the deploy directory
+
 
 
 
