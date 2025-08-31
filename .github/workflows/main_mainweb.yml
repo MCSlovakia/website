@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nuxt-app
-          path: .  # Upload the entire 'deploy' directory
+          path: .output  # Upload the entire 'deploy' directory
 
   deploy:
     runs-on: ubuntu-latest
@@ -64,6 +64,7 @@ jobs:
           app-name: 'mainweb'
           slot-name: 'Production'
           package: .  # Point to the deploy directory
+
 
 
 
