@@ -33,19 +33,11 @@ jobs:
       # Upload the entire .output folder as artifact
       
 
-      - name: Create deployment package
-        run: |
-          # Copy .output and production dependencies to a new directory
-          mkdir -p deploy/.output
-          cp -r .output/* deploy/.output/
-          cp package.json package-lock.json deploy/
-          cd deploy && npm ci --production
-
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: nuxt-app
-          path: deploy/  # Upload the entire 'deploy' directory
+          path: .  # Upload the entire 'deploy' directory
 
   deploy:
     runs-on: ubuntu-latest
@@ -58,7 +50,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: nuxt-app
-          path: deploy/  # Downloads to 'deploy/' directory
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -72,6 +63,7 @@ jobs:
         with:
           app-name: 'mainweb'
           slot-name: 'Production'
-          package: deploy/  # Point to the deploy directory
+          package: .  # Point to the deploy directory
+
 
 
