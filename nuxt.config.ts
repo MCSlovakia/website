@@ -26,13 +26,8 @@ export default defineNuxtConfig({
     ]
   },
   nitro: {
-    azure: {
-      config: {
-        // ...
-        platform: {
-          apiRuntime: 'node:22'
-        }
-      }
+    prerender: {
+      autoSubfolderIndex: false
     }
   }
 });
