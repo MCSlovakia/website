@@ -232,7 +232,7 @@ const leaders = [
     linkedin: 'hana-huorkova',
   },
   {
-    img: '/components/leaders/tomas.jpg',
+    img: '/components/leaders/tomas.JPG',
     name: 'Tomáš Klein',
     role: 'Predseda Výkonnej rady',
     instagram: 'tomas_klein',
@@ -246,21 +246,21 @@ const leaders = [
     linkedin: 'adam-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/goran.jpg',
+    img: '/components/leaders/goran.JPG',
     name: 'Goran Dacho',
     role: 'Člen Výkonnej rady',
     instagram: 'goran_dacho',
     linkedin: 'goran-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/kika.jpg',
+    img: '/components/leaders/kika.JPG',
     name: 'Katarína Matejková',
     role: 'Revízorka',
     instagram: 'katarina_matejkova',
     linkedin: 'katarina-matejkova-1a4b6b1',
   },
   {
-    img: '/components/leaders/oliver.jpg',
+    img: '/components/leaders/oliver.JPG',
     name: 'Oliver Gajarský',
     role: 'Člen Správnej rady',
     instagram: 'oliver_gajarsky',
