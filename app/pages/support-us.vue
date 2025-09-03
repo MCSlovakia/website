@@ -1,6 +1,6 @@
 <template>
-  <div class=" bg-mcs-blue min-h-screen lg:px-auto px-5 flex justify-center lg:items-center items-start overflow-visible ">
-    <div class="xl:w-[1180px] lg:w-[940px] w-full flex lg:pt-0 pt-14 flex-row justify-between lg:items-center items-start">
+  <div class=" bg-mcs-blue min-h-screen lg:px-auto px-5 flex justify-center lg:items-end items-end overflow-visible ">
+    <div class="xl:w-[1180px] lg:w-[940px] w-full flex lg:pt-0 pt-14 lg:flex-row md:fle flex-col justify-between lg:items-center items-center">
       <div class="w-[580px] flex flex-col gap-6">
         <h1 class="text-txt-white-prim md:text-5xl sm:text-3xl text-2xl">Podporte vzdelávanie a rozvoj budúcich lídrov </h1>
         <p class="text-txt-white-sec md:text-[18px] text-base">
@@ -22,7 +22,7 @@
       <div class="lg:flex-shrink-0 lg:w-auto w-full lg:mt-0 mt-8">
         <NuxtImg
             src="/components/support/hero.png"
-            class="lg:w-[500px] lg:h-auto w-full object-contain lg:object-right object-center"
+            class="md:h-[800px] md:w-auto h-full object-contain lg:object-right md:object-right-bottom xs:object-bottom object-center"
             alt="Hero Image"
         />
       </div>
