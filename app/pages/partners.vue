@@ -1,7 +1,7 @@
 <template>
   <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl">Stáli partneri</h2>
+  <h2 class="md:text-[40px] text-3xl">{{ t('partnersPage.permanent') }}</h2>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
         <PartnerCard
             v-for="(p, idx) in partnersContent"
@@ -14,7 +14,7 @@
 
   <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl">Projektoví partneri</h2>
+  <h2 class="md:text-[40px] text-3xl">{{ t('partnersPage.project') }}</h2>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
         <PartnerCard
             v-for="(p, idx) in partnersContent"
@@ -26,9 +26,9 @@
   </div>
 
   <CtaBig
-      title="Staň sa partnerom"
-      description="Staňte sa partnerom Model Conferences Slovakia a pomôžte nám rozvíjať kritické myslenie, dialóg a občiansku angažovanosť mladých. Vaša podpora znamená investíciu do vzdelania, hodnotovej výchovy a budúcnosti Slovenska. Spolu vieme formovať generáciu, ktorá bude meniť svet."
-      buttonText="Staňte sa partnerom"
+      :title="t('partnersPage.cta.title')"
+      :description="t('partnersPage.cta.desc')"
+      :buttonText="t('partnersPage.cta.button')"
       buttonLink="/kontakt"
   />
 
@@ -41,8 +41,8 @@ import CtaBig from "~/components/ctaBig.vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
-import {useI18n} from "#imports";
-const { t } = useI18n()
+import { useI18n } from '#imports';
+const { t } = useI18n();
 
 import partnerBa from '~/assets/partners/partner=ba.png'
 import partnerMxvez from '~/assets/partners/partner=mxvez.png'

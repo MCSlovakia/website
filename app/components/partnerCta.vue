@@ -3,12 +3,12 @@
     <div class="bg-mcs-blue sm:pt-[90px] sm:pb-[100px] pb-[60px] pt-[50px] md:h-[370px] h-[430px] xl:px-[50px] lg:px-[40px] px-5 rounded xl:w-[1280px] lg:w-[980px] w-full cont">
       <div class="flex flex-col md:gap-6 gap-5 lg:w-[680px] sm:w-[500px] w-full overflow-hidden">
         <div class="flex flex-col gap-4">
-          <h2 class="md:text-[40px] text-3xl text-txt-white-prim">Podporte mladých lídrov</h2>
-          <p class="text-txt-white-sec sm:text-[18px]">Veríte v vzdelanie a potenciál mladých? Podporte MCS a staňte sa súčasťou projektov, ktoré rozvíjajú lídrov budúcnosti z celého Slovenska.</p>
+          <h2 class="md:text-[40px] text-3xl text-txt-white-prim">{{ t('home.partnerCta.supportYoung') }}</h2>
+          <p class="text-txt-white-sec sm:text-[18px]">{{t('home.partnerCta.desc')}}</p>
         </div>
         <ButtonPrim
             class="inline-flex w-60 items-center justify-center"
-            text="Podporiť projekt"
+            :text="t('home.partnerCta.ctaSupport')"
             :onClick="() => $router.push('/support-us')"
         />
       </div>
@@ -20,7 +20,8 @@
 <script setup lang="ts">
 import ButtonPrim from "~/components/buttonPrim.vue";
 import ButtonSec from "~/components/buttonSec.vue";
-
+import {useI18n} from "#imports";
+const { t } = useI18n()
 import { useRouter } from 'vue-router';
 const $router = useRouter();
 </script>

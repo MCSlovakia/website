@@ -1,22 +1,22 @@
 <template>
   <div class="flex lg:mx-auto mx-5 justify-center">
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-[90px] mt-[50px] xl:w-[1180px] lg:w-[940px] w-full">
-      <h1 class="md:text-5xl sm:text-3xl text-2xl">Študenti, ktorí formujú budúcnosť dialógom</h1>
+  <h1 class="md:text-5xl sm:text-3xl text-2xl">{{ t('about.hero.title') }}</h1>
       <div class="flex gap-5 justify-between lg:flex-row flex-col ">
         <p class="text-txt-black-sec md:text-[18px] text-base xl:w-[700px] lg:w-[500px] w-full">
-          Sme komunita mladých lídrov, ktorí cez simulácie medzinárodných inštitúcií rozvíjajú diplomaciu, kritické myslenie a odvahu viesť, pričom spájame študentov z celého Slovenska, aby spolu riešili globálne výzvy už dnes.
+          {{ t('about.hero.desc') }}
         </p>
         <div class="flex gap-5 items-start">
-          <ButtonPrim
-              class="inline"
-              text="Pripojiť sa k tímu"
-              @click="() => router.push('/partners')"
-          />
-          <ButtonSec
-              class="text-txt-black-prim inline"
-              text="Podporiť projekt"
-              @click="() => router.push('/support-us')"
-          />
+      <ButtonPrim
+        class="inline"
+        :text="t('about.hero.ctaJoinTeam')"
+        @click="() => router.push('/partners')"
+      />
+      <ButtonSec
+        class="text-txt-black-prim inline"
+        :text="t('about.hero.ctaSupportProject')"
+        @click="() => router.push('/support-us')"
+      />
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
 
   <div class="flex lg:mx-auto mx-5 justify-center">
     <div class="flex flex-col md:gap-6 gap-5 md:mt-[90px] mt-[50px] xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl">Ako to funguje</h2>
+  <h2 class="md:text-[40px] text-3xl">{{ t('about.structure.title') }}</h2>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <Card
             v-for="(item, idx) in WorkContent"
@@ -50,7 +50,7 @@
 
   <div class="flex lg:px-auto px-5 justify-center bg-mcs-blue md:mt-[90px] mt-[50px] ">
     <div class="flex flex-col md:gap-6 gap-5 md:pt-[90px] md:pb-[100px] pt-[50px] pb-[60px] xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl text-txt-white-prim">Naše hodnoty</h2>
+  <h2 class="md:text-[40px] text-3xl text-txt-white-prim">{{ t('about.values.title') }}</h2>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <Card
             v-for="(item, idx) in ValuesContent"
@@ -65,7 +65,7 @@
 
   <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl">Zakladatelia</h2>
+  <h2 class="md:text-[40px] text-3xl">{{ t('about.founders.title') }}</h2>
       <div class="grid lg:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <FounderCard
             v-for="(item, idx) in founders"
@@ -83,7 +83,7 @@
 
   <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
-      <h2 class="md:text-[40px] text-3xl">Vedenie</h2>
+  <h2 class="md:text-[40px] text-3xl">{{ t('about.leadership.title') }}</h2>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <LeaderCard
             v-for="(item, idx) in leaders"
@@ -110,32 +110,34 @@ import { useRouter } from 'vue-router';
 import Card from "~/components/card.vue";
 import FounderCard from "~/components/leaders/founderCard.vue";
 import LeaderCard from "~/components/leaders/leaderCard.vue";
+import { useI18n } from '#imports';
 const router = useRouter();
+const { t } = useI18n();
 
 const WorkContent = [
   {
-    title: 'Spravná rada',
-    description: 'Správna rada je najvyšší orgán MCS. Tvorí ju trojica členov vrátane predsedu. Rieši právne záležitosti, schvaľuje účtovníctvo, výročnú správu, zmeny v štatúte a dohliada na rozvoj organizácie.',
+    title: t('about.structure.items.board.title'),
+    description: t('about.structure.items.board.desc'),
   },
   {
-    title: 'Výkonná rada',
-    description: 'Výkonná rada má päť členov a dohliada na riaditeľa, smerovanie MCS a plánovanie aktivít. Vydáva nariadenia a upravuje interné pravidlá.',
+    title: t('about.structure.items.executiveBoard.title'),
+    description: t('about.structure.items.executiveBoard.desc'),
   },
   {
-    title: 'Riaditeľ',
-    description: 'Riaditeľ vedie každodennú činnosť MCS, koordinuje projekty a zastupuje organizáciu navonok.',
+    title: t('about.structure.items.director.title'),
+    description: t('about.structure.items.director.desc'),
   },
   {
-    title: 'Revízor',
-    description: 'Revízor dohliada na finančnú a administratívnu správnosť fungovania MCS.',
+    title: t('about.structure.items.auditor.title'),
+    description: t('about.structure.items.auditor.desc'),
   },
   {
-    title: 'Vedúci sekcií',
-    description: 'Vedúci sekcií (päť členov) zabezpečujú kľúčové oblasti prípravy a realizácie projektov MCS.',
+    title: t('about.structure.items.sectionLeaders.title'),
+    description: t('about.structure.items.sectionLeaders.desc'),
   },
   {
-    title: 'Dobrovoľnici',
-    description: 'Dobrovoľnícky tím tvorí 40 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí.',
+    title: t('about.structure.items.volunteers.title'),
+    description: t('about.structure.items.volunteers.desc'),
   },
 ];
 
@@ -149,33 +151,33 @@ import aboutBeCreative from '~/assets/icons/about/be-creative.svg'
 const ValuesContent = [
   {
     icon: aboutCriticalThinking,
-    title: 'Kritické myslenie a argumentácia',
-    description: 'MCS podporuje rozvoj analytického a logického myslenia, ako aj schopnosti formulovať a obhajovať vlastné názory.',
+    title: t('about.values.items.criticalThinking.title'),
+    description: t('about.values.items.criticalThinking.desc'),
   },
   {
     icon: aboutActiveCitizen,
-    title: 'Aktívne občianstvo a angažovanosť',
-    description: 'Cieľom je pripraviť mladých ľudí na aktívnu účasť v spoločnosti a motivovať ich, aby sa podieľali na riešení spoločenských a globálnych problémov.',
+    title: t('about.values.items.activeCitizenship.title'),
+    description: t('about.values.items.activeCitizenship.desc'),
   },
   {
     icon: aboutYapsesh,
-    title: 'Dialóg a porozumenie',
-    description: 'MCS verí v silu aktívneho a rešpektujúceho dialógu ako nástroja na vytváranie konsenzu medzi rôznymi názormi a záujmami.',
+    title: t('about.values.items.dialogueUnderstanding.title'),
+    description: t('about.values.items.dialogueUnderstanding.desc'),
   },
   {
     icon: aboutSelfGrow,
-    title: 'Osobnostný rast a sebavyjadrenie',
-    description: 'Organizácia vytvára bezpečný priestor pre rozvoj sebavedomia, schopnosti vyjadriť sa a prezentovať vlastné názory bez strachu.',
+    title: t('about.values.items.personalGrowth.title'),
+    description: t('about.values.items.personalGrowth.desc'),
   },
   {
     icon: aboutGlobalChallenge,
-    title: 'Vzdelávanie o globálnych výzvach',
-    description: 'Dôležitou hodnotou je zvyšovanie povedomia o medzinárodných vzťahoch, diplomacii a výzvach dnešného sveta.',
+    title: t('about.values.items.globalChallengesEducation.title'),
+    description: t('about.values.items.globalChallengesEducation.desc'),
   },
   {
     icon: aboutBeCreative,
-    title: 'Tvorivosť a hľadanie riešení',
-    description: 'MCS podporuje mladých ľudí v tom, aby boli proaktívni, hľadali inovatívne a konštruktívne riešenia problémov, ktoré svet trápi.',
+    title: t('about.values.items.creativitySolutions.title'),
+    description: t('about.values.items.creativitySolutions.desc'),
   },
 ];
 
@@ -183,7 +185,7 @@ const founders = [
   {
     img: '/components/leaders/adam.jpg',
     name: 'Adam Dacho',
-    description: 'Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje MUN, MEP, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie.',
+    description: t('about.founders.items.adam.desc'),
     instagram: 'tomas_klein',
     linkedin: 'tomas-klein-1a4b6b1a2',
     email: 'adam@mcslovakia.sk',
@@ -191,7 +193,7 @@ const founders = [
   {
     img: '/components/leaders/hanka.jpg',
     name: 'Hana Huorková',
-    description: 'Hanka je maturantka na ŠpMNDaG, čoskoro odchádza študovať medzinárodné právo do Amsterdamu. Zúčastnila sa desiatok modelových konferencií, ktoré aj organizovala. Je v DofE a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším a podporiť vzdelávanie v diplomacii.',
+    description: t('about.founders.items.hana.desc'),
     instagram: 'hanahuorkova',
     linkedin: 'hana-huorkova',
     email: 'hana@mcslovakia.sk',
@@ -202,63 +204,63 @@ const leaders = [
   {
     img: '/components/leaders/hanka.jpg',
     name: 'Hana Huorková',
-    role: 'Riaditeľka',
+    role: t('roles.directorFemale'),
     instagram: 'hanahuorkova',
     linkedin: 'hana-huorkova',
   },
   {
-    img: '/components/leaders/tomas.jpg',
+    img: '/components/leaders/tomas.JPG',
     name: 'Tomáš Klein',
-    role: 'Predseda Výkonnej rady',
+    role: t('roles.executiveBoardChair'),
     instagram: 'tomas_klein',
     linkedin: 'tomas-klein-1a4b6b1a2',
   },
   {
     img: '/components/leaders/adam.jpg',
     name: 'Adam Dacho',
-    role: 'Podpredseda Výkonnej rady',
+    role: t('roles.executiveBoardViceChair'),
     instagram: 'adam_dacho',
     linkedin: 'adam-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/goran.jpg',
+    img: '/components/leaders/goran.JPG',
     name: 'Goran Dacho',
-    role: 'Člen Výkonnej rady',
+    role: t('roles.executiveBoardMember'),
     instagram: 'goran_dacho',
     linkedin: 'goran-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/kika.jpg',
+    img: '/components/leaders/kika.JPG',
     name: 'Katarína Matejková',
-    role: 'Revízorka',
+    role: t('roles.auditorFemale'),
     instagram: 'katarina_matejkova',
     linkedin: 'katarina-matejkova-1a4b6b1',
   },
   {
-    img: '/components/leaders/oliver.jpg',
+    img: '/components/leaders/oliver.JPG',
     name: 'Oliver Gajarský',
-    role: 'Člen Správnej rady',
+    role: t('roles.boardMember'),
     instagram: 'oliver_gajarsky',
     linkedin: 'oliver-gajarsky-1a4b6b1a',
   },
   {
     img: '/components/leaders/holder.png',
     name: 'Anna Kleinová',
-    role: 'Predsedkyňa Správnej rady',
+    role: t('roles.boardChairFemale'),
     instagram: 'anna_kleinova',
     linkedin: 'anna-kleinova-1a4b6b1a2',
   },
   {
     img: '/components/leaders/holder.png',
     name: 'Tomáš Klein st.',
-    role: 'Člen Správnej rady',
+    role: t('roles.boardMember'),
     instagram: 'tomas_klein_st',
     linkedin: 'tomas-klein-st-1a4b6b1a2',
   },
   {
     img: '/components/leaders/holder.png',
     name: 'Lucia Šimková',
-    role: 'Marketingová manažérka',
+    role: t('roles.marketingManagerFemale'),
     instagram: 'lucia_simkova',
     linkedin: 'lucia-simkova-1a4b6b1a',
   },

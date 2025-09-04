@@ -111,7 +111,7 @@
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex items-center justify-between gap-5 flex-wrap">
         <h2 class="md:text-[40px] text-3xl">{{ t('home.articles.title') }}</h2>
@@ -131,7 +131,7 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <LazyJoinUs />
 
@@ -154,7 +154,7 @@
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <h2 class="md:text-[40px] text-3xl">{{ t('home.press.title') }}</h2>
       <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
@@ -168,12 +168,12 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <CtaBig
-    title="Pridaj sa k organizátorom"
-    description="Staň sa súčasťou komunity mladých lídrov, diplomatov a vizionárov. Či už ako dobrovoľník alebo líder, čaká ťa zmysluplná skúsenosť, nové výzvy a priestor na rast. Pripoj sa k nám a buď súčasťou skutočnej zmeny."
-    buttonText="Staň sa dobrovoľníkom"
+    :title="t('home.volunteerCta.ctaVolunteer2')"
+    :description="t('home.volunteerCta.desc2')"
+    :buttonText="t('home.volunteerCta.ctaVolunteer')"
     buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform"
   />
 

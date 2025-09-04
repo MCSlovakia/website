@@ -2,14 +2,14 @@
   "header": {
     "about": "O nás",
     "projects": "Projekty",
-    "partners": "Partnery",
+    "partners": "Partneri",
     "support-us": "Podporte nás",
     "articles": "Články"
   },
   "home": {
     "seo": {
       "title": "Model Conferences Slovakia — Domov",
-      "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov. TODO: upraviť popis."
+      "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov."
     },
     "hero": {
       "title": "Modelové konferencie pre budúcich lídrov a diplomatov Slovenska",
@@ -34,7 +34,8 @@
       "title": "Podporte mladých lídrov",
       "desc": "Veríte v vzdelanie a potenciál mladých? Podporte MCS a staňte sa súčasťou projektov, ktoré rozvíjajú lídrov budúcnosti z celého Slovenska.",
       "ctaSupport": "Podporiť projekt",
-      "ctaPartner": "Stať sa partnerom"
+      "ctaPartner": "Stať sa partnerom",
+      "supportYoung": "Podporte mladých lídrov"
     },
     "leadership": {
       "title": "Vedenie",
@@ -51,11 +52,203 @@
     "volunteerCta": {
       "title": "Pridaj sa k nám",
       "desc": "Chceš zažiť konferencie, získať skúsenosti a byť súčasťou tímu? Staň sa dobrovoľníkom MCS a pomôž rozvíjať budúcich lídrov Slovenska.",
-      "ctaVolunteer": "Stať sa dobrovoľníkom"
+      "ctaVolunteer": "Stať sa dobrovoľníkom",
+      "ctaVolunteer2": "Pridaj sa k organizátorom",
+      "desc2": "Staň sa súčasťou komunity mladých lídrov, diplomatov a vizionárov. Či už ako dobrovoľník alebo líder, čaká ťa zmysluplná skúsenosť, nové výzvy a priestor na rast. Pripoj sa k nám a buď súčasťou skutočnej zmeny."
     },
     "press": {
       "title": "O nás napísali",
       "editorLabel": "Redakcia"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Študenti, ktorí formujú budúcnosť dialógom",
+      "desc": "Sme komunita mladých lídrov, ktorí cez simulácie medzinárodných inštitúcií rozvíjajú diplomaciu, kritické myslenie a odvahu viesť, pričom spájame študentov z celého Slovenska, aby spolu riešili globálne výzvy už dnes.",
+      "ctaJoinTeam": "Pripojiť sa k tímu",
+      "ctaSupportProject": "Podporiť projekt"
+    },
+    "structure": {
+      "title": "Ako to funguje",
+      "items": {
+        "board": {
+          "title": "Spravná rada",
+          "desc": "Správna rada je najvyšší orgán MCS. Tvorí ju trojica členov vrátane predsedu. Rieši právne záležitosti, schvaľuje účtovníctvo, výročnú správu, zmeny v štatúte a dohliada na rozvoj organizácie."
+        },
+        "executiveBoard": {
+          "title": "Výkonná rada",
+          "desc": "Výkonná rada má päť členov a dohliada na riaditeľa, smerovanie MCS a plánovanie aktivít. Vydáva nariadenia a upravuje interné pravidlá."
+        },
+        "director": {
+          "title": "Riaditeľ",
+          "desc": "Riaditeľ vedie každodennú činnosť MCS, koordinuje projekty a zastupuje organizáciu navonok."
+        },
+        "auditor": {
+          "title": "Revízor",
+          "desc": "Revízor dohliada na finančnú a administratívnu správnosť fungovania MCS."
+        },
+        "sectionLeaders": {
+          "title": "Vedúci sekcií",
+          "desc": "Vedúci sekcií (päť členov) zabezpečujú kľúčové oblasti prípravy a realizácie projektov MCS."
+        },
+        "volunteers": {
+          "title": "Dobrovoľnici",
+          "desc": "Dobrovoľnícky tím tvorí 40 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí."
+        }
+      }
+    },
+    "values": {
+      "title": "Naše hodnoty",
+      "items": {
+        "criticalThinking": {
+          "title": "Kritické myslenie a argumentácia",
+          "desc": "MCS podporuje rozvoj analytického a logického myslenia, ako aj schopnosti formulovať a obhajovať vlastné názory."
+        },
+        "activeCitizenship": {
+          "title": "Aktívne občianstvo a angažovanosť",
+          "desc": "Cieľom je pripraviť mladých ľudí na aktívnu účasť v spoločnosti a motivovať ich, aby sa podieľali na riešení spoločenských a globálnych problémov."
+        },
+        "dialogueUnderstanding": {
+          "title": "Dialóg a porozumenie",
+          "desc": "MCS verí v silu aktívneho a rešpektujúceho dialógu ako nástroja na vytváranie konsenzu medzi rôznymi názormi a záujmami."
+        },
+        "personalGrowth": {
+          "title": "Osobnostný rast a sebavyjadrenie",
+          "desc": "Organizácia vytvára bezpečný priestor pre rozvoj sebavedomia, schopnosti vyjadriť sa a prezentovať vlastné názory bez strachu."
+        },
+        "globalChallengesEducation": {
+          "title": "Vzdelávanie o globálnych výzvach",
+          "desc": "Dôležitou hodnotou je zvyšovanie povedomia o medzinárodných vzťahoch, diplomacii a výzvach dnešného sveta."
+        },
+        "creativitySolutions": {
+          "title": "Tvorivosť a hľadanie riešení",
+          "desc": "MCS podporuje mladých ľudí v tom, aby boli proaktívni, hľadali inovatívne a konštruktívne riešenia problémov, ktoré svet trápi."
+        }
+      }
+    },
+    "founders": {
+      "title": "Zakladatelia",
+      "items": {
+        "adam": {
+          "desc": "Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje MUN, MEP, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie."
+        },
+        "hana": {
+          "desc": "Hanka je maturantka na ŠpMNDaG, čoskoro odchádza študovať medzinárodné právo do Amsterdamu. Zúčastnila sa desiatok modelových konferencií, ktoré aj organizovala. Je v DofE a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším a podporiť vzdelávanie v diplomacii."
+        }
+      }
+    },
+    "leadership": {
+      "title": "Vedenie"
+    }
+  },
+  "roles": {
+    "directorFemale": "Riaditeľka",
+    "executiveBoardChair": "Predseda Výkonnej rady",
+    "executiveBoardViceChair": "Podpredseda Výkonnej rady",
+    "executiveBoardMember": "Člen Výkonnej rady",
+    "auditorFemale": "Revízorka",
+    "boardMember": "Člen Správnej rady",
+    "boardChairFemale": "Predsedkyňa Správnej rady",
+    "marketingManagerFemale": "Marketingová manažérka"
+  },
+  "support": {
+    "hero": {
+      "title": "Podporte vzdelávanie a rozvoj budúcich lídrov",
+      "desc": "Pomôžte nám rozvíjať kritické myslenie, rečnícke schopnosti a záujem o verejné dianie u študentov z celého Slovenska. Či už ste jednotlivec alebo firma, vaša podpora má zmysel.",
+      "ctaWays": "Pozrieť spôsoby podpory",
+      "ctaPartner": "Stať sa partnerom"
+    },
+    "enables": {
+      "title": "Vaša podpora umožňuje",
+      "items": {
+        "leaders": { "title": "Vzdelávanie budúcich lídrov", "desc": "Vaša podpora pomáha formovať generáciu mladých, ktorí chcú zodpovedne ovplyvňovať svet okolo seba." },
+        "impact": { "title": "Skutočný spoločenský dopad", "desc": "Konferencie a programy MCS rozvíjajú schopnosti, ktoré mladí využijú v škole, práci aj verejnom živote." },
+        "criticalThinkingDialogue": { "title": "Podpora kritického myslenia a dialógu", "desc": "Investujete do zručností, ktoré budujú otvorenú, tolerantnú a informovanú spoločnosť." },
+        "transparencyNonprofit": { "title": "Transparentná a nezisková organizácia", "desc": "Každé euro smeruje priamo do vzdelávacích aktivít, nie do zisku. Sme otvorení a zodpovední voči darcom aj partnerom." },
+        "partnershipValue": { "title": "Partnerstvo s dlhodobou hodnotou", "desc": "Firmám ponúkame zmysluplnú spoluprácu, viditeľnosť a možnosť podieľať sa na rozvoji občianskej spoločnosti." },
+        "communityChange": { "title": "Komunita s vášňou pre zmenu", "desc": "Pridáte sa k ľuďom, ktorým záleží na budúcnosti Slovenska – vzdelaných, angažovaných a ochotných konať." }
+      }
+    },
+    "ways": {
+      "title": "Spôsoby podpory",
+      "taxDonate": {
+        "title": "Darujte 2 % z daní",
+        "desc": "Rozhodnite, kam pôjde časť vašich daní. Podporte vzdelávanie a rozvoj mladých lídrov.",
+        "points": {
+          "0": "Stačí vyplniť formulár",
+          "1": "Pridať IČO: 57 034 265",
+          "2": "Odovzdať na daňový úrad alebo zamestnávateľovi. Nezabudnite na termín do konca apríla."
+        },
+        "paragraph": "Rozhodnite, kam pôjde časť vašich daní. Podporte vzdelávanie a rozvoj mladých lídrov.",
+        "button": "Stať sa partnerom"
+      },
+      "oneTimeDonation": {
+        "title": "Jednorazový dar",
+        "desc": "Aj jednorazový príspevok dokáže veľa. Podporte nás bankovým prevodom alebo cez QR kód.",
+        "points": {
+          "0": "Podpora projektov a konferencií",
+          "1": "Pomoc pre mladých, ktorí chcú rásť",
+          "2": "Transparentné využitie darov"
+        },
+        "paragraph": "IBAN: SK14 1100 0000 0029 4727 1726",
+        "button": "Požiadať potvrdenie"
+      },
+      "recurringSupport": {
+        "title": "Pravidelná podpora",
+        "desc": "Malý príspevok každý mesiac = veľký rozdiel.",
+        "points": {
+          "0": "Umožňuje plánovať dlhodobo",
+          "1": "Podporujete konkrétnu misiu",
+          "2": "Dostanete pozvánky a novinky"
+        },
+  "paragraph": "Chcete začať? Napíšte na {email} IBAN: SK14 1100 0000 0029 4727 1726",
+        "button": "Napísať mail"
+      }
+    }
+  },
+  "transparency": {
+    "title": "Konáme transparentne a zodpovedne",
+    "desc": "Veríme, že dôvera sa buduje činom. Zverejňujeme všetky dôležité dokumenty, pravidelne hodnotíme našu činnosť a každé euro smerujeme tam, kde má najväčší zmysel – do vzdelávania a rozvoja mladých ľudí."
+  },
+  "footer": {
+    "navigation": "Navigácia",
+    "information": "Informácie",
+    "organization": "Organizácia",
+    "links": {
+      "about": "O nás",
+      "projects": "Projekty",
+      "partners": "Partneri",
+      "support": "Podporte nás",
+      "articles": "Články",
+      "gallery": "Galéria",
+      "contact": "Kontakt",
+      "media": "Média o nás",
+      "pressReleases": "Tlačové správy",
+      "annualReports": "Výročné správy",
+      "legalDocs": "Právne dokumenty",
+      "financialStatements": "Finančné výkazy",
+      "privacy": "Zásady ochrany osobných údajov",
+      "processing": "Spracovanie osobných údajov"
+    },
+    "org": {
+      "name": "Model Conferences Slovakia n.o.",
+      "registration": "Registrovaná na Ministerstve vnútra SR, registračné číslo OVVS-433474/637/2025-NO",
+      "address": "Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto",
+      "ico": "IČO: 55 888 888",
+      "iban": "IBAN: SK14 1100 0000 0029 4727 1726"
+    },
+    "copyright": "© Model Conferences Slovakia"
+  },
+  "projectsPage": {
+    "title": "Projekty"
+  },
+  "partnersPage": {
+    "permanent": "Stáli partneri",
+    "project": "Projektoví partneri",
+    "cta": {
+      "title": "Staň sa partnerom",
+      "desc": "Staňte sa partnerom Model Conferences Slovakia a pomôžte nám rozvíjať kritické myslenie, dialóg a občiansku angažovanosť mladých. Vaša podpora znamená investíciu do vzdelania, hodnotovej výchovy a budúcnosti Slovenska. Spolu vieme formovať generáciu, ktorá bude meniť svet.",
+      "button": "Staňte sa partnerom"
     }
   }
 }
