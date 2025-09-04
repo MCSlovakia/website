@@ -32,7 +32,7 @@
     },
     "partnerCta": {
       "title": "Support Young Leaders",
-      "desc": "Do you believe in the education and potential of young people? Support MCS and become part of projects that develop the leaders of tomorrow from all over Slovakia.",
+      "desc": "Do you believe in the education and potential of young people? Support MCS and become a part of projects that develop the leaders of tomorrow from all over Slovakia.",
       "ctaSupport": "Support the Project",
       "ctaPartner": "Become a Partner",
       "supportYoung": "Support Young Leaders"
@@ -54,7 +54,7 @@
       "desc": "Want to experience conferences, gain experience, and be part of the team? Become a volunteer at MCS and help develop the future leaders of Slovakia.",
       "ctaVolunteer": "Become a Volunteer",
       "ctaVolunteer2": "Join the Organizers",
-      "desc2": "Become part of a community of young leaders, diplomats, and visionaries. Whether as a volunteer or a organizer, you will have a meaningful experience, new challenges, and room for growth. Join us and be part of real change."
+      "desc2": "Become part of a community of young leaders, diplomats, and visionaries. Whether as a volunteer or an organizer, you will have a meaningful experience, new challenges, and room for growth. Join us and be a part of real change."
     },
     "press": {
       "title": "Press",
@@ -64,18 +64,18 @@
   "about": {
     "hero": {
       "title": "Students Shaping the Future Through Dialogue",
-      "desc": "We are a community of young leaders who, through simulations of international institutions, develop diplomacy, critical thinking, and the courage to lead, connecting students from across Slovakia to address global challenges today.",
+      "desc": "We are a community of young leaders, who, through simulations of international institutions, develop diplomacy, critical thinking, and the courage to lead, connecting students from across Slovakia to address global challenges today.",
       "ctaJoinTeam": "Join the Team",
       "ctaSupportProject": "Support the Project"
     },
     "structure": {
       "title": "How It Works",
       "items": {
-        "board": { "title": "Board of Trustees", "desc": "The Board of Trustees is the highest body of MCS. It consists of three members including the chair. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
+        "board": { "title": "Directorate", "desc": "The Directorate is the highest body of MCS. It consists of three members including the chair. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
         "executiveBoard": { "title": "Executive Board", "desc": "The Executive Board has five members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules." },
         "director": { "title": "Director", "desc": "The Director manages MCS daily operations, coordinates projects, and represents the organization externally." },
         "auditor": { "title": "Auditor", "desc": "The Auditor supervises the financial and administrative correctness of MCS operations." },
-        "sectionLeaders": { "title": "Section Leaders", "desc": "Five Section Leaders ensure key areas of preparation and implementation of MCS projects." },
+        "sectionLeaders": { "title": "Section Leaders", "desc": "Six Section Leaders ensure running key areas of preparation and implementation of MCS projects." },
         "volunteers": { "title": "Volunteers", "desc": "A team of 40 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
       }
     },
@@ -105,8 +105,8 @@
     "executiveBoardViceChair": "Executive Board Vice Chair",
     "executiveBoardMember": "Executive Board Member",
     "auditorFemale": "Auditor",
-    "boardMember": "Board of Trustees Member",
-    "boardChairFemale": "Board of Trustees Chair",
+    "boardMember": "Member of directorate",
+    "boardChairFemale": "Chair of directorate",
     "marketingManagerFemale": "Marketing Manager"
   },
   "support": {

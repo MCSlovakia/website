@@ -7,12 +7,12 @@
         <div class="flex gap-4 sm:flex-row flex-col">
           <ButtonPrim
       :text="t('support.hero.ctaWays')"
-              :onClick="() => $router.push('/support-us#ways-to-support')"
+              :onClick="() => $router.push(localePath('/support-us') + '#ways-to-support')"
           />
           <ButtonSec
               class="text-txt-white-prim"
       :text="t('support.hero.ctaPartner')"
-              :onClick="() => $router.push('/partners')"
+              :onClick="() => $router.push(localePath('/partners'))"
           />
         </div>
       </div>
@@ -67,6 +67,7 @@ import ButtonPrim from '~/components/buttonPrim.vue';
 import ButtonSec from '~/components/buttonSec.vue';
 import { useRouter } from 'vue-router';
 const router = useRouter();
+const localePath = useLocalePath();
 import { useI18n } from '#imports';
 const { t } = useI18n();
 

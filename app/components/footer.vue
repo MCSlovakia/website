@@ -3,7 +3,7 @@
     <div class="xl:w-[1180px] lg:w-[940px] w-full flex-wrap lg:mx-auto mx-5 flex flex-col gap-20">
       <div class="flex flex-row items-start justify-between flex-wrap gap-5">
         <div class="logo--container">
-          <NuxtLink to="/" class="flex items-center">
+          <NuxtLink :to="localePath('/')" class="flex items-center">
             <img :src="logoFooter" alt="MCS logo" class="w-[150px] h-auto">
           </NuxtLink>
           <div>
@@ -59,6 +59,9 @@
 
 <script setup lang="ts">
 import logoFooter from '~/assets/logo/logo-footer.svg'
+
+const localePath = useLocalePath()
+
 const smLinks = [
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
@@ -66,28 +69,28 @@ const smLinks = [
   { name: "YouTube", icon: "ri-youtube-fill", url: "https://www.youtube.com/@modelconferencessk" },
 ];
 
-const footerLinks = [
+const footerLinks = computed(() => [
   { name: "Navigácia",
     links: [
-      { name: "O nás", to: "/about" },
-      { name: "Projekty", to: "/projects" },
-      { name: "Partneri", to: "/partners" },
-      { name: "Podporte nás", to: "/support-us" },
-      { name: "Články", to: "/articles" },
-      { name: "Galéria", to: "/gallery" },
+      { name: "O nás", to: localePath("/about") },
+      { name: "Projekty", to: localePath("/projects") },
+      { name: "Partneri", to: localePath("/partners") },
+      { name: "Podporte nás", to: localePath("/support-us") },
+      { name: "Články", to: localePath("/articles") },
+      { name: "Galéria", to: localePath("/gallery") },
     ]
   },
   { name: "Informácie",
     links: [
-      { name: "Kontakt", to: "/contacts" },
-      { name: "Média o nás", to: "/" },
-      { name: "Tlačové správy", to: "/" },
-      { name: "Výročné správy", to: "/" },
-      { name: "Právne dokumenty", to: "/" },
-      { name: "Finančné výkazy", to: "/" },
+      { name: "Kontakt", to: localePath("/contacts") },
+      { name: "Média o nás", to: localePath("/") },
+      { name: "Tlačové správy", to: localePath("/") },
+      { name: "Výročné správy", to: localePath("/") },
+      { name: "Právne dokumenty", to: localePath("/") },
+      { name: "Finančné výkazy", to: localePath("/") },
     ]
   }
-];
+]);
 </script>
 
 <style>

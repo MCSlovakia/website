@@ -1,7 +1,7 @@
 <template>
   <div class="flex lg:mx-auto mx-5 justify-center">
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-[90px] mt-[50px] xl:w-[1180px] lg:w-[940px] w-full">
-      <h1 class="md:text-5xl sm:text-3xl text-2xl">Články</h1>
+      <h1 class="md:text-5xl sm:text-3xl text-2xl">{{t('header.articles')}}</h1>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <ArticleCard
           v-for="(article, index) in pagedArticles"
@@ -40,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from '#imports';
+const { t } = useI18n();
 import { ref, computed } from 'vue'
 import JoinUs from "~/components/joinUs.vue";
 import ArticleCard from "~/components/articles/articleCard.vue";

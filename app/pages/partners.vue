@@ -44,21 +44,11 @@ const router = useRouter();
 import { useI18n } from '#imports';
 const { t } = useI18n();
 
-import partnerBa from '~/assets/partners/partner=ba.png'
-import partnerMxvez from '~/assets/partners/partner=mxvez.png'
-import partnerOrange from '~/assets/partners/partner=nadacia-orange.png'
-import partnerNivam from '~/assets/partners/partner=nivam.png'
-import partnerSda from '~/assets/partners/partner=sda.png'
-import partnerTatra from '~/assets/partners/partner=tatra.png'
-import partnerVariant7 from '~/assets/partners/partner=Variant7.png'
+import partnerYubico from '~/assets/partners/partner=yubico.png'
+import partnerDofe from '~/assets/partners/partner=dofe.png'
 
 const partnersContent = [
-  partnerBa,
-  partnerMxvez,
-  partnerOrange,
-  partnerNivam,
-  partnerSda,
-  partnerTatra,
-  partnerVariant7,
+  partnerYubico,
+  partnerDofe
 ]
 </script>

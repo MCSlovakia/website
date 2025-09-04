@@ -17,7 +17,7 @@
             <ButtonSec
                 class="text-txt-white-prim"
                 :text="t('home.hero.ctaPartner')"
-                :onClick="() => router.push('/partners')"
+                :onClick="() => router.push(localePath('/partners'))"
             />
           </div>
         </div>
@@ -48,7 +48,7 @@
           <p class="text-[18px] text-txt-black-sec">{{ t('home.about.desc') }}</p>
           <ButtonSec
               :text="t('home.about.cta')"
-              :onClick="() => router.push('/about')"
+              :onClick="() => router.push(localePath('/about'))"
           />
         </div>
       </div>
@@ -61,7 +61,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.projects.title') }}</h2>
         <ButtonSec
             :text="t('home.projects.cta')"
-            :onClick="() => router.push('/projects')"
+            :onClick="() => router.push(localePath('/projects'))"
         />
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
@@ -86,7 +86,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.leadership.title') }}</h2>
         <ButtonSec
             :text="t('home.leadership.ctaMore')"
-            :onClick="() => router.push('/about')"
+            :onClick="() => router.push(localePath('/about'))"
         />
       </div>
       <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -117,7 +117,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.articles.title') }}</h2>
         <ButtonSec
             :text="t('home.articles.ctaMore')"
-            :onClick="() => router.push('/articles')"
+            :onClick="() => router.push(localePath('/articles'))"
         />
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
@@ -141,7 +141,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.partners.title') }}</h2>
         <ButtonSec
             :text="t('home.partners.ctaMore')"
-            :onClick="() => router.push('/partners')"
+            :onClick="() => router.push(localePath('/partners'))"
         />
       </div>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
@@ -191,6 +191,7 @@ import CtaBig from "@/components/ctaBig.vue";
 
 import {useRouter} from "vue-router";
 const router = useRouter();
+const localePath = useLocalePath();
 
 import {useI18n} from "#imports";
 const { t } = useI18n()
@@ -311,22 +312,12 @@ const articlesContent = [
   },
 ]
 
-import partnerBa from '~/assets/partners/partner=ba.png'
-import partnerMxvez from '~/assets/partners/partner=mxvez.png'
-import partnerOrange from '~/assets/partners/partner=nadacia-orange.png'
-import partnerNivam from '~/assets/partners/partner=nivam.png'
-import partnerSda from '~/assets/partners/partner=sda.png'
-import partnerTatra from '~/assets/partners/partner=tatra.png'
-import partnerVariant7 from '~/assets/partners/partner=Variant7.png'
+import partnerYubico from '~/assets/partners/partner=yubico.png'
+import partnerDofe from '~/assets/partners/partner=dofe.png'
 
 const partnersContent = [
-  partnerBa,
-  partnerMxvez,
-  partnerOrange,
-  partnerNivam,
-  partnerSda,
-  partnerTatra,
-  partnerVariant7,
+  partnerYubico,
+  partnerDofe
 ]
 
 const pressMensionContent = [
