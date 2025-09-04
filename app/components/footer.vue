@@ -47,12 +47,11 @@
         </div>
 
       </div>
-      <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs gap-5">
+      <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs sm:gap-5 gap-3">
         <p>© Model Conferences Slovakia {{ new Date().getFullYear() }}</p>
-        <div class="flex sm:gap-4 gap-2 sm:flex-row flex-col">
-          <NuxtLink :to="localePath('/privacy-policy')" class="hover:text-mcs-orange-light transition duration-150">Zásady ochrany osobných údajov</NuxtLink>
-          <NuxtLink :to="localePath('/processing-policy')" class="hover:text-mcs-orange-light transition duration-150">Spracovanie osobných údajov</NuxtLink>
-        </div>
+        <NuxtLink to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?tab=t.0#heading=h.8gi0tqvdkg11"
+                  class="hover:text-mcs-orange-light transition duration-150">Zásady ochrany osobných údajov
+        </NuxtLink>
       </div>
     </div>
   </footer>
