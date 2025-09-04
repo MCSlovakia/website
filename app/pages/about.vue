@@ -10,12 +10,12 @@
       <ButtonPrim
         class="inline"
         :text="t('about.hero.ctaJoinTeam')"
-        @click="() => router.push('/partners')"
+        @click="() => router.push(localePath('/partners'))"
       />
       <ButtonSec
         class="text-txt-black-prim inline"
         :text="t('about.hero.ctaSupportProject')"
-        @click="() => router.push('/support-us')"
+        @click="() => router.push(localePath('/support-us'))"
       />
         </div>
       </div>
@@ -111,7 +111,9 @@ import Card from "~/components/card.vue";
 import FounderCard from "~/components/leaders/founderCard.vue";
 import LeaderCard from "~/components/leaders/leaderCard.vue";
 import { useI18n } from '#imports';
+
 const router = useRouter();
+const localePath = useLocalePath();
 const { t } = useI18n();
 
 const WorkContent = [
