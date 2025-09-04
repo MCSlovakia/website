@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-[90px] mt-[50px] w-full max-w-[1180px] px-5 mx-auto">
-      <h1 class="md:text-5xl sm:text-3xl text-2xl">Projekty</h1>
+  <h1 class="md:text-5xl sm:text-3xl text-2xl">{{ t('projectsPage.title') }}</h1>
   <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <ProjectCard
             v-for="(project, index) in pagedProjects"
@@ -46,7 +46,7 @@ import JoinUs from "~/components/joinUs.vue";
 import ProjectCard from "~/components/project/projectCard.vue";
 import ButtonSec from '~/components/buttonSec.vue';
 
-import { useI18n } from 'vue-i18n';
+import { useI18n } from '#imports';
 const { t } = useI18n();
 
 // show 6 cards per page so we can render 3x2 (>=1024), 2x3 (>=768) and 1x6 (<768)
@@ -70,62 +70,6 @@ const projects = [
     title: 'NATOBA 2026',
     desc: t('home.projects.sampleDesc1'),
     date: 'Jún 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2025',
-    desc: t('home.projects.sampleDesc2'),
-    date: 'November 2025',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
-    cta: t('home.projects.ctaJoin'),
-  },
-  {
-    img: "",
-    title: 'MUN 2026',
-    desc: t('home.projects.sampleDesc3'),
-    date: 'Apríl 2026',
     cta: t('home.projects.ctaJoin'),
   },
 ]
