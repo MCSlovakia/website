@@ -10,7 +10,7 @@
       <ButtonPrim
         class="inline"
         :text="t('about.hero.ctaJoinTeam')"
-        @click="() => router.push(localePath('/partners'))"
+        :click="openVolunteerForm"
       />
       <ButtonSec
         class="text-txt-black-prim inline"
@@ -115,7 +115,9 @@ import { useI18n } from '#imports';
 const router = useRouter();
 const localePath = useLocalePath();
 const { t } = useI18n();
-
+function openVolunteerForm() {
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
+}
 const WorkContent = [
   {
     title: t('about.structure.items.board.title'),

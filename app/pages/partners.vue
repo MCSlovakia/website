@@ -29,7 +29,7 @@
       :title="t('partnersPage.cta.title')"
       :description="t('partnersPage.cta.desc')"
       :buttonText="t('partnersPage.cta.button')"
-      buttonLink="/kontakt"
+      buttonLink="/contacts"
   />
 
 </template>

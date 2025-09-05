@@ -9,7 +9,7 @@
         <ButtonPrim
             class="inline-flex w-60 items-center justify-center"
             :text="t('home.partnerCta.ctaSupport')"
-            :onClick="() => $router.push('/support-us')"
+            :onClick="() => $router.push('/contacts')"
         />
       </div>
       <NuxtImg class="relative xl:-right-[730px] lg:-right-[550px] md:-right-[450px] md:-top-[200px] sm:-right-[400px] sm:-top-[200px] -right-[200px] -top-[40px] img" src="/components/join-us.png" />
