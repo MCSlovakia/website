@@ -13,26 +13,26 @@
     },
     "hero": {
       "title": "Model Conferences for Future Leaders and Diplomats of Slovakia",
-      "desc": "Experience diplomacy firsthand. At model conferences for high school and university students, you develop critical thinking, public speaking skills, and the ability to lead with respect.",
+      "desc": "Experience diplomacy firsthand. At model conferences for high school and university students, you get to develop essential skills such as critical thinking, public speaking skills, and the ability to lead with respect.",
       "ctaVolunteer": "Become a Volunteer",
       "ctaPartner": "Become a Partner"
     },
     "about": {
-      "title": "What is MCS",
-      "desc": "Model Conferences Slovakia (MCS) is a non-profit organization that shapes future leaders and diplomats. Through model conferences, we develop critical thinking, public speaking skills, and global awareness.",
+      "title": "What is MCS?",
+      "desc": "Model Conferences Slovakia (MCS) is a non-profit organization that shapes future leaders and diplomats. Through model conferences, we allow the youth to develop crucial skills such as critical thinking, public speaking, as well as global awareness.",
       "cta": "Learn More About Us"
     },
     "projects": {
       "title": "Projects",
       "cta": "View Projects",
       "ctaJoin": "Join",
-      "sampleDesc1": "NATOBA is the first project of MCS: an international simulation of a NATO summit in Bratislava...",
+      "sampleDesc1": "NATOBA is the pilot project of MCS. It is an international simulation of a NATO summit in Bratislava...",
       "sampleDesc2": "MUN 2025 is a prestigious conference simulating the activities of the UN...",
       "sampleDesc3": "MUN 2026 will continue the tradition of providing a platform for young leaders..."
     },
     "partnerCta": {
       "title": "Support Young Leaders",
-      "desc": "Do you believe in the education and potential of young people? Support MCS and become a part of projects that develop the leaders of tomorrow from all over Slovakia.",
+      "desc": "Do you believe in the value of education and the potential of young people? Support MCS and become a part of the projects that develop the leaders of tomorrow from all over the world.",
       "ctaSupport": "Support the Project",
       "ctaPartner": "Become a Partner",
       "supportYoung": "Support Young Leaders"
@@ -43,7 +43,7 @@
     },
     "articles": {
       "title": "Articles",
-      "ctaMore": "Read More Articles"
+      "ctaMore": "Discover More Articles"
     },
     "partners": {
       "title": "Our Partners",
@@ -51,10 +51,10 @@
     },
     "volunteerCta": {
       "title": "Join Us",
-      "desc": "Want to experience conferences, gain experience, and be part of the team? Become a volunteer at MCS and help develop the future leaders of Slovakia.",
+      "desc": "Do you want to explore conferences, grow as a leader, and join a dedicated team? Become a volunteer at MCS and help develop the future leaders of the world.",
       "ctaVolunteer": "Become a Volunteer",
-      "ctaVolunteer2": "Join the Organizers",
-      "desc2": "Become part of a community of young leaders, diplomats, and visionaries. Whether as a volunteer or an organizer, you will have a meaningful experience, new challenges, and room for growth. Join us and be a part of real change."
+      "ctaVolunteer2": "Join the Organisers",
+      "desc2": "Become part of a community of young leaders, diplomats, and visionaries. Whether as a volunteer or an organizer, you will get to undergo meaningful experiences, new challenges, and have room for growth. Join us and be a part of real change."
     },
     "press": {
       "title": "Press",
@@ -64,92 +64,92 @@
   "about": {
     "hero": {
       "title": "Students Shaping the Future Through Dialogue",
-      "desc": "We are a community of young leaders, who, through simulations of international institutions, develop diplomacy, critical thinking, and the courage to lead, connecting students from across Slovakia to address global challenges today.",
+      "desc": "We are a community of young leaders, who, through simulations of international institutions, develop diplomacy, critical thinking, and the courage to lead, connecting students from across the globe to address global challenges here and today.",
       "ctaJoinTeam": "Join the Team",
       "ctaSupportProject": "Support the Project"
     },
     "structure": {
       "title": "How It Works",
       "items": {
-        "board": { "title": "Directorate", "desc": "The Directorate is the highest body of MCS. It consists of three members including the chair. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
+        "board": { "title": "Board of Trustees", "desc": "The Board of Trustees is the highest body of MCS. It consists of three members including the president of the board. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
         "executiveBoard": { "title": "Executive Board", "desc": "The Executive Board has five members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules." },
-        "director": { "title": "Director", "desc": "The Director manages MCS daily operations, coordinates projects, and represents the organization externally." },
+        "director": { "title": "Director", "desc": "The Director manages the daily operations of MCS, coordinates projects, and represents the organization externally." },
         "auditor": { "title": "Auditor", "desc": "The Auditor supervises the financial and administrative correctness of MCS operations." },
         "sectionLeaders": { "title": "Section Leaders", "desc": "Six Section Leaders ensure running key areas of preparation and implementation of MCS projects." },
-        "volunteers": { "title": "Volunteers", "desc": "A team of 40 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
+        "volunteers": { "title": "Volunteers", "desc": "A team of 50 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
       }
     },
     "values": {
       "title": "Our Values",
       "items": {
-        "criticalThinking": { "title": "Critical Thinking and Argumentation", "desc": "MCS supports the development of analytical and logical thinking as well as the ability to formulate and defend one’s views." },
-        "activeCitizenship": { "title": "Active Citizenship and Engagement", "desc": "We prepare young people for active participation in society and motivate them to help solve societal and global issues." },
+        "criticalThinking": { "title": "Critical Thinking and Debate Skills", "desc": "MCS supports the development of analytical and logical thinking as well as the ability to formulate and defend one’s views." },
+        "activeCitizenship": { "title": "Active Citizenship and Engagement", "desc": "We prepare young people for active participation in society and motivate them to help solve issues on a local, national, and global level." },
         "dialogueUnderstanding": { "title": "Dialogue and Understanding", "desc": "We believe in the power of respectful, active dialogue as a tool for creating consensus among different views and interests." },
-        "personalGrowth": { "title": "Personal Growth and Self‑Expression", "desc": "We create a safe space to build confidence, express oneself, and present ideas without fear." },
-        "globalChallengesEducation": { "title": "Education on Global Challenges", "desc": "An important value is raising awareness of international relations, diplomacy, and today’s global challenges." },
+        "personalGrowth": { "title": "Personal Growth and Self‑Expression", "desc": "MCS creates a safe space to build confidence, express oneself, and present ideas without fear." },
+        "globalChallengesEducation": { "title": "Education on Global Challenges", "desc": "An important value to our organisation is raising awareness of international relations, diplomacy, and today’s global challenges." },
         "creativitySolutions": { "title": "Creativity and Problem‑Solving", "desc": "We encourage young people to be proactive and seek innovative, constructive solutions to the world’s problems." }
       }
     },
     "founders": {
       "title": "Founders",
       "items": {
-        "adam": { "desc": "Adam (16) studies at the bilingual Jura Hronca Grammar School. Growing up in Taiwan and Moldova shaped his interest in diplomacy. He actively participates in MUN, MEP, debates, and moot courts. By founding this initiative, he wants to help students develop critical thinking and interest in international affairs." },
-        "hana": { "desc": "Hanka is a senior at ŠpMNDaG and will soon study international law in Amsterdam. She has attended dozens of model conferences, also helping organize them. She is in DofE and works with youth. At MCS she wants to make these experiences accessible to others and support education in diplomacy." }
+        "adam": { "desc": "Adam (16) studies at the bilingual Jur Hronec Grammar School in Bratislava. Having the privilege of growing up in Taiwan and Moldova, these experiences shaped his interest in diplomacy. He actively participates in MUN, MEP, debates, and moot courts. By establishing this initiative, he aims to nurture critical thinking and inspire a deeper engagement with international affairs among students all over the globe." },
+        "hana": { "desc": "Hana studies international law at the Amsterdam University College. She has attended dozens of model conferences, while also helping organize many of them. She partakes in the Duke of Edinburgh International Award and works with the youth. At MCS she aspires to make these experiences accessible to others and support further education about diplomacy." }
       }
     },
     "leadership": { "title": "Leadership" }
   },
   "roles": {
     "directorFemale": "Director",
-    "executiveBoardChair": "Executive Board Chair",
-    "executiveBoardViceChair": "Executive Board Vice Chair",
+    "executiveBoardChair": "Executive Board President",
+    "executiveBoardViceChair": "Executive Board Vice President",
     "executiveBoardMember": "Executive Board Member",
     "auditorFemale": "Auditor",
-    "boardMember": "Member of directorate",
-    "boardChairFemale": "Chair of directorate",
-    "boardMemberSenior": "Member of directorate",
-    "executiveBoardChairJunior": "Executive Board Chair",
-    "organizationalTeamLeader": "Organizational Team Section Leader",
-    "organizationalTeamDeputy": "Deputy Organizational Team Section Leader",
-    "hrLeader": "HR Section Leader",
-    "hrDeputy": "Deputy HR Section Leader",
-    "marketingLeader": "Marketing Section Leader",
-    "marketingDeputy": "Deputy Marketing Section Leader",
-    "marketingContentCreationLeader": "Content Creation Marketing Subsection Leader",
-    "spokesperson": "Organization Spokesperson",
-    "accountingLeader": "Accounting Section Leader",
-    "accountingDeputy": "Deputy Accounting Section Leader",
-    "contentWritersLeader": "Content Writers Section Leader",
-    "contentWritersDeputy": "Deputy Content Writers Section Leader",
-    "itLeader": "IT Section Leader",
-    "itDeputy": "Deputy IT Section Leader",
+    "boardMember": "Board of Trustees Member",
+    "boardChairFemale": "Board of Trustees President",
+    "boardMemberSenior": "Board of Trustees Member",
+    "executiveBoardChairJunior": "Executive Board President",
+    "organizationalTeamLeader": "Section Leader for the Organising Team",
+    "organizationalTeamDeputy": "Deputy Section Leader for the Organising Team",
+    "hrLeader": "Section Leader for HR",
+    "hrDeputy": "Deputy Section Leader for HR",
+    "marketingLeader": "Section Leader for Marketing",
+    "marketingDeputy": "Deputy Section Leader for Marketing",
+    "marketingContentCreationLeader": "Subsection Leader for Marketing: Content Creation",
+    "spokesperson": "Spokesperson of the Organisation",
+    "accountingLeader": "Section Leader for Accounting",
+    "accountingDeputy": "Deputy Section Leader for Accounting",
+    "contentWritersLeader": "Section Leader for Content Writers",
+    "contentWritersDeputy": "Deputy Section Leader for Content Writers",
+    "itLeader": "Section Leader for IT",
+    "itDeputy": "Deputy Section Leader for IT",
     "marketingManagerFemale": "Marketing Manager"
   },
   "support": {
-    "hero": { "title": "Support the Education and Growth of Future Leaders", "desc": "Help us develop critical thinking, public speaking, and civic engagement among students across Slovakia. Whether you’re an individual or a company, your support matters.", "ctaWays": "See Ways to Support", "ctaPartner": "Become a Partner" },
+    "hero": { "title": "Support the Education and Growth of Future Leaders", "desc": "Help us develop critical thinking, public speaking, and civic engagement among students globally. Whether you’re an individual or a company, your support matters.", "ctaWays": "See Ways to Support", "ctaPartner": "Become a Partner" },
     "enables": {
       "title": "Your Support Makes Possible",
       "items": {
-        "leaders": { "title": "Educating Future Leaders", "desc": "Your support helps shape a generation of young people who want to responsibly influence the world around them." },
-        "impact": { "title": "Real Social Impact", "desc": "MCS conferences and programs build skills young people use in school, work, and public life." },
+        "leaders": { "title": "Educating Future Leaders", "desc": "Your support helps shape a generation of young people who want to influence the world around them and engage with it in a responsible manner." },
+        "impact": { "title": "Real Social Impact", "desc": "MCS conferences and programmes build skills that young people use in school, work, and public life." },
         "criticalThinkingDialogue": { "title": "Supporting Critical Thinking and Dialogue", "desc": "You invest in skills that build an open, tolerant, and informed society." },
-        "transparencyNonprofit": { "title": "Transparent, Non‑Profit Organization", "desc": "Every euro goes directly to educational activities, not profit. We are open and accountable to donors and partners." },
+        "transparencyNonprofit": { "title": "Transparent, Non‑Profit Organization", "desc": "Every euro goes directly to educational activities, with no profit for the founders or leadership. We are open and accountable to donors and partners." },
         "partnershipValue": { "title": "Partnership with Long‑Term Value", "desc": "We offer companies meaningful collaboration, visibility, and a chance to strengthen civil society." },
-        "communityChange": { "title": "A Community Driven by Change", "desc": "You join people who care about Slovakia’s future – educated, engaged, and ready to act." }
+        "communityChange": { "title": "A Community Driven by Change", "desc": "You get to join people who care about the world’s future. Become educated, engaged, and ready to act." }
       }
     },
     "ways": {
       "title": "Ways to Support",
       "taxDonate": {
         "title": "Donate 2% of Your Taxes",
-        "desc": "Decide where part of your taxes goes. Support the education and growth of young leaders.",
-        "points": { "0": "Just fill in the form", "1": "Add Company ID: 57 034 265", "2": "Submit to the tax office or employer. Don’t miss the end-of-April deadline." },
-        "paragraph": "Decide where part of your taxes goes. Support the education and growth of young leaders.",
+        "desc": "Decide where a part of your taxes go. Support the education and growth of young leaders.",
+        "points": { "0": "Just fill in the government 2% form", "1": "Add Company ID (IČO): 57 034 265", "2": "Submit to the tax office or to your employer. Don’t miss the end-of-April deadline." },
+        "paragraph": "Decide where a part of your taxes go. Support the education and growth of young leaders.",
         "button": "Become a Partner"
       },
       "oneTimeDonation": {
         "title": "One‑Time Donation",
-        "desc": "Even a one‑time contribution makes a difference. Support us via bank transfer or QR code.",
+        "desc": "Even a one‑time contribution makes a difference. Support us via a bank transfer.",
         "points": { "0": "Supports projects and conferences", "1": "Helps young people who want to grow", "2": "Transparent use of funds" },
         "paragraph": "IBAN: SK14 1100 0000 0029 4727 1726",
         "button": "Request Confirmation"
@@ -158,12 +158,12 @@
         "title": "Recurring Support",
         "desc": "A small monthly contribution = a big difference.",
         "points": { "0": "Enables long‑term planning", "1": "You support a specific mission", "2": "You receive invitations and updates" },
-        "paragraph": "Want to start? Write to {email} IBAN: SK14 1100 0000 0029 4727 1726",
+        "paragraph": "Want to start? Write to {email} or set up a repeating payment to IBAN: SK14 1100 0000 0029 4727 1726",
         "button": "Send Email"
       }
     }
   },
-  "transparency": { "title": "We Act Transparently and Responsibly", "desc": "We believe trust is built through action. We publish all key documents, regularly evaluate our activities, and direct every euro where it has the greatest impact – into the education and development of young people." },
+  "transparency": { "title": "We Act Transparently and Responsibly", "desc": "We believe that trust is built through action. We publish all key documents, regularly evaluate our activities, and direct every euro to where it has the greatest impact, which means investing it into the education and development of young people." },
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -188,14 +188,14 @@
       "name": "Model Conferences Slovakia n.o.", 
       "registration": "Registered at the Ministry of Interior of the Slovak Republic, registration number OVVS-433474/637/2025-NO", 
       "address": "Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto", 
-      "ico": "Company ID: 55 888 888", 
+      "ico": "Company ID: 57 034 265", 
       "iban": "IBAN: SK14 1100 0000 0029 4727 1726" 
     },
     "copyright": "© Model Conferences Slovakia"
   },
   "projectsPage": { "title": "Projects" },
   "partnersPage": {
-    "permanent": "Permanent Partners",
+    "permanent": "Long-term Partners",
     "project": "Project Partners",
     "cta": { "title": "Become a Partner", "desc": "Become a partner of Model Conferences Slovakia and help us develop critical thinking, dialogue, and civic engagement among youth. Your support is an investment in education, values, and the future of Slovakia. Together we can shape a generation that will change the world.", "button": "Become a Partner" }
   }
