@@ -5,7 +5,7 @@
   >
     <NuxtImg
       class="w-full h-48 object-cover"
-      src="/images/project-thumbnail.jpg"
+      :src="img"
       alt="Project Thumbnail"
       loading="lazy"
     />
