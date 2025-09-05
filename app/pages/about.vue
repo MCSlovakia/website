@@ -246,14 +246,14 @@ const leaders = [
     linkedin: 'oliver-gajarsky-1a4b6b1a',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
     instagram: 'anna_kleinova',
     linkedin: 'anna-kleinova-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMemberSenior'),
     instagram: 'tomas_klein_st',
