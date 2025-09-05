@@ -59,7 +59,7 @@
 
 <script setup lang="ts">
 import logoFooter from '~/assets/logo/logo-footer.svg'
-
+const { t } = useI18n();
 const localePath = useLocalePath()
 
 const smLinks = [
@@ -72,22 +72,22 @@ const smLinks = [
 const footerLinks = computed(() => [
   { name: "Navigácia",
     links: [
-      { name: "O nás", to: localePath("/about") },
-      { name: "Projekty", to: localePath("/projects") },
-      { name: "Partneri", to: localePath("/partners") },
-      { name: "Podporte nás", to: localePath("/support-us") },
-      { name: "Články", to: localePath("/articles") },
-      { name: "Galéria", to: localePath("/gallery") },
+      { name: t('footer.links.about'), to: localePath("/about") },
+      { name: t('footer.links.projects'), to: localePath("/projects") },
+      { name: t('footer.links.partners'), to: localePath("/partners") },
+      { name: t('footer.links.support'), to: localePath("/support-us") },
+      { name: t('footer.links.articles'), to: localePath("/articles") },
+      { name: t('footer.links.gallery'), to: localePath("/gallery") },
     ]
   },
   { name: "Informácie",
     links: [
-      { name: "Kontakt", to: localePath("/contacts") },
-      { name: "Média o nás", to: localePath("/") },
-      { name: "Tlačové správy", to: localePath("/") },
-      { name: "Výročné správy", to: localePath("/") },
-      { name: "Právne dokumenty", to: localePath("/") },
-      { name: "Finančné výkazy", to: localePath("/") },
+      { name: t('footer.links.contact'), to: localePath("/contacts") },
+      { name: t('footer.links.media'), to: localePath("/") },
+      { name: t('footer.links.pressReleases'), to: localePath("/") },
+      { name: t('footer.links.annualReports'), to: localePath("/") },
+      { name: t('footer.links.legalDocs'), to: localePath("/") },
+      { name: t('footer.links.financialStatements'), to: localePath("/") },
     ]
   }
 ]);

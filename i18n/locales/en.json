@@ -165,27 +165,33 @@
   },
   "transparency": { "title": "We Act Transparently and Responsibly", "desc": "We believe trust is built through action. We publish all key documents, regularly evaluate our activities, and direct every euro where it has the greatest impact – into the education and development of young people." },
   "footer": {
-    "navigation": "",
-    "information": "",
-    "organization": "",
+    "navigation": "Navigation",
+    "information": "Information",
+    "organization": "Organization",
     "links": {
-      "about": "",
-      "projects": "",
-      "partners": "",
-      "support": "",
-      "articles": "",
-      "gallery": "",
-      "contact": "",
-      "media": "",
-      "pressReleases": "",
-      "annualReports": "",
-      "legalDocs": "",
-      "financialStatements": "",
-      "privacy": "",
-      "processing": ""
+      "about": "About Us",
+      "projects": "Projects",
+      "partners": "Partners",
+      "support": "Support Us",
+      "articles": "Articles",
+      "gallery": "Gallery",
+      "contact": "Contact",
+      "media": "Media About Us",
+      "pressReleases": "Press Releases",
+      "annualReports": "Annual Reports",
+      "legalDocs": "Legal Documents",
+      "financialStatements": "Financial Statements",
+      "privacy": "Privacy Policy",
+      "processing": "Personal Data Processing"
     },
-    "org": { "name": "", "registration": "", "address": "", "ico": "", "iban": "" },
-    "copyright": ""
+    "org": { 
+      "name": "Model Conferences Slovakia n.o.", 
+      "registration": "Registered at the Ministry of Interior of the Slovak Republic, registration number OVVS-433474/637/2025-NO", 
+      "address": "Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto", 
+      "ico": "Company ID: 55 888 888", 
+      "iban": "IBAN: SK14 1100 0000 0029 4727 1726" 
+    },
+    "copyright": "© Model Conferences Slovakia"
   },
   "projectsPage": { "title": "Projects" },
   "partnersPage": {
