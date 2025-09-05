@@ -66,7 +66,7 @@ function goToPage(page: number) {
 
 const projects = [
   {
-    img: "",
+    img: "/components/main/NATOBA_LOGO_FULL.png",
     title: 'NATOBA 2026',
     desc: t('home.projects.sampleDesc1'),
     date: 'Jún 2026',

@@ -28,6 +28,7 @@
           alt="Background image"
           width="100%"
           height="100%"
+          loading="lazy"
       />
     </div>
   </div>
@@ -55,7 +56,7 @@
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex items-center justify-between gap-5 flex-wrap">
         <h2 class="md:text-[40px] text-3xl">{{ t('home.projects.title') }}</h2>
@@ -76,7 +77,7 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <PartnerCta />
 
@@ -229,42 +230,42 @@ const leaders = [
     img: '/components/leaders/hanka.jpg',
     name: 'Hana Huorková',
     role: 'Riaditeľka',
-    instagram: 'hanahuorkova',
+    instagram: 'huorkovaa_',
     linkedin: 'hana-huorkova',
   },
   {
     img: '/components/leaders/tomas.JPG',
     name: 'Tomáš Klein',
     role: 'Predseda Výkonnej rady',
-    instagram: 'tomas_klein',
+    instagram: 'tkmk08',
     linkedin: 'tomas-klein-1a4b6b1a2',
   },
   {
     img: '/components/leaders/adam.jpg',
     name: 'Adam Dacho',
     role: 'Podpredseda Výkonnej rady',
-    instagram: 'adam_dacho',
+    instagram: 'adam.d.007',
     linkedin: 'adam-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/goran.JPG',
-    name: 'Goran Dacho',
+    img: '/components/leaders/barbora.JPG',
+    name: 'Matilda Dittelová',
     role: 'Člen Výkonnej rady',
-    instagram: 'goran_dacho',
+    instagram: 'matildaa_dittelova_',
     linkedin: 'goran-dacho-1a4b6b1a2',
   },
   {
     img: '/components/leaders/kika.JPG',
     name: 'Katarína Matejková',
     role: 'Revízorka',
-    instagram: 'katarina_matejkova',
+    instagram: '_matejkovie_',
     linkedin: 'katarina-matejkova-1a4b6b1',
   },
   {
     img: '/components/leaders/oliver.JPG',
     name: 'Oliver Gajarský',
     role: 'Člen Správnej rady',
-    instagram: 'oliver_gajarsky',
+    instagram: 'mrozik_1999',
     linkedin: 'oliver-gajarsky-1a4b6b1a',
   },
   {
