@@ -248,11 +248,11 @@ const leaders = [
     linkedin: 'adam-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/barbora.JPG',
+    img: '/components/leaders/matilda.png',
     name: 'Matilda Dittelová',
     role: t('roles.executiveBoardMember'),
     instagram: 'matildaa_dittelova_',
-    linkedin: 'goran-dacho-1a4b6b1a2',
+    linkedin: '',
   },
   {
     img: '/components/leaders/kika.JPG',

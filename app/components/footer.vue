@@ -36,7 +36,7 @@
             <li>Registrovaná na Ministerstve vnútra SR, registračné číslo OVVS-433474/637/2025-NO</li>
             <li>Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto</li>
             <div class="flex sm:gap-7 gap-2 sm:flex-row flex-col">
-              <li>IČO: 55 888 888</li>
+              <li>IČO: 57 034 265</li>
               <li>IBAN: SK14 1100 0000 0029 4727 1726</li>
             </div>
             <NuxtLink to="mailto:info@mcslovakia.com" class="hover:text-mcs-orange-light transition duration-150 text-txt-white-sec">
