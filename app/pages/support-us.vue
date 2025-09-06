@@ -12,7 +12,7 @@
           <ButtonSec
               class="text-txt-white-prim"
       :text="t('support.hero.ctaPartner')"
-              :onClick="() => $router.push(localePath('/partners'))"
+              :onClick="() => $router.push(localePath('/contacts'))"
           />
         </div>
       </div>

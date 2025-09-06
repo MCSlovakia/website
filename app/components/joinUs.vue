@@ -9,7 +9,7 @@
         <ButtonPrim
             class="inline-flex w-60 items-center justify-center"
             :text="t('home.volunteerCta.ctaVolunteer')"
-            :onClick="() => $router.push('/partners')"
+            :click="openVolunteerForm"
         />
       </div>
       <NuxtImg class="relative xl:-right-[730px] lg:-right-[550px] md:-right-[450px] md:-top-[200px] sm:-right-[400px] sm:-top-[200px] -right-[200px] -top-[40px] img" src="/components/join-us.png" />
@@ -21,6 +21,9 @@
 import {useI18n} from "#imports";
 const { t } = useI18n()
 import ButtonPrim from "~/components/buttonPrim.vue";
+function openVolunteerForm() {
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
+}
 </script>
 
 <style>

@@ -29,7 +29,7 @@
         </div>
         <div class="flex flex-col gap-5 sm:w-[460px] w-full">
           <h3 class="text-txt-white-prim font-semibold md:text-base text-sm">
-            Organizácia
+            {{ t('footer.organization') }}
           </h3>
           <ul class="text-txt-white-sec flex flex-col gap-2 md:text-base text-sm">
             <li>Model Conferences Slovakia n.o.</li>
@@ -50,7 +50,7 @@
       <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs sm:gap-5 gap-3">
         <p>© Model Conferences Slovakia {{ new Date().getFullYear() }}</p>
         <NuxtLink to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?tab=t.0#heading=h.8gi0tqvdkg11"
-                  class="hover:text-mcs-orange-light transition duration-150">Zásady ochrany osobných údajov
+                  class="hover:text-mcs-orange-light transition duration-150">{{t('footer.links.privacy')}}
         </NuxtLink>
       </div>
     </div>
@@ -70,7 +70,7 @@ const smLinks = [
 ];
 
 const footerLinks = computed(() => [
-  { name: "Navigácia",
+  { name: t('footer.navigation'),
     links: [
       { name: t('footer.links.about'), to: localePath("/about") },
       { name: t('footer.links.projects'), to: localePath("/projects") },
@@ -80,7 +80,7 @@ const footerLinks = computed(() => [
       { name: t('footer.links.gallery'), to: localePath("/gallery") },
     ]
   },
-  { name: "Informácie",
+  { name: t('footer.information'),
     links: [
       { name: t('footer.links.contact'), to: localePath("/contacts") },
       { name: t('footer.links.media'), to: localePath("/") },
