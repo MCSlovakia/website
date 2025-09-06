@@ -1,6 +1,6 @@
 <template>
   <div class="bg-mcs-grey flex flex-col p-5 justify-start items-start gap-4 rounded">
-    <h3 class="font-semibold text-xl">Sledujte nás</h3>
+    <h3 class="font-semibold text-xl">{{t('social.follow')}}</h3>
     <div class="flex flex-row items-center gap-6">
       <NuxtLink
         v-for="(link, idx) in links"
@@ -16,6 +16,10 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+
+const router = useRouter();
+const { t } = useI18n();
 const links = [
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
