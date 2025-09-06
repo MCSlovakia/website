@@ -12,7 +12,7 @@
       "description": "MCS organizuje modelové konferencie pre stredoškolákov a vysokoškolákov."
     },
     "hero": {
-      "title": "Modelové konferencie pre budúcich lídrov a diplomatov Slovenska",
+      "title": "Vzdelávanie a konferencie pre budúcich lídrov Slovenska",
       "desc": "Zaži diplomaciu na vlastnej koži. Na modelových konferenciách pre stredoškolákov a vysokoškolákov rozvíjaš kritické myslenie, rečnícke zručnosti a schopnosť viesť s rešpektom.",
       "ctaVolunteer": "Stať sa dobrovoľníkom",
       "ctaPartner": "Stať sa partnerom"
@@ -130,10 +130,10 @@
       "title": "Zakladatelia",
       "items": {
         "adam": {
-          "desc": "Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje MUN, MEP, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie."
+          "desc": "Adam (16) študuje na bilingválnom Gymnáziu Jura Hronca. Vyrastal na Taiwane a v Moldavsku, čo formovalo jeho záujem o diplomaciu. Aktívne sa venuje Modelovým zasadnutiam OSN, Modelovému európskemu parlamentu, debatám a moot courtom. Založením tejto iniciatívy chce pomôcť študentom rozvíjať kritické myslenie a záujem o medzinárodné dianie."
         },
         "hana": {
-          "desc": "Hanka je maturantka na ŠpMNDaG, čoskoro odchádza študovať medzinárodné právo do Amsterdamu. Zúčastnila sa desiatok modelových konferencií, ktoré aj organizovala. Je v DofE a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším a podporiť vzdelávanie v diplomacii."
+          "desc": "Hana študuje medzinárodné právo na Amsterdam University College v Holandsku. Zúčastnila sa desiatok modelových konferencií na Slovensku aj v zahraničí, z ktorých veľkú časť aj organizovala. Je súčastou medzinárodnej ceny vojvodu z Edinburghu a pracuje s mládežou. V MCS chce sprístupniť tieto skúsenosti ďalším mladím a podporiť vzdelávanie o diplomacii."
         }
       }
     },
