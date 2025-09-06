@@ -1,4 +1,3 @@
-
 <template>
   <div class="flex lg:mx-auto mx-5 justify-center">
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-12 mt-8 xl:w-[1180px] lg:w-[940px] w-full">
@@ -23,7 +22,12 @@
             :key="idx"
             :title="item.title"
             :description="item.description"
+            :descriptionHtml="item.descriptionHtml"
         />
+      </div>
+      <!-- Social card with same width as normal card -->
+      <div class="grid sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4 mt-2">
+        <SocialCard />
       </div>
     </div>
   </div>
@@ -45,6 +49,7 @@
 <script setup lang="ts">
 import ButtonSec from "~/components/buttonSec.vue";
 import Card from "~/components/card.vue";
+import SocialCard from "~/components/SocialCard.vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -52,20 +57,13 @@ const ContactCardsContent = [
   {
     title: "Email",
     description: "Napíšte nám email na adresu",
+    descriptionHtml: 'Napíšte nám email na adresu <a href="mailto:info@mcslovakia.com" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">info@mcslovakia.com</a>'
   },
   {
     title: "Telefón",
     description: "Zavolajte nám na číslo",
-  },
-  {
-    title: "Sociálne siete",
-    description: "Sledujte nás na sociálnych sieťach",
-  },
-  {
-    title: "Osobné stretnutie",
-    description: "Dohodnite si osobné stretnutie",
-  },
+    descriptionHtml: 'Zavolajte nám na číslo <a href="tel:+421912345678" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">+421 907 357 491</a>'
+  }
 ];
-
 </script>
 
