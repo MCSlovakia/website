@@ -3,15 +3,15 @@
     <div class="flex flex-col md:gap-6 sm:gap-5 gap-4 md:mt-12 mt-8 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex flex-col md:gap-6 gap-4 justify-between">
         <h1 class="md:text-5xl sm:text-3xl text-2xl">
-          Kontakt
+          {{ $t('contactsPage.title') }}
         </h1>
         <div class="flex md:flex-row flex-col md:gap-6 gap-5 justify-between">
           <p class="md:text-[18px] text-base text-txt-black-sec lg:w-[700px] w-full">
-            Máte otázky alebo záujem o spoluprácu? Kontaktujte nás cez formulár alebo iným spôsobom, radi vám odpovieme.
+            {{ $t('contactsPage.description') }}
           </p>
           <ButtonSec
               class="text-txt-black-prim inline"
-              text="Vyplniť formulár"
+              :text="$t('contactsPage.formButton')"
               @click="() => router.push('/support-us')"
           />
         </div>
@@ -51,18 +51,25 @@ import ButtonSec from "~/components/buttonSec.vue";
 import Card from "~/components/card.vue";
 import SocialCard from "~/components/SocialCard.vue";
 import { useRouter } from "vue-router";
+import { useI18n } from "vue-i18n";
+
 const router = useRouter();
+const { t } = useI18n();
+
+// Contact information - kept outside of i18n files
+const contactEmail = "info@mcslovakia.com";
+const contactPhone = "+421 907 357 491";
 
 const ContactCardsContent = [
   {
-    title: "Email",
-    description: "Napíšte nám email na adresu",
-    descriptionHtml: 'Napíšte nám email na adresu <a href="mailto:info@mcslovakia.com" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">info@mcslovakia.com</a>'
+    title: t('contactsPage.cards.email.title'),
+    description: t('contactsPage.cards.email.description'),
+    descriptionHtml: `${t('contactsPage.cards.email.description')} <a href="mailto:${contactEmail}" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">${contactEmail}</a>`
   },
   {
-    title: "Telefón",
-    description: "Zavolajte nám na číslo",
-    descriptionHtml: 'Zavolajte nám na číslo <a href="tel:+421912345678" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">+421 907 357 491</a>'
+    title: t('contactsPage.cards.phone.title'),
+    description: t('contactsPage.cards.phone.description'),
+    descriptionHtml: `${t('contactsPage.cards.phone.description')} <a href="tel:${contactPhone.replace(/\s+/g, '')}" class="text-mcs-orange underline hover:no-underline hover:text-mcs-orange-light">${contactPhone}</a>`
   }
 ];
 </script>

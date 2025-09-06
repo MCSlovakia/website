@@ -266,5 +266,23 @@
       "desc": "Staňte sa partnerom Model Conferences Slovakia a pomôžte nám rozvíjať kritické myslenie, dialóg a občiansku angažovanosť mladých. Vaša podpora znamená investíciu do vzdelania, hodnotovej výchovy a budúcnosti Slovenska. Spolu vieme formovať generáciu, ktorá bude meniť svet.",
       "button": "Staňte sa partnerom"
     }
+  },
+  "contactsPage": {
+    "title": "Kontakt",
+    "description": "Máte otázky alebo záujem o spoluprácu? Kontaktujte nás cez formulár alebo iným spôsobom, radi vám odpovieme.",
+    "formButton": "Vyplniť formulár",
+    "cards": {
+      "email": {
+        "title": "Email",
+        "description": "Napíšte nám email na adresu"
+      },
+      "phone": {
+        "title": "Telefón",
+        "description": "Zavolajte nám na číslo"
+      }
+    }
+  },
+  "social":{
+    "follow":"Sledujte nás"
   }
 }

@@ -198,5 +198,23 @@
     "permanent": "Long-term Partners",
     "project": "Project Partners",
     "cta": { "title": "Become a Partner", "desc": "Become a partner of Model Conferences Slovakia and help us develop critical thinking, dialogue, and civic engagement among youth. Your support is an investment in education, values, and the future of Slovakia. Together we can shape a generation that will change the world.", "button": "Become a Partner" }
+  },
+  "contactsPage": {
+    "title": "Contact",
+    "description": "Do you have questions or want to collaborate? Contact us through the form or in other ways, we'll be happy to respond.",
+    "formButton": "Fill out the form",
+    "cards": {
+      "email": {
+        "title": "Email",
+        "description": "Write us an email at"
+      },
+      "phone": {
+        "title": "Phone",
+        "description": "Call us at"
+      }
+    }
+  },
+  "social":{
+    "follow":"Follow Us"
   }
 }
