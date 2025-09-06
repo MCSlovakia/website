@@ -210,7 +210,7 @@ const leaders = [
     name: 'Hana Huorková',
     role: t('roles.directorFemale'),
     instagram: 'huorkovaa_',
-    linkedin: '',
+    linkedin: 'hana-huorková-3aa7602a8',
   },
   {
     img: '/components/leaders/tomas.JPG',
@@ -234,7 +234,7 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/kika.JPG',
+    img: '/components/leaders/katka.png',
     name: 'Katarína Matejková',
     role: t('roles.auditorFemale'),
     instagram: '_matejkovie_',
@@ -252,17 +252,17 @@ const leaders = [
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
     instagram: 'anna_kleinova',
-    linkedin: 'anna-kleinova-1a4b6b1a2',
+    linkedin: '',
   },
   {
     img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMemberSenior'),
     instagram: 'tomas_klein_st',
-    linkedin: 'tomas-klein-st-1a4b6b1a2',
+    linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/spisakova.png',
     name: 'Daniela Spišáková',
     role: t('roles.organizationalTeamLeader'),
     instagram: 'danielaa_s_',
@@ -270,7 +270,7 @@ const leaders = [
   },
   {
     img: '/components/leaders/vaculova.png',
-    name: 'Lilien Vaculová',
+    name: 'Lillien Vaculová',
     role: t('roles.organizationalTeamDeputy'),
     instagram: 'vaculova_lillien',
     linkedin: '',
@@ -319,7 +319,7 @@ const leaders = [
   },
   {
     img: '/components/leaders/bednar.png',
-    name: 'Adrián Bednár',
+    name: 'Adrian Bednár',
     role: t('roles.accountingLeader'),
     instagram: 'adr.bed',
     linkedin: 'adrian-bednar',

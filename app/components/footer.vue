@@ -66,7 +66,7 @@ const smLinks = [
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
   { name: "TikTok", icon: "ri-tiktok-fill", url: "https://www.tiktok.com/@mc.slovakia" },
-  { name: "YouTube", icon: "ri-youtube-fill", url: "https://www.youtube.com/@modelconferencessk" },
+  // { name: "YouTube", icon: "ri-youtube-fill", url: "https://www.youtube.com/@modelconferencessk" },
 ];
 
 const footerLinks = computed(() => [
