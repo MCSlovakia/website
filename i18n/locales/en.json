@@ -123,7 +123,8 @@
     "contentWritersDeputy": "Deputy Section Leader for Content Writers",
     "itLeader": "Section Leader for IT",
     "itDeputy": "Deputy Section Leader for IT",
-    "marketingManagerFemale": "Marketing Manager"
+    "marketingManagerFemale": "Marketing Manager",
+    "generalMarketing":"Subsection Leader for Marketing: General Marketing"
   },
   "support": {
     "hero": { "title": "Support the Education and Growth of Future Leaders", "desc": "Help us develop critical thinking, public speaking, and civic engagement among students globally. Whether you’re an individual or a company, your support matters.", "ctaWays": "See Ways to Support", "ctaPartner": "Become a Partner" },
