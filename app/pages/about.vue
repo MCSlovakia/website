@@ -359,6 +359,13 @@ const leaders = [
     instagram: 'tot_samy_technopetya',
     linkedin: 'pbalabolkin',
   },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Martin Gašperec',
+    role: t('roles.generalMarketing'),
+    instagram: '_martingasperec_',
+    linkedin: '',
+  },
 ]                                                                                                                                                                 
 
 </script>
