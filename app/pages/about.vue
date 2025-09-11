@@ -25,7 +25,7 @@
   <div class="flex justify-center lg:mx-auto mx-5 sm:mt-7 mt-5">
     <div class="xl:w-[1180px] lg:w-[940px] w-full">
       <NuxtImg
-          src="/components/about/hero.jpg"
+          src="/components/about/hero.png"
           width="1180"
           height="700"
           class="w-full h-auto object-cover"
@@ -311,7 +311,7 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/casnochova.png',
     name: 'Ivana Časnochová',
     role: t('roles.spokesperson'),
     instagram: 'casnochovaxx',
@@ -325,7 +325,7 @@ const leaders = [
     linkedin: 'adrian-bednar',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/petrufova.png',
     name: 'Emma Kornélia Petrufová',
     role: t('roles.accountingDeputy'),
     instagram: 'epetruf',
