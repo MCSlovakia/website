@@ -17,7 +17,7 @@
             <ButtonSec
                 class="text-txt-white-prim"
                 :text="t('home.hero.ctaPartner')"
-                :onClick="() => router.push('/partners')"
+                :onClick="() => router.push(localePath('/partners'))"
             />
           </div>
         </div>
@@ -28,6 +28,7 @@
           alt="Background image"
           width="100%"
           height="100%"
+          loading="lazy"
       />
     </div>
   </div>
@@ -48,20 +49,20 @@
           <p class="text-[18px] text-txt-black-sec">{{ t('home.about.desc') }}</p>
           <ButtonSec
               :text="t('home.about.cta')"
-              :onClick="() => router.push('/about')"
+              :onClick="() => router.push(localePath('/about'))"
           />
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex items-center justify-between gap-5 flex-wrap">
         <h2 class="md:text-[40px] text-3xl">{{ t('home.projects.title') }}</h2>
         <ButtonSec
             :text="t('home.projects.cta')"
-            :onClick="() => router.push('/projects')"
+            :onClick="() => router.push(localePath('/projects'))"
         />
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
@@ -76,7 +77,7 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <PartnerCta />
 
@@ -86,7 +87,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.leadership.title') }}</h2>
         <ButtonSec
             :text="t('home.leadership.ctaMore')"
-            :onClick="() => router.push('/about')"
+            :onClick="() => router.push(localePath('/about'))"
         />
       </div>
       <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -111,13 +112,13 @@
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex items-center justify-between gap-5 flex-wrap">
         <h2 class="md:text-[40px] text-3xl">{{ t('home.articles.title') }}</h2>
         <ButtonSec
             :text="t('home.articles.ctaMore')"
-            :onClick="() => router.push('/articles')"
+            :onClick="() => router.push(localePath('/articles'))"
         />
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
@@ -131,7 +132,7 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <LazyJoinUs />
 
@@ -141,7 +142,7 @@
         <h2 class="md:text-[40px] text-3xl">{{ t('home.partners.title') }}</h2>
         <ButtonSec
             :text="t('home.partners.ctaMore')"
-            :onClick="() => router.push('/partners')"
+            :onClick="() => router.push(localePath('/partners'))"
         />
       </div>
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
@@ -154,7 +155,7 @@
     </div>
   </div>
 
-  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <h2 class="md:text-[40px] text-3xl">{{ t('home.press.title') }}</h2>
       <div class="grid lg:grid-cols-3 grid-cols-1 gap-5">
@@ -168,29 +169,30 @@
         />
       </div>
     </div>
-  </div>
+  </div> -->
 
   <CtaBig
-    title="Pridaj sa k organizátorom"
-    description="Staň sa súčasťou komunity mladých lídrov, diplomatov a vizionárov. Či už ako dobrovoľník alebo líder, čaká ťa zmysluplná skúsenosť, nové výzvy a priestor na rast. Pripoj sa k nám a buď súčasťou skutočnej zmeny."
-    buttonText="Staň sa dobrovoľníkom"
+    :title="t('home.volunteerCta.ctaVolunteer2')"
+    :description="t('home.volunteerCta.desc2')"
+    :buttonText="t('home.volunteerCta.ctaVolunteer')"
     buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform"
   />
 
 </template>
 
 <script lang="ts" setup>
-import ProjectCard from "~/components/project/projectCard.vue";
-import PartnerCta from "~/components/partnerCta.vue";
-import LeaderCard from "~/components/leaders/leaderCard.vue";
-import ArticleCard from "~/components/articles/articleCard.vue";
-import JoinUs from "~/components/joinUs.vue";
-import PartnerCard from "~/components/partners/partnerCard.vue";
-import PressMentionCard from '~/components/main/pressMentionCard.vue';
-import CtaBig from "~/components/ctaBig.vue";
+import ProjectCard from "@/components/project/projectCard.vue";
+import PartnerCta from "@/components/partnerCta.vue";
+import LeaderCard from "@/components/leaders/leaderCard.vue";
+import ArticleCard from "@/components/articles/articleCard.vue";
+import JoinUs from "@/components/joinUs.vue";
+import PartnerCard from "@/components/partners/partnerCard.vue";
+import PressMentionCard from '@/components/main/pressMentionCard.vue';
+import CtaBig from "@/components/ctaBig.vue";
 
 import {useRouter} from "vue-router";
 const router = useRouter();
+const localePath = useLocalePath();
 
 import {useI18n} from "#imports";
 const { t } = useI18n()
@@ -198,6 +200,8 @@ const { t } = useI18n()
 function openVolunteerForm() {
   window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
 }
+
+
 
 const projects = [
   {
@@ -222,70 +226,63 @@ const projects = [
     cta: t('home.projects.ctaJoin'),
   },
 ]
-
+// test
 const leaders = [
   {
     img: '/components/leaders/hanka.jpg',
     name: 'Hana Huorková',
-    role: 'Riaditeľka',
-    instagram: 'hanahuorkova',
-    linkedin: 'hana-huorkova',
+    role: t('roles.directorFemale'),
+    instagram: 'huorkovaa_',
+    linkedin: 'hana-huorková-3aa7602a8',
   },
   {
-    img: '/components/leaders/tomas.jpg',
+    img: '/components/leaders/tomas.JPG',
     name: 'Tomáš Klein',
-    role: 'Predseda Výkonnej rady',
-    instagram: 'tomas_klein',
-    linkedin: 'tomas-klein-1a4b6b1a2',
+    role: t('roles.executiveBoardChair'),
+    instagram: 'tkmk08',
+    linkedin: '',
   },
   {
     img: '/components/leaders/adam.jpg',
     name: 'Adam Dacho',
-    role: 'Podpredseda Výkonnej rady',
-    instagram: 'adam_dacho',
+    role: t('roles.executiveBoardViceChair'),
+    instagram: 'adam.d.007',
     linkedin: 'adam-dacho-1a4b6b1a2',
   },
   {
-    img: '/components/leaders/goran.jpg',
-    name: 'Goran Dacho',
-    role: 'Člen Výkonnej rady',
-    instagram: 'goran_dacho',
-    linkedin: 'goran-dacho-1a4b6b1a2',
+    img: '/components/leaders/matilda.png',
+    name: 'Matilda Dittelová',
+    role: t('roles.executiveBoardMember'),
+    instagram: 'matildaa_dittelova_',
+    linkedin: '',
   },
   {
-    img: '/components/leaders/kika.jpg',
+    img: '/components/leaders/katka.png',
     name: 'Katarína Matejková',
-    role: 'Revízorka',
-    instagram: 'katarina_matejkova',
-    linkedin: 'katarina-matejkova-1a4b6b1',
+    role: t('roles.auditorFemale'),
+    instagram: '_matejkovie_',
+    linkedin: '',
   },
   {
-    img: '/components/leaders/oliver.jpg',
+    img: '/components/leaders/oliver.JPG',
     name: 'Oliver Gajarský',
-    role: 'Člen Správnej rady',
-    instagram: 'oliver_gajarsky',
-    linkedin: 'oliver-gajarsky-1a4b6b1a',
+    role: t('roles.boardMemberSenior'),
+    instagram: 'mrozik_1999',
+    linkedin: 'oliver-gajarský-996425370',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
-    role: 'Predsedkyňa Správnej rady',
+    role: t('roles.boardChairFemale'),
     instagram: 'anna_kleinova',
-    linkedin: 'anna-kleinova-1a4b6b1a2',
+    linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
-    role: 'Člen Správnej rady',
+    role: t('roles.boardMemberSenior'),
     instagram: 'tomas_klein_st',
-    linkedin: 'tomas-klein-st-1a4b6b1a2',
-  },
-  {
-    img: '/components/leaders/holder.png',
-    name: 'Lucia Šimková',
-    role: 'Marketingová manažérka',
-    instagram: 'lucia_simkova',
-    linkedin: 'lucia-simkova-1a4b6b1a',
+    linkedin: '',
   },
 ]
 
@@ -311,14 +308,12 @@ const articlesContent = [
   },
 ]
 
+import partnerYubico from '~/assets/partners/partner=yubico.png'
+import partnerDofe from '~/assets/partners/partner=dofe.png'
+
 const partnersContent = [
-  new URL('/assets/partners/partner=ba.png', import.meta.url).href,
-  new URL('/assets/partners/partner=mxvez.png', import.meta.url).href,
-  new URL('/assets/partners/partner=nadacia-orange.png', import.meta.url).href,
-  new URL('/assets/partners/partner=nivam.png', import.meta.url).href,
-  new URL('/assets/partners/partner=sda.png', import.meta.url).href,
-  new URL('/assets/partners/partner=tatra.png', import.meta.url).href,
-  new URL('/assets/partners/partner=Variant7.png', import.meta.url).href,
+  partnerYubico,
+  partnerDofe
 ]
 
 const pressMensionContent = [

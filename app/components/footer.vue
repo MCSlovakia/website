@@ -3,8 +3,8 @@
     <div class="xl:w-[1180px] lg:w-[940px] w-full flex-wrap lg:mx-auto mx-5 flex flex-col gap-20">
       <div class="flex flex-row items-start justify-between flex-wrap gap-5">
         <div class="logo--container">
-          <NuxtLink to="/" class="flex items-center">
-            <img src="/assets/logo/logo-footer.svg" alt="MCS logo" class="w-[150px] h-auto">
+          <NuxtLink :to="localePath('/')" class="flex items-center">
+            <img :src="logoFooter" alt="MCS logo" class="w-[150px] h-auto">
           </NuxtLink>
           <div>
             <NuxtLink
@@ -29,14 +29,14 @@
         </div>
         <div class="flex flex-col gap-5 sm:w-[460px] w-full">
           <h3 class="text-txt-white-prim font-semibold md:text-base text-sm">
-            Organizácia
+            {{ t('footer.organization') }}
           </h3>
           <ul class="text-txt-white-sec flex flex-col gap-2 md:text-base text-sm">
             <li>Model Conferences Slovakia n.o.</li>
             <li>Registrovaná na Ministerstve vnútra SR, registračné číslo OVVS-433474/637/2025-NO</li>
-            <li>Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto</li>
+            <li>Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto</li>
             <div class="flex sm:gap-7 gap-2 sm:flex-row flex-col">
-              <li>IČO: 55 888 888</li>
+              <li>IČO: 57 034 265</li>
               <li>IBAN: SK14 1100 0000 0029 4727 1726</li>
             </div>
             <NuxtLink to="mailto:info@mcslovakia.com" class="hover:text-mcs-orange-light transition duration-150 text-txt-white-sec">
@@ -47,47 +47,50 @@
         </div>
 
       </div>
-      <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs gap-5">
+      <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs sm:gap-5 gap-3">
         <p>© Model Conferences Slovakia {{ new Date().getFullYear() }}</p>
-        <div class="flex sm:gap-4 gap-2 sm:flex-row flex-col">
-          <NuxtLink to="/privacy-policy" class="hover:text-mcs-orange-light transition duration-150">Zásady ochrany osobných údajov</NuxtLink>
-          <NuxtLink to="/processing-policy" class="hover:text-mcs-orange-light transition duration-150">Spracovanie osobných údajov</NuxtLink>
-        </div>
+        <NuxtLink to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?tab=t.0#heading=h.8gi0tqvdkg11"
+                  class="hover:text-mcs-orange-light transition duration-150">{{t('footer.links.privacy')}}
+        </NuxtLink>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
+import logoFooter from '~/assets/logo/logo-footer.svg'
+const { t } = useI18n();
+const localePath = useLocalePath()
+
 const smLinks = [
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
   { name: "TikTok", icon: "ri-tiktok-fill", url: "https://www.tiktok.com/@mc.slovakia" },
-  { name: "YouTube", icon: "ri-youtube-fill", url: "https://www.youtube.com/@modelconferencessk" },
+  // { name: "YouTube", icon: "ri-youtube-fill", url: "https://www.youtube.com/@modelconferencessk" },
 ];
 
-const footerLinks = [
-  { name: "Navigácia",
+const footerLinks = computed(() => [
+  { name: t('footer.navigation'),
     links: [
-      { name: "O nás", to: "/about" },
-      { name: "Projekty", to: "/projects" },
-      { name: "Partneri", to: "/partners" },
-      { name: "Podporte nás", to: "/support-us" },
-      { name: "Články", to: "/articles" },
-      { name: "Galéria", to: "/gallery" },
+      { name: t('footer.links.about'), to: localePath("/about") },
+      { name: t('footer.links.projects'), to: localePath("/projects") },
+      { name: t('footer.links.partners'), to: localePath("/partners") },
+      { name: t('footer.links.support'), to: localePath("/support-us") },
+      { name: t('footer.links.articles'), to: localePath("/articles") },
+      { name: t('footer.links.gallery'), to: localePath("/gallery") },
     ]
   },
-  { name: "Informácie",
+  { name: t('footer.information'),
     links: [
-      { name: "Kontakt", to: "/contacts" },
-      { name: "Média o nás", to: "/" },
-      { name: "Tlačové správy", to: "/" },
-      { name: "Výročné správy", to: "/" },
-      { name: "Právne dokumenty", to: "/" },
-      { name: "Finančné výkazy", to: "/" },
+      { name: t('footer.links.contact'), to: localePath("/contacts") },
+      { name: t('footer.links.media'), to: localePath("/") },
+      { name: t('footer.links.pressReleases'), to: localePath("/") },
+      { name: t('footer.links.annualReports'), to: localePath("/") },
+      { name: t('footer.links.legalDocs'), to: localePath("/") },
+      { name: t('footer.links.financialStatements'), to: localePath("/") },
     ]
   }
-];
+]);
 </script>
 
 <style>

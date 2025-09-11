@@ -5,7 +5,7 @@
   >
     <NuxtImg
       class="w-full h-48 object-cover"
-      src="/images/project-thumbnail.jpg"
+      :src="img"
       alt="Project Thumbnail"
       loading="lazy"
     />
@@ -22,7 +22,7 @@
         </p>
         <ButtonSec
           class="z-100 inline"
-          text="Zúčastniť sa"
+          :text="t('home.projects.ctaJoin')"
           @click.stop="() => router.push(link || '/gallery')"
         />
       </div>
@@ -35,6 +35,8 @@
 import ButtonSec from "~/components/buttonSec.vue";
 import { useRouter } from 'vue-router';
 const router = useRouter();
+import { useI18n } from '#imports';
+const { t } = useI18n();
 
 const props = defineProps<{
   img?: string,
