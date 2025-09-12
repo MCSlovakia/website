@@ -14,18 +14,18 @@
     "hero": {
       "title": "Vzdelávanie a konferencie pre budúcich lídrov Slovenska",
       "desc": "Zaži diplomaciu na vlastnej koži. Na modelových konferenciách pre stredoškolákov a vysokoškolákov rozvíjaš kritické myslenie, rečnícke zručnosti a schopnosť viesť s rešpektom.",
-      "ctaVolunteer": "Stať sa dobrovoľníkom",
-      "ctaPartner": "Stať sa partnerom"
+      "ctaVolunteer": "Staň sa dobrovoľníkom",
+      "ctaPartner": "Staň sa partnerom"
     },
     "about": {
-      "title": "Čo je MCS",
+      "title": "Čo je MCS?",
       "desc": "Model Conferences Slovakia (MCS) je nezisková organizácia, ktorá formuje budúcich lídrov a diplomatov. Cez modelové konferencie rozvíjame kritické myslenie, rečnícke schopnosti a globálne povedomie.",
-      "cta": "Zistiť o nás"
+      "cta": "Zisti o nás"
     },
     "projects": {
       "title": "Projekty",
       "cta": "Prezrieť projekty",
-      "ctaJoin": "Zúčastniť sa",
+      "ctaJoin": "Zúčastni sa",
       "sampleDesc1": "NATOBA je prvý projekt MCS: medzinárodná simulácia summitu NATO v Bratislave...",
       "sampleDesc2": "MUN 2025 je prestížna konferencia simulujúca činnosť OSN...",
       "sampleDesc3": "MUN 2026 bude pokračovať v tradícii poskytovania platformy pre mladých lídrov..."
@@ -34,7 +34,7 @@
       "title": "Podporte mladých lídrov",
       "desc": "Veríte v vzdelanie a potenciál mladých? Podporte MCS a staňte sa súčasťou projektov, ktoré rozvíjajú lídrov budúcnosti z celého Slovenska.",
       "ctaSupport": "Podporiť projekt",
-      "ctaPartner": "Stať sa partnerom",
+      "ctaPartner": "Staň sa partnerom",
       "supportYoung": "Podporte mladých lídrov"
     },
     "leadership": {
@@ -43,16 +43,16 @@
     },
     "articles": {
       "title": "Články",
-      "ctaMore": "Prećítať viac článkov"
+      "ctaMore": "Prečítať viac článkov"
     },
     "partners": {
       "title": "Naši partneri",
-      "ctaMore": "Zistiť o partneroch"
+      "ctaMore": "Zisti o našich partneroch"
     },
     "volunteerCta": {
       "title": "Pridaj sa k nám",
       "desc": "Chceš zažiť konferencie, získať skúsenosti a byť súčasťou tímu? Staň sa dobrovoľníkom MCS a pomôž rozvíjať budúcich lídrov Slovenska.",
-      "ctaVolunteer": "Stať sa dobrovoľníkom",
+      "ctaVolunteer": "Staň sa dobrovoľníkom",
       "ctaVolunteer2": "Pridaj sa k organizátorom",
       "desc2": "Staň sa súčasťou komunity mladých lídrov, diplomatov a vizionárov. Či už ako dobrovoľník alebo líder, čaká ťa zmysluplná skúsenosť, nové výzvy a priestor na rast. Pripoj sa k nám a buď súčasťou skutočnej zmeny."
     },
@@ -65,7 +65,7 @@
     "hero": {
       "title": "Študenti, ktorí formujú budúcnosť dialógom",
       "desc": "Sme komunita mladých lídrov, ktorí cez simulácie medzinárodných inštitúcií rozvíjajú diplomaciu, kritické myslenie a odvahu viesť, pričom spájame študentov z celého Slovenska, aby spolu riešili globálne výzvy už dnes.",
-      "ctaJoinTeam": "Pripojiť sa k tímu",
+      "ctaJoinTeam": "Pripoj sa k tímu",
       "ctaSupportProject": "Podporiť projekt"
     },
     "structure": {
@@ -93,7 +93,7 @@
         },
         "volunteers": {
           "title": "Dobrovoľnici",
-          "desc": "Dobrovoľnícky tím tvorí 40 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí."
+          "desc": "Dobrovoľnícky tím tvorí 50 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí."
         }
       }
     },
@@ -173,7 +173,7 @@
       "title": "Podporte vzdelávanie a rozvoj budúcich lídrov",
       "desc": "Pomôžte nám rozvíjať kritické myslenie, rečnícke schopnosti a záujem o verejné dianie u študentov z celého Slovenska. Či už ste jednotlivec alebo firma, vaša podpora má zmysel.",
       "ctaWays": "Pozrieť spôsoby podpory",
-      "ctaPartner": "Stať sa partnerom"
+      "ctaPartner": "Staň sa partnerom"
     },
     "enables": {
       "title": "Vaša podpora umožňuje",
@@ -197,7 +197,7 @@
           "2": "Odovzdať na daňový úrad alebo zamestnávateľovi. Nezabudnite na termín do konca apríla."
         },
         "paragraph": "Rozhodnite, kam pôjde časť vašich daní. Podporte vzdelávanie a rozvoj mladých lídrov.",
-        "button": "Stať sa partnerom"
+        "button": "Staň sa partnerom"
       },
       "oneTimeDonation": {
         "title": "Jednorazový dar",
@@ -208,7 +208,7 @@
           "2": "Transparentné využitie darov"
         },
         "paragraph": "IBAN: SK14 1100 0000 0029 4727 1726",
-        "button": "Požiadať potvrdenie"
+        "button": "Požiadať o potvrdenie"
       },
       "recurringSupport": {
         "title": "Pravidelná podpora",
@@ -271,15 +271,15 @@
   "contactsPage": {
     "title": "Kontakt",
     "description": "Máte otázky alebo záujem o spoluprácu? Kontaktujte nás cez formulár alebo iným spôsobom, radi vám odpovieme.",
-    "formButton": "Vyplniť formulár",
+    "formButton": "Vyplň formulár",
     "cards": {
       "email": {
         "title": "Email",
-        "description": "Napíšte nám email na adresu"
+        "description": "Napíš nám email na adresu"
       },
       "phone": {
         "title": "Telefón",
-        "description": "Zavolajte nám na číslo"
+        "description": "Zavolaj nám na číslo"
       }
     }
   },
