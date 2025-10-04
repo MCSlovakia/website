@@ -10,7 +10,7 @@
       <ButtonPrim
         class="inline"
         :text="t('about.hero.ctaJoinTeam')"
-        :click="openVolunteerForm"
+        :onClick="openVolunteerForm"
       />
       <ButtonSec
         class="text-txt-black-prim inline"
@@ -115,6 +115,8 @@ import { useI18n } from '#imports';
 const router = useRouter();
 const localePath = useLocalePath();
 const { t } = useI18n();
+
+
 function openVolunteerForm() {
   window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
 }
@@ -191,7 +193,7 @@ const founders = [
     name: 'Adam Dacho',
     description: t('about.founders.items.adam.desc'),
     instagram: 'adam.d.007',
-    linkedin: 'adam-dacho-1a4b6b1a2',
+    linkedin: 'adam-d-4b98b6290',
     email: 'adam@mcslovakia.com',
   },
   {
@@ -224,7 +226,7 @@ const leaders = [
     name: 'Adam Dacho',
     role: t('roles.executiveBoardViceChair'),
     instagram: 'adam.d.007',
-    linkedin: 'adam-dacho-1a4b6b1a2',
+    linkedin: 'adam-d-4b98b6290',
   },
   {
     img: '/components/leaders/matilda.png',
@@ -238,7 +240,7 @@ const leaders = [
     name: 'Katarína Matejková',
     role: t('roles.auditorFemale'),
     instagram: '_matejkovie_',
-    linkedin: 'katarina-matejkova-1a4b6b1',
+    linkedin: '',
   },
   {
     img: '/components/leaders/oliver.JPG',
