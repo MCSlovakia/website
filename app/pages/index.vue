@@ -247,7 +247,7 @@ const leaders = [
     name: 'Adam Dacho',
     role: t('roles.executiveBoardViceChair'),
     instagram: 'adam.d.007',
-    linkedin: 'adam-dacho-1a4b6b1a2',
+    linkedin: 'adam-d-4b98b6290',
   },
   {
     img: '/components/leaders/matilda.png',
