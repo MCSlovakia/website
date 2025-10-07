@@ -214,6 +214,7 @@ const leaders = [
     instagram: 'huorkovaa_',
     linkedin: 'hana-huorková-3aa7602a8',
   },
+
   {
     img: '/components/leaders/tomas.JPG',
     name: 'Tomáš Klein',
@@ -235,6 +236,13 @@ const leaders = [
     instagram: 'matildaa_dittelova_',
     linkedin: '',
   },
+    {
+    img:'/components/leaders/goran.JPG',
+    name:'Goran Dacho',
+    role: t('roles.executiveBoardMember'),
+    instagram:'dachogoran',
+    linkedin:'goran-dacho-53a180346'
+  },
   {
     img: '/components/leaders/katka.png',
     name: 'Katarína Matejková',
@@ -253,14 +261,14 @@ const leaders = [
     img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
-    instagram: 'anna_kleinova',
+    instagram: '',
     linkedin: '',
   },
   {
     img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMemberSenior'),
-    instagram: 'tomas_klein_st',
+    instagram: '',
     linkedin: '',
   },
   {
@@ -289,10 +297,10 @@ const leaders = [
     name: 'Sebastián Ďurica',
     role: t('roles.hrDeputy'),
     instagram: 'sibo.cc',
-    linkedin: 'sebastian-durica-91b32829a',
+    linkedin: 'sebastián-ďurica-91b32829a',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/mrugova.png',
     name: 'Lívia Lilly Mrugová',
     role: t('roles.marketingLeader'),
     instagram: 'lilly.mrugova',
@@ -310,6 +318,13 @@ const leaders = [
     name: 'Nikola Droščínová',
     role: t('roles.marketingContentCreationLeader'),
     instagram: 'nikinka08',
+    linkedin: '',
+  },
+  {
+    img: '/components/leaders/holder.png',
+    name: 'Martin Gašperec',
+    role: t('roles.generalMarketing'),
+    instagram: '_martingasperec_',
     linkedin: '',
   },
   {
@@ -341,7 +356,7 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/hozlarovej.png',
     name: 'Sophia Anna Hozlárová',
     role: t('roles.contentWritersDeputy'),
     instagram: 'hozlarova_s',
@@ -361,13 +376,7 @@ const leaders = [
     instagram: 'tot_samy_technopetya',
     linkedin: 'pbalabolkin',
   },
-  {
-    img: '/components/leaders/holder.png',
-    name: 'Martin Gašperec',
-    role: t('roles.generalMarketing'),
-    instagram: '_martingasperec_',
-    linkedin: '',
-  },
+  
 ]                                                                                                                                                                 
 
 </script>

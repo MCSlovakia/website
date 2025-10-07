@@ -274,14 +274,14 @@ const leaders = [
     img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
-    instagram: 'anna_kleinova',
+    instagram: '',
     linkedin: '',
   },
   {
     img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMemberSenior'),
-    instagram: 'tomas_klein_st',
+    instagram: '',
     linkedin: '',
   },
 ]

@@ -72,6 +72,7 @@ const projects = [
     date: 'Jún 2026',
     cta: t('home.projects.ctaJoin'),
   },
+  
 ]
 
 </script>
