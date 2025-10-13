@@ -72,11 +72,11 @@
       "title": "How It Works",
       "items": {
         "board": { "title": "Board of Trustees", "desc": "The Board of Trustees is the highest body of MCS. It consists of three members including the president of the board. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
-        "executiveBoard": { "title": "Executive Board", "desc": "The Executive Board has five members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules." },
+        "executiveBoard": { "title": "Executive Board", "desc": "The Executive Board has four members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules." },
         "director": { "title": "Director", "desc": "The Director manages the daily operations of MCS, coordinates projects, and represents the organization externally." },
         "auditor": { "title": "Auditor", "desc": "The Auditor supervises the financial and administrative correctness of MCS operations." },
         "sectionLeaders": { "title": "Section Leaders", "desc": "Six Section Leaders ensure running key areas of preparation and implementation of MCS projects." },
-        "volunteers": { "title": "Volunteers", "desc": "A team of 50 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
+        "volunteers": { "title": "Volunteers", "desc": "A team of 65 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
       }
     },
     "values": {
