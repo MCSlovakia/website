@@ -4,13 +4,14 @@
       <h1 class="md:text-5xl sm:text-3xl text-2xl">{{t('header.articles')}}</h1>
       <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <ArticleCard
-          v-for="(article, index) in pagedArticles"
-          :key="index"
-          :img="article.img"
-          :title="article.title"
-          :excerpt="article.excerpt"
-          :author="article.author"
-        />
+        v-for="(article, index) in pagedArticles"
+        :key="index"
+        :img="article.image"
+        :title="article.title"
+        :excerpt="article.excerpt"
+        :author="(article.authors && article.authors.join(', ')) || article.author"
+        :to="localePath({ name: 'articles-slug', params: { slug: article.slug } })"
+      />
       </div>
       <div class="flex gap-2 justify-center mt-6" v-if="pageCount > 1">
         <ButtonSec
@@ -40,34 +41,54 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from '#imports';
-const { t } = useI18n();
-import { ref, computed } from 'vue'
+import { useI18n, useLocalePath } from '#imports';
+const { t, locale } = useI18n();
+const localePath = useLocalePath();
+import { ref, computed } from 'vue';
 import JoinUs from "~/components/joinUs.vue";
 import ArticleCard from "~/components/articles/articleCard.vue";
 import ButtonSec from '~/components/buttonSec.vue';
 
-const pageSize = 18
-const currentPage = ref(1)
-const pageCount = computed(() => Math.ceil(articlesContent.length / pageSize))
+// Static JSON data generated/maintained in the repo per locale
+import skArticles from '~/data/articles/sk.json';
+import enArticles from '~/data/articles/en.json';
+
+const pageSize = 18;
+const currentPage = ref(1);
+
+type Article = {
+  title: string;
+  slug?: string;
+  date?: string;
+  author?: string;
+  authors?: string[];
+  image?: string;
+  excerpt?: string;
+  body?: string;
+};
+
+const allArticles = computed<Record<string, Article[]>>(() => ({
+  sk: skArticles as Article[],
+  en: enArticles as Article[],
+}));
+
+const articlesContent = computed<Article[]>(() => {
+  const lang = locale.value === 'en' ? 'en' : 'sk';
+  return allArticles.value[lang] ?? [];
+});
+
+const pageCount = computed(() =>
+  Math.max(1, Math.ceil(articlesContent.value.length / pageSize))
+);
 
 const pagedArticles = computed(() =>
-    articlesContent.slice((currentPage.value - 1) * pageSize, currentPage.value * pageSize)
-)
+  articlesContent.value.slice((currentPage.value - 1) * pageSize, currentPage.value * pageSize)
+);
 
 function goToPage(page: number) {
   if (page >= 1 && page <= pageCount.value) {
-    currentPage.value = page
+    currentPage.value = page;
   }
 }
-
-const articlesContent = [
-  // {
-  //   img: 'https://example.com/article1.png',
-  //   title: 'Model Conferences Slovakia: Budúcnosť lídrov',
-  //   excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
-  //   author: 'Redakcia',
-  // }
-]
 
 </script>

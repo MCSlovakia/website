@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: MCSlovakia/website
+  branch: content # editors commit here; devs merge to main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  # Slovak articles
+  - name: "articles_sk"
+    label: "Articles (SK)"
+    label_singular: "Article (SK)"
+    folder: "content/articles/sk"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Used in the URL" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author (single)", name: "author", widget: "string", required: false }
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
+        required: false
+        field: { label: "Author name", name: "name", widget: "string" }
+      - { label: "Card Image", name: "image", widget: "image", required: false }
+      - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # English articles
+  - name: "articles_en"
+    label: "Articles (EN)"
+    label_singular: "Article (EN)"
+    folder: "content/articles/en"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Used in the URL" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author (single)", name: "author", widget: "string", required: false }
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
+        required: false
+        field: { label: "Author name", name: "name", widget: "string" }
+      - { label: "Card Image", name: "image", widget: "image", required: false }
+      - { label: "Hero Image", name: "heroImage", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
