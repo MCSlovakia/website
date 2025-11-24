@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-      to="/articles"
+      :to="`/posts/${slug}`"
       class="rounded hover:shadow-[0px_4px_10px_0px_rgba(9,24,81,0.15)] transition duration-200 bg-mcs-grey group"
   >
     <NuxtImg
@@ -27,5 +27,6 @@ const props = defineProps<{
   title?: string
   excerpt?: string
   author?: string
+  slug: string
 }>()
 </script>
