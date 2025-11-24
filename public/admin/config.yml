@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: MCSlovakia/website
+  branch: main
+  auth_scope: repo
+  open_authoring: true
+  client_id: "xxx"
+  client_secret: "xxx"
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Články"
+    label_singular: "Článok"
+    folder: "content/posts"
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"  # URL bude /posts/slug
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", default: "{{now}}" }
+      - { label: "Author", name: "author", widget: "string", default: "MCS" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Stránky"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
