@@ -2,6 +2,8 @@ backend:
   name: github
   repo: MCSlovakia/website
   branch: content # editors commit here; devs merge to main
+  base_url: https://sveltia-cms-auth.services-b48.workers.dev
+  site_id: mcslovakia.com
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
