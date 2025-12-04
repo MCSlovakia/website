@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:articles && nuxt build",
+    "start": "node .output/server/index.mjs",
     "dev": "nuxt dev",
     "generate": "npm run build:articles && nuxt generate",
     "preview": "nuxt preview",

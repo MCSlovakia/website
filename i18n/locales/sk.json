@@ -77,7 +77,7 @@
         },
         "executiveBoard": {
           "title": "Výkonná rada",
-          "desc": "Výkonná rada má päť členov a dohliada na riaditeľa, smerovanie MCS a plánovanie aktivít. Vydáva nariadenia a upravuje interné pravidlá."
+          "desc": "Výkonná rada má štyroch členov a dohliada na riaditeľa, smerovanie MCS a plánovanie aktivít organizácie. Vydáva nariadenia a upravuje interné pravidlá."
         },
         "director": {
           "title": "Riaditeľ",
@@ -93,7 +93,7 @@
         },
         "volunteers": {
           "title": "Dobrovoľnici",
-          "desc": "Dobrovoľnícky tím tvorí 40 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí."
+          "desc": "Dobrovoľnícky tím tvorí 65 mladých nadšencov, ktorí organizujú podujatia a šíria povedomie o diplomacii medzi mládežou doma aj v zahraničí."
         }
       }
     },
