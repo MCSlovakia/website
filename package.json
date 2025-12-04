@@ -3,11 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "npm run build:articles && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npm run build:articles && nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "build:articles": "node scripts/build-articles-json.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
@@ -21,6 +22,8 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^17.0.0",
     "prettier": "3.6.2"
   },
   "engines": {

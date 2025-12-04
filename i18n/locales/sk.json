@@ -178,12 +178,30 @@
     "enables": {
       "title": "Vaša podpora umožňuje",
       "items": {
-        "leaders": { "title": "Vzdelávanie budúcich lídrov", "desc": "Vaša podpora pomáha formovať generáciu mladých, ktorí chcú zodpovedne ovplyvňovať svet okolo seba." },
-        "impact": { "title": "Skutočný spoločenský dopad", "desc": "Konferencie a programy MCS rozvíjajú schopnosti, ktoré mladí využijú v škole, práci aj verejnom živote." },
-        "criticalThinkingDialogue": { "title": "Podpora kritického myslenia a dialógu", "desc": "Investujete do zručností, ktoré budujú otvorenú, tolerantnú a informovanú spoločnosť." },
-        "transparencyNonprofit": { "title": "Transparentná a nezisková organizácia", "desc": "Každé euro smeruje priamo do vzdelávacích aktivít, nie do zisku. Sme otvorení a zodpovední voči darcom aj partnerom." },
-        "partnershipValue": { "title": "Partnerstvo s dlhodobou hodnotou", "desc": "Firmám ponúkame zmysluplnú spoluprácu, viditeľnosť a možnosť podieľať sa na rozvoji občianskej spoločnosti." },
-        "communityChange": { "title": "Komunita s vášňou pre zmenu", "desc": "Pridáte sa k ľuďom, ktorým záleží na budúcnosti Slovenska – vzdelaných, angažovaných a ochotných konať." }
+        "leaders": {
+          "title": "Vzdelávanie budúcich lídrov",
+          "desc": "Vaša podpora pomáha formovať generáciu mladých, ktorí chcú zodpovedne ovplyvňovať svet okolo seba."
+        },
+        "impact": {
+          "title": "Skutočný spoločenský dopad",
+          "desc": "Konferencie a programy MCS rozvíjajú schopnosti, ktoré mladí využijú v škole, práci aj verejnom živote."
+        },
+        "criticalThinkingDialogue": {
+          "title": "Podpora kritického myslenia a dialógu",
+          "desc": "Investujete do zručností, ktoré budujú otvorenú, tolerantnú a informovanú spoločnosť."
+        },
+        "transparencyNonprofit": {
+          "title": "Transparentná a nezisková organizácia",
+          "desc": "Každé euro smeruje priamo do vzdelávacích aktivít, nie do zisku. Sme otvorení a zodpovední voči darcom aj partnerom."
+        },
+        "partnershipValue": {
+          "title": "Partnerstvo s dlhodobou hodnotou",
+          "desc": "Firmám ponúkame zmysluplnú spoluprácu, viditeľnosť a možnosť podieľať sa na rozvoji občianskej spoločnosti."
+        },
+        "communityChange": {
+          "title": "Komunita s vášňou pre zmenu",
+          "desc": "Pridáte sa k ľuďom, ktorým záleží na budúcnosti Slovenska – vzdelaných, angažovaných a ochotných konať."
+        }
       }
     },
     "ways": {
@@ -218,7 +236,7 @@
           "1": "Podporujete konkrétnu misiu",
           "2": "Dostanete pozvánky a novinky"
         },
-  "paragraph": "Chcete začať? Napíšte na {email} IBAN: SK14 1100 0000 0029 4727 1726",
+        "paragraph": "Chcete začať? Napíšte na {email} IBAN: SK14 1100 0000 0029 4727 1726",
         "button": "Napísať mail"
       }
     }
@@ -283,7 +301,10 @@
       }
     }
   },
-  "social":{
-    "follow":"Sledujte nás"
+  "social": {
+    "follow": "Sledujte nás"
+  },
+  "articles": {
+    "readAlso": "Čítať ďalej"
   }
 }

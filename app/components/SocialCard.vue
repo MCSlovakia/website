@@ -20,7 +20,7 @@ import { useI18n } from "vue-i18n";
 
 const router = useRouter();
 const { t } = useI18n();
-const links = [
+const links = [   
   { name: "LinkedIn", icon: "ri-linkedin-box-fill", url: "https://www.linkedin.com/company/model-conferences-slovakia/" },
   { name: "Instagram", icon: "ri-instagram-fill", url: "https://www.instagram.com/mc.slovakia/" },
   { name: "TikTok", icon: "ri-tiktok-fill", url: "https://www.tiktok.com/@mc.slovakia" },
