@@ -1,5 +1,5 @@
 ---
-title: Ja diplomacia vôbec potrebná v našom modernom svete?
+title: Je diplomacia vôbec potrebná v našom modernom svete?
 slug: diplomacia-v-modernom-svete
 date: 2025-12-11T10:55:00.000+01:00
 author: ""
@@ -35,4 +35,6 @@ Určite áno. Svet je dnes zložitejší, rýchlejší a zároveň krehkejší. 
 
 ## **Záver**
 
-Veka ľudí sa domnieva, že diplomacia je v momentálnom stave našej modernej spoločnosti iba nástroj minulosti. **Pravda je však** **niekde úplne inde, diplomacia práve** **je oporou budúcnosti.** V modernom svete sa jej podoba mení, ale jej podstata, teda budovanie mieru, spolupráce a vzájomného porozumenia, zostáva rovnaká. Ak chceme čeliť výzvam 21. storočia spoločne a efektívne, diplomaciu budeme potrebovať viac než kedykoľvek predtým.
+Veka ľudí sa domnieva, že diplomacia je v momentálnom stave našej modernej spoločnosti iba nástroj minulosti. **Pravda je však** **niekde úplne inde, diplomacia práve** **je oporou budúcnosti.** V modernom svete sa jej podoba mení, ale jej podstata, teda budovanie mieru, spolupráce a vzájomného porozumenia, zostáva rovnaká. Ak chceme čeliť výzvam 21. storočia spoločne a efektívne, diplomaciu budeme potrebovať viac než kedykoľvek predtým.\
+\
+Fotografie: VICMUN 2025 Organizačný Tím
