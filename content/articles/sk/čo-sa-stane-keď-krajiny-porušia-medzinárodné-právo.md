@@ -6,8 +6,8 @@ author: ""
 authors:
   - Zoe Potocká
   - "Korektúra: Adam Dacho"
-image: /uploads/img_5859.heic
-heroImage: /uploads/img_5856.heic
+image: /uploads/img_5859.png
+heroImage: /uploads/img_5856.png
 excerpt: Medzinárodné právo je možno brať aj ako poistenie, ktoré znemožňuje,
   respektíve predchádza situáciam, kde by sa jeden štát mohol správať ako tyran
   či už vnútroštátne alebo voči ostatným štátom. Keďže vďaka medzinárodným
