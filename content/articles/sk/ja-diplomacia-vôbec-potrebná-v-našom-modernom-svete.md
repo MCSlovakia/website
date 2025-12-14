@@ -2,8 +2,9 @@
 title: Ja diplomacia vôbec potrebná v našom modernom svete?
 slug: diplomacia-v-modernom-svete
 date: 2025-12-11T10:55:00.000+01:00
-author: Hana Dubeková
+author: ""
 authors:
+  - Hana Dubeková
   - "Korektúra: Adam Dacho"
 image: /uploads/dsc06165.jpg
 heroImage: /uploads/dsc09726.jpg
