@@ -2,8 +2,9 @@
 title: Čo sa stane keď krajiny porušia medzinárodné právo?
 slug: porusenie-medzinarodneho-prava
 date: 2025-12-11T12:00:00.000+01:00
-author: Zoe Potocká
+author: ""
 authors:
+  - Zoe Potocká
   - "Korektúra: Adam Dacho"
 image: /uploads/img_5859.heic
 heroImage: /uploads/img_5856.heic
@@ -45,4 +46,6 @@ Tie hrajú dôležitú úlohu pri implementácii medzinárodného práva. Niekto
 
 ## **Neoddeliteľná súčasť** 
 
-Medzinárodné právo je neoddeliteľnou súčasťou našich životov a  zasahuje do nášho každodenného fungovania oveľa viac ako si myslime. Okrem benefitov, ktoré prináša kooperácia jednotlivých štátov, medzinárodne právo prejavuje rešpekt jedného štátu voči druhému. Je to skutočné právne umenie.
+Medzinárodné právo je neoddeliteľnou súčasťou našich životov a  zasahuje do nášho každodenného fungovania oveľa viac ako si myslime. Okrem benefitov, ktoré prináša kooperácia jednotlivých štátov, medzinárodne právo prejavuje rešpekt jedného štátu voči druhému. Je to skutočné právne umenie.\
+\
+Fotografie: Adam Dacho
