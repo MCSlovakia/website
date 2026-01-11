@@ -2,10 +2,11 @@
 title: Je OSN stále dôležité? Akú úlohu zohráva dnes?
 slug: je-osn-stale-dolezite
 date: 2025-12-12T13:00:00.000+01:00
-author: Sophia Anna Hozlárová
+author: ""
 authors:
+  - Sophia Anna Hozlárová
   - "Korektúra: Adam Dacho"
-image: /uploads/img_3082.heic.heif
+image: /uploads/img_3082.heic.png
 heroImage: /uploads/20250808_114157.jpg
 excerpt: Aj napriek nedostatkom je OSN dnes nenahraditeľné. V svete plnom
   napätia, polarizácie a globálnych problémov je OSN jednou z mála platforiem,
@@ -50,4 +51,6 @@ Aj napriek nedostatkom je OSN dnes nenahraditeľné. V svete plnom napätia, pol
 
 ## **Záver**
 
-OSN stále zohráva významnú úlohu vo svete ako garant mieru, obranca práv a koordinátor pri riešení globálnych výziev. Jeho existencia je síce spojená s výzvami a nutnosťou reformy, no jeho dôležitosť sa nespochybňuje. V čase neistoty a globálnych kríz je OSN možno potrebnejšie než kedykoľvek predtým.
+OSN stále zohráva významnú úlohu vo svete ako garant mieru, obranca práv a koordinátor pri riešení globálnych výziev. Jeho existencia je síce spojená s výzvami a nutnosťou reformy, no jeho dôležitosť sa nespochybňuje. V čase neistoty a globálnych kríz je OSN možno potrebnejšie než kedykoľvek predtým.\
+\
+Fotografie: Tomáš Klein
