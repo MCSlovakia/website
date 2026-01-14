@@ -2,7 +2,7 @@
   "header": {
     "about": "O nás",
     "projects": "Projekty",
-    "partners": "Partneri",
+    "partners": "Spolupracujeme s",
     "support-us": "Podporte nás",
     "articles": "Články"
   },
@@ -46,7 +46,7 @@
       "ctaMore": "Prečítať viac článkov"
     },
     "partners": {
-      "title": "Naši partneri",
+      "title": "Spolupracujeme s",
       "ctaMore": "Zistiť o partneroch"
     },
     "volunteerCta": {
@@ -257,7 +257,7 @@
     "links": {
       "about": "O nás",
       "projects": "Projekty",
-      "partners": "Partneri",
+      "partners": "Spolupracujeme s",
       "support": "Podporte nás",
       "articles": "Články",
       "gallery": "Galéria",
@@ -283,7 +283,7 @@
     "title": "Projekty"
   },
   "partnersPage": {
-    "permanent": "Stáli partneri",
+    "permanent": "Spolupracujeme s",
     "project": "Projektoví partneri",
     "cta": {
       "title": "Staň sa partnerom",
