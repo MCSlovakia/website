@@ -21,7 +21,7 @@
           <h3 class="font-semibold text-txt-white-prim mb-5 md:text-base text-sm">{{ section.name }}</h3>
           <ul class="flex flex-col gap-3 md:text-base text-sm">
             <li v-for="(link, lidx) in section.links" :key="lidx">
-              <NuxtLink :to="link.to" class="hover:text-mcs-orange-light font-normal mb-3 transition duration-150 text-txt-white-sec">
+              <NuxtLink :to="link.to" :external="link.external" :target="link.external ? '_blank' : undefined" class="hover:text-mcs-orange-light font-normal mb-3 transition duration-150 text-txt-white-sec">
                 {{ link.name }}
               </NuxtLink>
             </li>
@@ -49,7 +49,7 @@
       </div>
       <div class="flex sm:flex-row flex-col sm:justify-between sm:items-center items-start text-txt-white-sec text-xs sm:gap-5 gap-3">
         <p>© Model Conferences Slovakia {{ new Date().getFullYear() }}</p>
-        <NuxtLink to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?tab=t.0#heading=h.8gi0tqvdkg11"
+        <NuxtLink to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?usp=sharing"
                   class="hover:text-mcs-orange-light transition duration-150">{{t('footer.links.privacy')}}
         </NuxtLink>
       </div>
@@ -86,7 +86,7 @@ const footerLinks = computed(() => [
       { name: t('footer.links.media'), to: localePath("/") },
       { name: t('footer.links.pressReleases'), to: localePath("/") },
       { name: t('footer.links.annualReports'), to: localePath("/") },
-      { name: t('footer.links.legalDocs'), to: localePath("/") },
+      { name: t('footer.links.legalDocs'), to: "/components/statut.pdf", external: true },
       { name: t('footer.links.financialStatements'), to: localePath("/") },
     ]
   }

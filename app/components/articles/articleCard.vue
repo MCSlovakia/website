@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
-      to="/articles"
-      class="rounded hover:shadow-[0px_4px_10px_0px_rgba(9,24,81,0.15)] transition duration-200 bg-mcs-grey group"
+	  :to="to"
+	  class="rounded hover:shadow-[0px_4px_10px_0px_rgba(9,24,81,0.15)] transition duration-200 bg-mcs-grey group"
   >
     <NuxtImg
         class="w-full h-[240px] object-cover rounded-t"
@@ -27,5 +27,6 @@ const props = defineProps<{
   title?: string
   excerpt?: string
   author?: string
+  to?: string | object
 }>()
 </script>
