@@ -112,7 +112,7 @@
     </div>
   </div>
 
-  <!-- <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
+  <div v-if="articlesData.length > 0" class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px]">
     <div class="flex flex-col md:gap-6 gap-5 xl:w-[1180px] lg:w-[940px] w-full">
       <div class="flex items-center justify-between gap-5 flex-wrap">
         <h2 class="md:text-[40px] text-3xl">{{ t('home.articles.title') }}</h2>
@@ -123,16 +123,17 @@
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-4">
         <ArticleCard
-            v-for="(a, idx) in articlesContent"
+            v-for="(a, idx) in articlesData"
             :key="idx"
-            :img="a.img"
+            :img="a.image ?? undefined"
             :title="a.title"
             :excerpt="a.excerpt"
-            :author="a.author"
+            :author="(a.authors && a.authors.join(', ')) || a.author"
+            :to="localePath({ name: 'articles-slug', params: { slug: a.slug } })"
         />
       </div>
     </div>
-  </div> -->
+  </div>
 
   <LazyJoinUs />
 
@@ -191,11 +192,45 @@ import PressMentionCard from '@/components/main/pressMentionCard.vue';
 import CtaBig from "@/components/ctaBig.vue";
 
 import {useRouter} from "vue-router";
+import { computed } from 'vue';
 const router = useRouter();
 const localePath = useLocalePath();
 
 import {useI18n} from "#imports";
-const { t } = useI18n()
+const { t, locale } = useI18n()
+
+// Import article data from JSON files
+import skArticles from '~/data/articles/sk.json';
+import enArticles from '~/data/articles/en.json';
+
+type Article = {
+  title: string;
+  slug?: string;
+  date?: string;
+  author?: string;
+  authors?: string[];
+  image?: string | null;
+  heroImage?: string | null;
+  excerpt?: string;
+  body?: string;
+};
+
+const allArticles = computed<Record<string, Article[]>>(() => ({
+  sk: skArticles as unknown as Article[],
+  en: enArticles as unknown as Article[],
+}));
+
+const articlesData = computed<Article[]>(() => {
+  const lang = locale.value === 'en' ? 'en' : 'sk';
+  const articles = allArticles.value[lang] ?? [];
+  // Return the 3 most recent articles
+  return [...articles]
+    .sort((a, b) => {
+      if (!a.date || !b.date) return 0;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    })
+    .slice(0, 3);
+});
 
 function openVolunteerForm() {
   window.open('https://docs.google.com/forms/d/e/1FAIpQLSeuE7h_LyGQ2KK1ncA2_blFCcS6-8uP8vbBEs8hdy4Tkdg5OQ/viewform', '_blank');
@@ -286,27 +321,7 @@ const leaders = [
   },
 ]
 
-const articlesContent = [
-  {
-    img: 'https://example.com/article1.png',
-    title: 'Model Conferences Slovakia: Budúcnosť lídrov',
-    excerpt: 'MCS organizuje simulácie OSN a NATO, kde študenti získavajú reálne skúsenosti.',
-    author: 'Redakcia',
-  },
-  {
-    img: 'https://example.com/article2.png',
-    title: 'Ako MCS formuje budúcich lídrov',
-    excerpt: 'Model Conferences Slovakia ponúka študentom príležitosť rozvíjať zručnosti v diplomacii a vedení.',
-    author: 'Redakcia',
-  },
 
-  {
-    img: 'https://example.com/article3.png',
-    title: 'MCS: Komunita mladých lídrov',
-    excerpt: 'Model Conferences Slovakia je platforma pre študentov, ktorí chcú aktívne formovať svet.',
-    author: 'Redakcia',
-  },
-]
 
 import partnerYubico from '~/assets/partners/partner=yubico.png'
 import partnerDofe from '~/assets/partners/partner=dofe.png'

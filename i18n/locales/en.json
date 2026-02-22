@@ -71,39 +71,82 @@
     "structure": {
       "title": "How It Works",
       "items": {
-        "board": { "title": "Board of Trustees", "desc": "The Board of Trustees is the highest body of MCS. It consists of three members including the president of the board. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development." },
-        "executiveBoard": { "title": "Executive Board", "desc": "The Executive Board has four members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules." },
-        "director": { "title": "Director", "desc": "The Director manages the daily operations of MCS, coordinates projects, and represents the organization externally." },
-        "auditor": { "title": "Auditor", "desc": "The Auditor supervises the financial and administrative correctness of MCS operations." },
-        "sectionLeaders": { "title": "Section Leaders", "desc": "Six Section Leaders ensure running key areas of preparation and implementation of MCS projects." },
-        "volunteers": { "title": "Volunteers", "desc": "A team of 65 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad." }
+        "board": {
+          "title": "Board of Trustees",
+          "desc": "The Board of Trustees is the highest body of MCS. It consists of three members including the president of the board. It handles legal matters, approves accounting, the annual report, statute changes, and oversees the organization’s development."
+        },
+        "executiveBoard": {
+          "title": "Executive Board",
+          "desc": "The Executive Board has five members and oversees the Director, MCS strategy, and activity planning. It issues regulations and adjusts internal rules."
+        },
+        "director": {
+          "title": "Director",
+          "desc": "The Director manages the daily operations of MCS, coordinates projects, and represents the organization externally."
+        },
+        "auditor": {
+          "title": "Auditor",
+          "desc": "The Auditor supervises the financial and administrative correctness of MCS operations."
+        },
+        "sectionLeaders": {
+          "title": "Section Leaders",
+          "desc": "Six Section Leaders ensure running key areas of preparation and implementation of MCS projects."
+        },
+        "volunteers": {
+          "title": "Volunteers",
+          "desc": "A team of 50 young enthusiasts organize events and spread awareness of diplomacy among youth at home and abroad."
+        }
       }
     },
     "values": {
       "title": "Our Values",
       "items": {
-        "criticalThinking": { "title": "Critical Thinking and Debate Skills", "desc": "MCS supports the development of analytical and logical thinking as well as the ability to formulate and defend one’s views." },
-        "activeCitizenship": { "title": "Active Citizenship and Engagement", "desc": "We prepare young people for active participation in society and motivate them to help solve issues on a local, national, and global level." },
-        "dialogueUnderstanding": { "title": "Dialogue and Understanding", "desc": "We believe in the power of respectful, active dialogue as a tool for creating consensus among different views and interests." },
-        "personalGrowth": { "title": "Personal Growth and Self‑Expression", "desc": "MCS creates a safe space to build confidence, express oneself, and present ideas without fear." },
-        "globalChallengesEducation": { "title": "Education on Global Challenges", "desc": "An important value to our organisation is raising awareness of international relations, diplomacy, and today’s global challenges." },
-        "creativitySolutions": { "title": "Creativity and Problem‑Solving", "desc": "We encourage young people to be proactive and seek innovative, constructive solutions to the world’s problems." }
+        "criticalThinking": {
+          "title": "Critical Thinking and Debate Skills",
+          "desc": "MCS supports the development of analytical and logical thinking as well as the ability to formulate and defend one’s views."
+        },
+        "activeCitizenship": {
+          "title": "Active Citizenship and Engagement",
+          "desc": "We prepare young people for active participation in society and motivate them to help solve issues on a local, national, and global level."
+        },
+        "dialogueUnderstanding": {
+          "title": "Dialogue and Understanding",
+          "desc": "We believe in the power of respectful, active dialogue as a tool for creating consensus among different views and interests."
+        },
+        "personalGrowth": {
+          "title": "Personal Growth and Self‑Expression",
+          "desc": "MCS creates a safe space to build confidence, express oneself, and present ideas without fear."
+        },
+        "globalChallengesEducation": {
+          "title": "Education on Global Challenges",
+          "desc": "An important value to our organisation is raising awareness of international relations, diplomacy, and today’s global challenges."
+        },
+        "creativitySolutions": {
+          "title": "Creativity and Problem‑Solving",
+          "desc": "We encourage young people to be proactive and seek innovative, constructive solutions to the world’s problems."
+        }
       }
     },
     "founders": {
       "title": "Founders",
       "items": {
-        "adam": { "desc": "Adam (16) studies at the bilingual Jur Hronec Grammar School in Bratislava. Having the privilege of growing up in Taiwan and Moldova, these experiences shaped his interest in diplomacy. He actively participates in MUN, MEP, debates, and moot courts. By establishing this initiative, he aims to nurture critical thinking and inspire a deeper engagement with international affairs among students all over the globe." },
-        "hana": { "desc": "Hana studies international law at the Amsterdam University College. She has attended dozens of model conferences, while also helping organize many of them. She partakes in the Duke of Edinburgh International Award and works with the youth. At MCS she aspires to make these experiences accessible to others and support further education about diplomacy." }
+        "adam": {
+          "desc": "Adam (16) studies at the bilingual Jur Hronec Grammar School in Bratislava. Having the privilege of growing up in Taiwan and Moldova, these experiences shaped his interest in diplomacy. He actively participates in MUN, MEP, debates, and moot courts. By establishing this initiative, he aims to nurture critical thinking and inspire a deeper engagement with international affairs among students all over the globe."
+        },
+        "hana": {
+          "desc": "Hana studies international law at the Amsterdam University College. She has attended dozens of model conferences, while also helping organize many of them. She partakes in the Duke of Edinburgh International Award and works with the youth. At MCS she aspires to make these experiences accessible to others and support further education about diplomacy."
+        }
       }
     },
-    "leadership": { "title": "Leadership" }
+    "leadership": {
+      "title": "Leadership"
+    }
   },
   "roles": {
     "directorFemale": "Director",
     "executiveBoardChair": "Executive Board President",
     "executiveBoardViceChair": "Executive Board Vice President",
     "executiveBoardMember": "Executive Board Member",
+    "executiveBoardMemberFemale": "Executive Board Member",
     "auditorFemale": "Auditor",
     "boardMember": "Board of Trustees Member",
     "boardChairFemale": "Board of Trustees President",
@@ -111,32 +154,59 @@
     "executiveBoardChairJunior": "Executive Board President",
     "organizationalTeamLeader": "Section Leader for the Organising Team",
     "organizationalTeamDeputy": "Deputy Section Leader for the Organising Team",
+    "chiefPeopleOfficer": "Chief People Officer",
     "hrLeader": "Section Leader for HR",
     "hrDeputy": "Deputy Section Leader for HR",
     "marketingLeader": "Section Leader for Marketing",
     "marketingDeputy": "Deputy Section Leader for Marketing",
+    "generalMarketingLeader": "Subsection Leader for Marketing: General Marketing",
+    "contentCreationLeader": "Subsection Leader for Marketing: Content Creation",
     "marketingContentCreationLeader": "Subsection Leader for Marketing: Content Creation",
     "spokesperson": "Spokesperson of the Organisation",
     "accountingLeader": "Section Leader for Accounting",
     "accountingDeputy": "Deputy Section Leader for Accounting",
     "contentWritersLeader": "Section Leader for Content Writers",
     "contentWritersDeputy": "Deputy Section Leader for Content Writers",
+    "chiefTechnicalOfficer": "Chief Technical Officer",
     "itLeader": "Section Leader for IT",
     "itDeputy": "Deputy Section Leader for IT",
     "marketingManagerFemale": "Marketing Manager",
     "generalMarketing":"Subsection Leader for Marketing: General Marketing"
   },
   "support": {
-    "hero": { "title": "Support the Education and Growth of Future Leaders", "desc": "Help us develop critical thinking, public speaking, and civic engagement among students globally. Whether you’re an individual or a company, your support matters.", "ctaWays": "See Ways to Support", "ctaPartner": "Become a Partner" },
+    "hero": {
+      "title": "Support the Education and Growth of Future Leaders",
+      "desc": "Help us develop critical thinking, public speaking, and civic engagement among students globally. Whether you’re an individual or a company, your support matters.",
+      "ctaWays": "See Ways to Support",
+      "ctaPartner": "Become a Partner"
+    },
     "enables": {
       "title": "Your Support Makes Possible",
       "items": {
-        "leaders": { "title": "Educating Future Leaders", "desc": "Your support helps shape a generation of young people who want to influence the world around them and engage with it in a responsible manner." },
-        "impact": { "title": "Real Social Impact", "desc": "MCS conferences and programmes build skills that young people use in school, work, and public life." },
-        "criticalThinkingDialogue": { "title": "Supporting Critical Thinking and Dialogue", "desc": "You invest in skills that build an open, tolerant, and informed society." },
-        "transparencyNonprofit": { "title": "Transparent, Non‑Profit Organization", "desc": "Every euro goes directly to educational activities, with no profit for the founders or leadership. We are open and accountable to donors and partners." },
-        "partnershipValue": { "title": "Partnership with Long‑Term Value", "desc": "We offer companies meaningful collaboration, visibility, and a chance to strengthen civil society." },
-        "communityChange": { "title": "A Community Driven by Change", "desc": "You get to join people who care about the world’s future. Become educated, engaged, and ready to act." }
+        "leaders": {
+          "title": "Educating Future Leaders",
+          "desc": "Your support helps shape a generation of young people who want to influence the world around them and engage with it in a responsible manner."
+        },
+        "impact": {
+          "title": "Real Social Impact",
+          "desc": "MCS conferences and programmes build skills that young people use in school, work, and public life."
+        },
+        "criticalThinkingDialogue": {
+          "title": "Supporting Critical Thinking and Dialogue",
+          "desc": "You invest in skills that build an open, tolerant, and informed society."
+        },
+        "transparencyNonprofit": {
+          "title": "Transparent, Non‑Profit Organization",
+          "desc": "Every euro goes directly to educational activities, with no profit for the founders or leadership. We are open and accountable to donors and partners."
+        },
+        "partnershipValue": {
+          "title": "Partnership with Long‑Term Value",
+          "desc": "We offer companies meaningful collaboration, visibility, and a chance to strengthen civil society."
+        },
+        "communityChange": {
+          "title": "A Community Driven by Change",
+          "desc": "You get to join people who care about the world’s future. Become educated, engaged, and ready to act."
+        }
       }
     },
     "ways": {
@@ -144,27 +214,42 @@
       "taxDonate": {
         "title": "Donate 2% of Your Taxes",
         "desc": "Decide where a part of your taxes go. Support the education and growth of young leaders.",
-        "points": { "0": "Just fill in the government 2% form", "1": "Add Company ID (IČO): 57 034 265", "2": "Submit to the tax office or to your employer. Don’t miss the end-of-April deadline." },
+        "points": {
+          "0": "Just fill in the government 2% form",
+          "1": "Add Company ID (IČO): 57 034 265",
+          "2": "Submit to the tax office or to your employer. Don’t miss the end-of-April deadline."
+        },
         "paragraph": "Decide where a part of your taxes go. Support the education and growth of young leaders.",
         "button": "Become a Partner"
       },
       "oneTimeDonation": {
         "title": "One‑Time Donation",
         "desc": "Even a one‑time contribution makes a difference. Support us via a bank transfer.",
-        "points": { "0": "Supports projects and conferences", "1": "Helps young people who want to grow", "2": "Transparent use of funds" },
+        "points": {
+          "0": "Supports projects and conferences",
+          "1": "Helps young people who want to grow",
+          "2": "Transparent use of funds"
+        },
         "paragraph": "IBAN: SK14 1100 0000 0029 4727 1726",
         "button": "Request Confirmation"
       },
       "recurringSupport": {
         "title": "Recurring Support",
         "desc": "A small monthly contribution = a big difference.",
-        "points": { "0": "Enables long‑term planning", "1": "You support a specific mission", "2": "You receive invitations and updates" },
+        "points": {
+          "0": "Enables long‑term planning",
+          "1": "You support a specific mission",
+          "2": "You receive invitations and updates"
+        },
         "paragraph": "Want to start? Write to {email} or set up a repeating payment to IBAN: SK14 1100 0000 0029 4727 1726",
         "button": "Send Email"
       }
     }
   },
-  "transparency": { "title": "We Act Transparently and Responsibly", "desc": "We believe that trust is built through action. We publish all key documents, regularly evaluate our activities, and direct every euro to where it has the greatest impact, which means investing it into the education and development of young people." },
+  "transparency": {
+    "title": "We Act Transparently and Responsibly",
+    "desc": "We believe that trust is built through action. We publish all key documents, regularly evaluate our activities, and direct every euro to where it has the greatest impact, which means investing it into the education and development of young people."
+  },
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -185,20 +270,26 @@
       "privacy": "Privacy Policy",
       "processing": "Personal Data Processing"
     },
-    "org": { 
-      "name": "Model Conferences Slovakia n.o.", 
-      "registration": "Registered at the Ministry of Interior of the Slovak Republic, registration number OVVS-433474/637/2025-NO", 
-      "address": "Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto", 
-      "ico": "Company ID: 57 034 265", 
-      "iban": "IBAN: SK14 1100 0000 0029 4727 1726" 
+    "org": {
+      "name": "Model Conferences Slovakia n.o.",
+      "registration": "Registered at the Ministry of Interior of the Slovak Republic, registration number OVVS-433474/637/2025-NO",
+      "address": "Dobrovského 2200/6, 811 08 Bratislava — Staré Mesto",
+      "ico": "Company ID: 57 034 265",
+      "iban": "IBAN: SK14 1100 0000 0029 4727 1726"
     },
     "copyright": "© Model Conferences Slovakia"
   },
-  "projectsPage": { "title": "Projects" },
+  "projectsPage": {
+    "title": "Projects"
+  },
   "partnersPage": {
     "permanent": "Long-term Partners",
     "project": "Project Partners",
-    "cta": { "title": "Become a Partner", "desc": "Become a partner of Model Conferences Slovakia and help us develop critical thinking, dialogue, and civic engagement among youth. Your support is an investment in education, values, and the future of Slovakia. Together we can shape a generation that will change the world.", "button": "Become a Partner" }
+    "cta": {
+      "title": "Become a Partner",
+      "desc": "Become a partner of Model Conferences Slovakia and help us develop critical thinking, dialogue, and civic engagement among youth. Your support is an investment in education, values, and the future of Slovakia. Together we can shape a generation that will change the world.",
+      "button": "Become a Partner"
+    }
   },
   "contactsPage": {
     "title": "Contact",
@@ -215,7 +306,10 @@
       }
     }
   },
-  "social":{
-    "follow":"Follow Us"
+  "social": {
+    "follow": "Follow Us"
+  },
+  "articles": {
+    "readAlso": "Read Also"
   }
 }
