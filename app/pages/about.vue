@@ -229,20 +229,6 @@ const leaders = [
     linkedin: 'adam-d-4b98b6290',
   },
   {
-    img: '/components/leaders/cannecka.png',
-    name: 'Emma Čanecká',
-    role: t('roles.executiveBoardMemberFemale'),
-    instagram: 'emma.canecka',
-    linkedin: 'emma-čanecká-459943373',
-  },
-  {
-    img: '/components/leaders/matilda.png',
-    name: 'Matilda Dittelová',
-    role: t('roles.executiveBoardMemberFemale'),
-    instagram: 'matildaa_dittelova_',
-    linkedin: '',
-  },
-  {
     img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
@@ -287,7 +273,7 @@ const leaders = [
   {
     img: '/components/leaders/durica.png',
     name: 'Sebastián Ďurica',
-    role: t('roles.chiefPeopleOfficer'),
+    role: t('roles.executiveBoardMember'),
     instagram: 'sibo.cc',
     linkedin: 'sebastian-durica-91b32829a',
   },
