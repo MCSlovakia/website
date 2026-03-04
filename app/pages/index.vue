@@ -285,11 +285,11 @@ const leaders = [
     linkedin: 'adam-d-4b98b6290',
   },
   {
-    img: '/components/leaders/matilda.png',
-    name: 'Matilda Dittelová',
+    img: '/components/leaders/durica.png',
+    name: 'Sebastián Ďurica',
     role: t('roles.executiveBoardMember'),
-    instagram: 'matildaa_dittelova_',
-    linkedin: '',
+    instagram: 'sibo.cc',
+    linkedin: 'sebastian-durica-91b32829a',
   },
   {
     img: '/components/leaders/katka.png',

@@ -207,12 +207,19 @@ const founders = [
 ];
 
 const leaders = [
-  {
+  {                      //je tu 2x
     img: '/components/leaders/hanka.jpg',
     name: 'Hana Huorková',
     role: t('roles.directorFemale'),
     instagram: 'huorkovaa_',
     linkedin: 'hana-huorková-3aa7602a8',
+  },
+  {                      //teiz sa znova opakuje
+    img: '/components/leaders/adam.jpg',
+    name: 'Adam Dacho',
+    role: t('roles.executiveBoardViceChair'),
+    instagram: 'adam.d.007',
+    linkedin: 'adam-d-4b98b6290',
   },
   {
     img: '/components/leaders/tomas.JPG',
@@ -229,20 +236,6 @@ const leaders = [
     linkedin: 'adam-d-4b98b6290',
   },
   {
-    img: '/components/leaders/cannecka.png',
-    name: 'Emma Čanecká',
-    role: t('roles.executiveBoardMemberFemale'),
-    instagram: 'emma.canecka',
-    linkedin: 'emma-čanecká-459943373',
-  },
-  {
-    img: '/components/leaders/matilda.png',
-    name: 'Matilda Dittelová',
-    role: t('roles.executiveBoardMemberFemale'),
-    instagram: 'matildaa_dittelova_',
-    linkedin: '',
-  },
-  {
     img: '/components/leaders/kleinova.png',
     name: 'Anna Kleinová',
     role: t('roles.boardChairFemale'),
@@ -257,7 +250,7 @@ const leaders = [
     linkedin: 'oliver-gajarský-996425370',
   },
   {
-    img: '/components/leaders/kleins.png',
+    img: '/components/leaders/kleins-2.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMember'),
     instagram: 'tomas_klein_st',
@@ -271,23 +264,23 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/vaculova.png',
+    img: '/components/leaders/vaculova-2.png',
     name: 'Lillien Vaculová',
     role: t('roles.organizationalTeamLeader'),
     instagram: 'vaculova_lillien',
     linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/novotna.png',
     name: 'Vladimíra Novotná',
     role: t('roles.organizationalTeamDeputy'),
     instagram: '',
     linkedin: '',
   },
   {
-    img: '/components/leaders/durica.png',
+    img: '/components/leaders/durica-2.png',
     name: 'Sebastián Ďurica',
-    role: t('roles.chiefPeopleOfficer'),
+    role: t('roles.executiveBoardMember'),
     instagram: 'sibo.cc',
     linkedin: 'sebastian-durica-91b32829a',
   },
@@ -313,14 +306,14 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/holder.png',
+    img: '/components/leaders/gasparec.png',
     name: 'Martin Gašperec',
     role: t('roles.generalMarketingLeader'),
     instagram: '_martingasperec_',
     linkedin: '',
   },
   {
-    img: '/components/leaders/droscinova.png',
+    img: '/components/leaders/droscinova-2.png',
     name: 'Nikola Droščínová',
     role: t('roles.contentCreationLeader'),
     instagram: 'nikinka08',
@@ -334,18 +327,18 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/bednar.png',
-    name: 'Adrián Bednár',
-    role: t('roles.accountingLeader'),
-    instagram: 'adr.bed',
-    linkedin: 'adrian-bednar',
-  },
-  {
     img: '/components/leaders/petrufova.png',
     name: 'Emma Petrufová',
-    role: t('roles.accountingDeputy'),
+    role: t('roles.accountingLeader'),
     instagram: 'epetruf',
     linkedin: '',
+  },
+  {
+    img: '/components/leaders/bednar.png',
+    name: 'Adrián Bednár',
+    role: t('roles.accountingDeputy'),
+    instagram: 'adr.bed',
+    linkedin: 'adrian-bednar',
   },
   {
     img: '/components/leaders/hozlarova.png',
@@ -369,7 +362,7 @@ const leaders = [
     linkedin: 'martin-šenkýř-334141335',
   },
   {
-    img: '/components/leaders/balabolkin.png',
+    img: '/components/leaders/balabolkin-2.png',
     name: 'Petr Balabolkin',
     role: t('roles.itDeputy'),
     instagram: 'tot_samy_technopetya',
