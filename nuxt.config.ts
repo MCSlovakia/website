@@ -7,6 +7,11 @@ declare const defineNuxtConfig: any;
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  runtimeConfig: {
+    public: {
+      gaId: process.env.NUXT_PUBLIC_GA_ID || 'G-MCP311CK1C'
+    }
+  },
   css: [
     'remixicon/fonts/remixicon.css',
     '@/assets/global.css',
