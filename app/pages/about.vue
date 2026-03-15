@@ -250,7 +250,7 @@ const leaders = [
     linkedin: 'oliver-gajarský-996425370',
   },
   {
-    img: '/components/leaders/kleins-2.png',
+    img: '/components/leaders/kleins.png',
     name: 'Tomáš Klein st.',
     role: t('roles.boardMember'),
     instagram: 'tomas_klein_st',
@@ -264,7 +264,7 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/vaculova-2.png',
+    img: '/components/leaders/vaculova.png',
     name: 'Lillien Vaculová',
     role: t('roles.organizationalTeamLeader'),
     instagram: 'vaculova_lillien',
@@ -278,7 +278,7 @@ const leaders = [
     linkedin: '',
   },
   {
-    img: '/components/leaders/durica-2.png',
+    img: '/components/leaders/durica.png',
     name: 'Sebastián Ďurica',
     role: t('roles.executiveBoardMember'),
     instagram: 'sibo.cc',
