@@ -171,7 +171,21 @@
     "itLeader": "Vedúci sekcie IT",
     "itDeputy": "Zástupca vedúceho sekcie IT",
     "marketingManagerFemale": "Marketingová manažérka",
-    "generalMarketing":"Vedúci marketingovej podsekcie General Marketing"
+    "generalMarketing":"Vedúci marketingovej podsekcie General Marketing",
+    "secretaryGeneral": "Generálny tajomník organizácie",
+    "generalDirectorMarketing": "Generálna riaditeľka sekcie marketingu a komunikačnej stratégie (SMKS)",
+    "generalDirectorIT": "Generálny riaditeľ sekcie prevádzky informačných systémov (SPIS)",
+    "directorHR": "Riaditeľ sekcie ľudských zdrojov a rozvoja dobrovoľníkov (HRAD)",
+    "deputyDirectorMarketing": "Zástupca riaditeľa sekcie marketingu a komunikačnej stratégie (SMKS)",
+    "deputyDirectorHR": "Zástupca riaditeľa sekcie ľudských zdrojov a rozvoja dobrovoľníkov (HRAD)",
+    "deputyDirectorEducation": "Zástupca riaditeľa sekcie programov a vzdelávania (SPRAV)",
+    "deputyDirectorIT": "Zástupca riaditeľa sekcie prevádzky informačných systémov (SPIS)",
+    "directorStrategicCommunication": "Riaditeľ odboru strategickej komunikácie (OSK)",
+    "directorMediaProduction": "Riaditeľ odboru obsahu mediálnej produkcie (OMP)",
+    "directorGrantsFemale": "Riaditeľka odboru grantov (GRO)",
+    "directorPartnerships": "Riaditeľ odboru korporátnych a inštitucionálnych partnerstiev (OKIP)",
+    "directorDonors": "Riaditeľ odboru donorov a fundraisingovej stratégie (ODON)",
+    "directorFinance": "Riaditeľ odboru finančných operácii a compliance (OFOC)"
   },
   "support": {
     "hero": {
