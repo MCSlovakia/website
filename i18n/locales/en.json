@@ -171,7 +171,21 @@
     "itLeader": "Section Leader for IT",
     "itDeputy": "Deputy Section Leader for IT",
     "marketingManagerFemale": "Marketing Manager",
-    "generalMarketing":"Subsection Leader for Marketing: General Marketing"
+    "generalMarketing":"Subsection Leader for Marketing: General Marketing",
+    "secretaryGeneral": "Secretary General of the Organisation",
+    "generalDirectorMarketing": "General Director of Marketing and Communication Strategy",
+    "generalDirectorIT": "General Director of Information Systems Operations",
+    "directorHR": "Director of Human Resources and Volunteer Development",
+    "deputyDirectorMarketing": "Deputy Director of Marketing and Communication Strategy",
+    "deputyDirectorHR": "Deputy Director of Human Resources and Volunteer Development",
+    "deputyDirectorEducation": "Deputy Director of Programs and Education",
+    "deputyDirectorIT": "Deputy Director of Information Systems Operations",
+    "directorStrategicCommunication": "Director of Strategic Communication Department",
+    "directorMediaProduction": "Director of Media Production Content Department",
+    "directorGrantsFemale": "Director of Grants Department",
+    "directorPartnerships": "Director of Corporate and Institutional Partnerships Department",
+    "directorDonors": "Director of Donors and Fundraising Strategy Department",
+    "directorFinance": "Director of Financial Operations and Compliance Department"
   },
   "support": {
     "hero": {

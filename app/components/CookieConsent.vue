@@ -19,17 +19,11 @@
             <p class="mt-2 text-xs text-txt-white-sec/90 md:text-sm">
               {{ detailsPrefix }}
               <NuxtLink
-                :to="localePath('/privacy-policy')"
+                to="https://docs.google.com/document/d/1qkzaxJ9s_pjUUmn4bUiSh5TDgTBNljrWb4jzzzIrHE0/edit?usp=sharing"
+                target="_blank"
                 class="text-mcs-orange-light underline decoration-mcs-orange-light/80 underline-offset-2 transition hover:text-mcs-orange"
               >
                 {{ privacyLabel }}
-              </NuxtLink>
-              {{ andText }}
-              <NuxtLink
-                :to="localePath('/processing-policy')"
-                class="text-mcs-orange-light underline decoration-mcs-orange-light/80 underline-offset-2 transition hover:text-mcs-orange"
-              >
-                {{ processingLabel }}
               </NuxtLink>
               .
             </p>
@@ -77,16 +71,10 @@ const description = computed(() =>
     : 'We use analytics cookies (Google Analytics) to measure traffic and improve this website.'
 );
 const detailsPrefix = computed(() =>
-  isSk.value ? 'Viac informácií nájdete v' : 'See more in our'
+  isSk.value ? 'Viac informácií nájdete v ' : 'See more in our '
 );
 const privacyLabel = computed(() =>
-  isSk.value ? 'zásadách ochrany súkromia' : 'privacy policy'
-);
-const andText = computed(() =>
-  isSk.value ? ' a ' : ' and '
-);
-const processingLabel = computed(() =>
-  isSk.value ? 'zásadách spracovania údajov' : 'processing policy'
+  isSk.value ? 'zásadách ochrany súkromia a podmienkach spracovania' : 'privacy and processing policy'
 );
 const rejectLabel = computed(() => (isSk.value ? 'Odmietnuť' : 'Reject'));
 const acceptLabel = computed(() => (isSk.value ? 'Prijať' : 'Accept'));
