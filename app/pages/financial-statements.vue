@@ -6,7 +6,7 @@
       <div class="p-8 bg-blue-600 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-5 text-white shadow-lg">
         <div>
           <h2 class="text-2xl font-bold font-serif">{{ $t('financialPage.account.title') }}</h2>
-          <p class="opacity-90">Sledujte naše financie transparentne v reálnom čase.</p>
+          <p class="opacity-90">{{ $t('financialPage.account.description') }}</p>
         </div>
         <a href="#" class="px-8 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-gray-100 transition whitespace-nowrap">
           Otvoriť účet
