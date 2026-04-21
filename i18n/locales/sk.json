@@ -325,5 +325,13 @@
   },
   "articles": {
     "readAlso": "Čítať ďalej"
+  },
+  "financialPage":{
+    "title": "Finančné výkazy",
+    "documents": "Documenty na stiahnutie",
+    "account":{
+      "title": "Transparečný účet",
+      "description": "Sledujte naše financie transparentne v reálnom čase."
+    }
   }
 }
