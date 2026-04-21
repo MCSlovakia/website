@@ -1,28 +1,15 @@
 <template>
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6">Finančné výkazy</h1>
-    
-    <div class="bg-blue-50 p-6 rounded-lg border border-blue-200 mb-8">
-      <h2 class="text-xl font-semibold mb-2">Transparentný účet</h2>
-      <p class="mb-4">Sledujte naše financie a pohyby na účte v reálnom čase.</p>
-      <a 
-        href="SEM_VLOZ_LINK_NA_TRANSPARENTNY_UCET" 
-        target="_blank" 
-        class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-      >
-        Otvoriť transparentný účet
-      </a>
-    </div>
-
-    <div class="space-y-4">
-      <h2 class="text-2xl font-semibold">Dokumenty na stiahnutie</h2>
-      <ul class="list-disc pl-5">
-        <li>
-          <a href="/documents/financny-vykaz-2023.pdf" target="_blank" class="text-blue-600 hover:underline">
-            Finančný výkaz za rok 2023 (PDF)
-          </a>
-        </li>
-      </ul>
+  <div class="flex lg:px-auto px-5 justify-center md:mt-[90px] mt-[50px] mb-[90px]">
+    <div class="flex flex-col md:gap-10 gap-5 xl:w-[1180px] lg:w-[940px] w-full text-black">
+      <h1 class="md:text-[40px] text-3xl font-bold">Výročné správy</h1>
+      <p class="text-lg text-gray-600">Tu nájdete prehľad našej činnosti za uplynulé roky.</p>
+      
+      <div class="grid md:grid-cols-2 gap-4 mt-5">
+        <div class="p-6 bg-white border border-gray-200 rounded-xl flex justify-between items-center shadow-sm">
+          <span class="font-medium">Výročná správa 2024</span>
+          <span class="text-gray-400 font-normal">Pripravujeme</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
