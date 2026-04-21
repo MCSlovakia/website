@@ -328,10 +328,10 @@
   },
   "financialPage":{
     "title": "Financial statements",
-    "documents": "Documents to download",
     "account":{
       "title": "Transparent account",
       "description": "Watch our finances transparently in real time."
-    }
+    },
+    "documents": "Documents to download"
   }
 }
