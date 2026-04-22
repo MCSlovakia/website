@@ -327,11 +327,27 @@
     "readAlso": "Čítať ďalej"
   },
   "financialPage":{
-    "title": "Finančné výkazy", 
+    "title": "Finančné výkazy",
+    
     "account":{
       "title": "Transparečný účet",
-      "description": "Sledujte naše financie transparentne v reálnom čase."
+      "description": "Sledujte naše financie transparentne v reálnom čase.",
+      "button": "Otvoriť účet"
     },
-    "documents": "Documenty na stiahnutie"
+    "documents": "Documenty na stiahnutie",
+    "message": "Momentálne nie sú dostupné žiadne správy."
+  },
+  "annualPage":{
+    "title": "Výročné správy",
+    "description": "Tu nájdete prehľad našej činnosti za uplynulé roky.",
+    "message": "Výročná správa 2024",
+    "desc2": "Pripravujeme"
+  },
+  "legalPage":{
+    "title": "Právne dokumenty",
+    "description": "Tu nájdete základné stanovy a dokumentáciu našej neziskovej organizácie.",
+    "title2": "Štatút MCSlovakia",
+    "description2": "Základný dokument definujúci fungovanie našej organizácie.",
+    "button": "Otvoriť Štatút (PDF)"
   }
 }

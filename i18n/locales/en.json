@@ -328,10 +328,26 @@
   },
   "financialPage":{
     "title": "Financial statements",
+    
     "account":{
       "title": "Transparent account",
-      "description": "Watch our finances transparently in real time."
+      "description": "Watch our finances transparently in real time.",
+      "button": "Open Account"
     },
-    "documents": "Documents to download"
+    "documents": "Documents to download",
+    "message": "No reports are available at the moment."
+  },
+  "annualPage":{
+    "title": "Annual reports",
+    "description": "Here you will find an overview of our activities over the past years.",
+    "message": "Annual Report 2024",
+    "desc2": "Preparing"
+  },
+  "legalPage":{
+    "title": "Legal Documents",
+    "description": "Here you will find the bylaws and documentation of our non-profit organization.",
+    "title2": "Statute of MCSlovakia",
+    "description2": "The foundational document defining the operation of our organization.",
+    "button": "Open Statute (PDF)"
   }
 }
