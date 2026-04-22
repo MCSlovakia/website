@@ -9,14 +9,14 @@
           <p class="opacity-90">{{ $t('financialPage.account.description') }}</p>
         </div>
         <a href="#" class="px-8 py-3 bg-white text-blue-600 font-bold rounded-full hover:bg-gray-100 transition whitespace-nowrap">
-          Otvoriť účet
+          {{ $t('financialPage.account.button') }}
         </a>
       </div>
 
       <div class="mt-5">
         <h2 class="text-2xl font-bold mb-4 text-black">{{ $t('financialPage.documents') }}</h2>
         <div class="grid md:grid-cols-2 gap-4">
-           <p class="text-gray-500 italic">Momentálne nie sú dostupné žiadne správy.</p>
+           <p class="text-gray-500 italic">{{ $t('financialPage.message') }}</p>
         </div>
       </div>
     </div>
