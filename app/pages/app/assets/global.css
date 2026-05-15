@@ -1,0 +1,48 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('./fonts/Mulish.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('./fonts/Merriweather.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    @apply bg-mcs-white;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.mulish {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* No global anchor color rules; style links per-component. */
