@@ -171,7 +171,7 @@
     "itLeader": "Section Leader for IT",
     "itDeputy": "Deputy Section Leader for IT",
     "marketingManagerFemale": "Marketing Manager",
-    "generalMarketing":"Subsection Leader for Marketing: General Marketing",
+    "generalMarketing": "Subsection Leader for Marketing: General Marketing",
     "secretaryGeneral": "Secretary General of the Organisation",
     "generalDirectorMarketing": "General Director of Marketing and Communication Strategy",
     "generalDirectorIT": "General Director of Information Systems Operations",
@@ -294,7 +294,11 @@
     "copyright": "© Model Conferences Slovakia"
   },
   "projectsPage": {
-    "title": "Projects"
+    "title": "Projects",
+    "subtitle": "Overview of Model Conferences Slovakia projects",
+    "back": "Back to projects",
+    "empty": "No projects have been added yet.",
+    "readAlso": "Next project"
   },
   "partnersPage": {
     "permanent": "Long-term Partners",
@@ -326,10 +330,9 @@
   "articles": {
     "readAlso": "Read Also"
   },
-  "financialPage":{
+  "financialPage": {
     "title": "Financial statements",
-    
-    "account":{
+    "account": {
       "title": "Transparent account",
       "description": "Watch our finances transparently in real time.",
       "button": "Open Account"
@@ -337,13 +340,13 @@
     "documents": "Documents to download",
     "message": "No reports are available at the moment."
   },
-  "annualPage":{
+  "annualPage": {
     "title": "Annual reports",
     "description": "Here you will find an overview of our activities over the past years.",
     "message": "Annual Report 2024",
     "desc2": "Preparing"
   },
-  "legalPage":{
+  "legalPage": {
     "title": "Legal Documents",
     "description": "Here you will find the bylaws and documentation of our non-profit organization.",
     "title2": "Statute of MCSlovakia",
