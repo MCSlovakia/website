@@ -303,6 +303,14 @@
   "partnersPage": {
     "permanent": "Spolupracujeme s",
     "project": "Projektoví partneri",
+    "partners": {
+      "yubico": "Yubico",
+      "dofe": "Medzinárodná cena vojvodu z Edinburghu",
+      "britishEmbassy": "Veľvyslanectvo Spojeného kráľovstva v Bratislave",
+      "germanEmbassy": "Veľvyslanectvo Spolkovej republiky Nemecko v Bratislave",
+      "frenchEmbassy": "Veľvyslanectvo Francúzskej republiky na Slovensku",
+      "czechEmbassy": "Veľvyslanectvo Českej republiky v Bratislave"
+    },
     "cta": {
       "title": "Staň sa partnerom",
       "desc": "Staňte sa partnerom Model Conferences Slovakia a pomôžte nám rozvíjať kritické myslenie, dialóg a občiansku angažovanosť mladých. Vaša podpora znamená investíciu do vzdelania, hodnotovej výchovy a budúcnosti Slovenska. Spolu vieme formovať generáciu, ktorá bude meniť svet.",

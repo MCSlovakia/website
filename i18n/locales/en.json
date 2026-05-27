@@ -303,6 +303,14 @@
   "partnersPage": {
     "permanent": "Long-term Partners",
     "project": "Project Partners",
+    "partners": {
+      "yubico": "Yubico",
+      "dofe": "The Duke of Edinburgh's International Award",
+      "britishEmbassy": "British Embassy Bratislava",
+      "germanEmbassy": "Embassy of the Federal Republic of Germany Bratislava",
+      "frenchEmbassy": "Embassy of France in Slovakia",
+      "czechEmbassy": "Embassy of the Czech Republic in Bratislava"
+    },
     "cta": {
       "title": "Become a Partner",
       "desc": "Become a partner of Model Conferences Slovakia and help us develop critical thinking, dialogue, and civic engagement among youth. Your support is an investment in education, values, and the future of Slovakia. Together we can shape a generation that will change the world.",
