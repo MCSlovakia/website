@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     class="rounded hover:shadow-[0px_4px_10px_0px_rgba(9,24,81,0.15)] transition duration-200 bg-mcs-grey group"
-    to="/gallery"
+    :to="link || '/projects'"
   >
     <NuxtImg
       class="w-full h-48 object-cover"

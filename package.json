@@ -3,19 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:articles && nuxt build",
+    "build": "npm run build:articles && npm run build:projects && nuxt build",
     "start": "node .output/server/index.mjs",
-    "dev": "nuxt dev",
-    "generate": "npm run build:articles && nuxt generate",
+    "dev": "npm run build:articles && npm run build:projects && nuxt dev",
+    "generate": "npm run build:articles && npm run build:projects && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build:articles": "node scripts/build-articles-json.mjs"
+    "build:articles": "node scripts/build-articles-json.mjs",
+    "build:projects": "node scripts/build-projects-json.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/i18n": "^10.0.6",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@tailwindcss/typography": "^0.5.19",
     "better-sqlite3": "^12.2.0",
     "nuxt": "^4.0.1",
     "remixicon": "^4.6.0",
