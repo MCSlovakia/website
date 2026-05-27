@@ -3,13 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:articles && nuxt build",
+    "build": "npm run build:articles && npm run build:projects && nuxt build",
     "start": "node .output/server/index.mjs",
-    "dev": "nuxt dev",
-    "generate": "npm run build:articles && nuxt generate",
+    "dev": "npm run build:articles && npm run build:projects && nuxt dev",
+    "generate": "npm run build:articles && npm run build:projects && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build:articles": "node scripts/build-articles-json.mjs"
+    "build:articles": "node scripts/build-articles-json.mjs",
+    "build:projects": "node scripts/build-projects-json.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",

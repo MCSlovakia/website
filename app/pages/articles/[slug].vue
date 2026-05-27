@@ -19,7 +19,7 @@
         />
 
         <!-- Body -->
-        <article class="prose max-w-none prose-p:text-txt-black-sec prose-headings:text-txt-black-prim">
+        <article class="prose prose-lg max-w-none">
           <div v-html="article.body" />
         </article>
       </div>

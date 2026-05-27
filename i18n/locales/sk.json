@@ -2,7 +2,7 @@
   "header": {
     "about": "O nás",
     "projects": "Projekty",
-    "partners": "Partneri",
+    "partners": "Spolupracujeme s",
     "support-us": "Podporte nás",
     "articles": "Články"
   },
@@ -46,7 +46,7 @@
       "ctaMore": "Prečítať viac článkov"
     },
     "partners": {
-      "title": "Naši partneri",
+      "title": "Spolupracujeme s",
       "ctaMore": "Zistiť o partneroch"
     },
     "volunteerCta": {
@@ -171,7 +171,7 @@
     "itLeader": "Vedúci sekcie IT",
     "itDeputy": "Zástupca vedúceho sekcie IT",
     "marketingManagerFemale": "Marketingová manažérka",
-    "generalMarketing":"Vedúci marketingovej podsekcie General Marketing",
+    "generalMarketing": "Vedúci marketingovej podsekcie General Marketing",
     "secretaryGeneral": "Generálny tajomník organizácie",
     "generalDirectorMarketing": "Generálna riaditeľka sekcie marketingu a komunikačnej stratégie (SMKS)",
     "generalDirectorIT": "Generálny riaditeľ sekcie prevádzky informačných systémov (SPIS)",
@@ -271,7 +271,7 @@
     "links": {
       "about": "O nás",
       "projects": "Projekty",
-      "partners": "Partneri",
+      "partners": "Spolupracujeme s",
       "support": "Podporte nás",
       "articles": "Články",
       "gallery": "Galéria",
@@ -294,10 +294,14 @@
     "copyright": "© Model Conferences Slovakia"
   },
   "projectsPage": {
-    "title": "Projekty"
+    "title": "Projekty",
+    "subtitle": "Prehľad projektov Model Conferences Slovakia",
+    "back": "Späť na projekty",
+    "empty": "Zatiaľ neboli pridané žiadne projekty.",
+    "readAlso": "Ďalší projekt"
   },
   "partnersPage": {
-    "permanent": "Stáli partneri",
+    "permanent": "Spolupracujeme s",
     "project": "Projektoví partneri",
     "cta": {
       "title": "Staň sa partnerom",
@@ -325,5 +329,28 @@
   },
   "articles": {
     "readAlso": "Čítať ďalej"
+  },
+  "financialPage": {
+    "title": "Finančné výkazy",
+    "account": {
+      "title": "Transparečný účet",
+      "description": "Sledujte naše financie transparentne v reálnom čase.",
+      "button": "Otvoriť účet"
+    },
+    "documents": "Documenty na stiahnutie",
+    "message": "Momentálne nie sú dostupné žiadne správy."
+  },
+  "annualPage": {
+    "title": "Výročné správy",
+    "description": "Tu nájdete prehľad našej činnosti za uplynulé roky.",
+    "message": "Výročná správa 2024",
+    "desc2": "Pripravujeme"
+  },
+  "legalPage": {
+    "title": "Právne dokumenty",
+    "description": "Tu nájdete základné stanovy a dokumentáciu našej neziskovej organizácie.",
+    "title2": "Štatút MCSlovakia",
+    "description2": "Základný dokument definujúci fungovanie našej organizácie.",
+    "button": "Otvoriť Štatút (PDF)"
   }
 }

@@ -85,9 +85,9 @@ const footerLinks = computed(() => [
       { name: t('footer.links.contact'), to: localePath("/contacts") },
       { name: t('footer.links.media'), to: localePath("/") },
       { name: t('footer.links.pressReleases'), to: localePath("/") },
-      { name: t('footer.links.annualReports'), to: localePath("/") },
-      { name: t('footer.links.legalDocs'), to: "/components/statut.pdf", external: true },
-      { name: t('footer.links.financialStatements'), to: localePath("/") },
+      { name: t('footer.links.annualReports'), to: localePath("/annual-reports") },
+      { name: t('footer.links.legalDocs'), to: localePath("/legal-documents") },
+      { name: t('footer.links.financialStatements'), to: localePath("/financial-statements") },
     ]
   }
 ]);
